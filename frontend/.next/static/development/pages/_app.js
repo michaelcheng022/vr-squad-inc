@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/_app.js"],{
+=======
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\_app.js"],{
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 /***/ "./components/Header.js":
 /*!******************************!*\
@@ -19,7 +23,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! nprogress */ "./node_modules/nprogress/nprogress.js");
 /* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Nav */ "./components/Nav.js");
+<<<<<<< HEAD
 var _jsxFileName = "/home/michael/Desktop/web-dev-projects/vr-squad-inc/vr-squad-inc-master/frontend/components/Header.js";
+=======
+var _jsxFileName = "C:\\Users\\jack\\Desktop\\web-dev\\contract\\vr-squad-inc\\content-management-system\\frontend\\components\\Header.js";
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 
 
@@ -132,7 +140,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+<<<<<<< HEAD
 var _jsxFileName = "/home/michael/Desktop/web-dev-projects/vr-squad-inc/vr-squad-inc-master/frontend/components/Meta.js";
+=======
+var _jsxFileName = "C:\\Users\\jack\\Desktop\\web-dev\\contract\\vr-squad-inc\\content-management-system\\frontend\\components\\Meta.js";
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 
 
@@ -204,7 +216,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_NavStyles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/NavStyles */ "./components/styles/NavStyles.js");
 /* harmony import */ var _User__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./User */ "./components/User.js");
 /* harmony import */ var _Signout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Signout */ "./components/Signout.js");
+<<<<<<< HEAD
 var _jsxFileName = "/home/michael/Desktop/web-dev-projects/vr-squad-inc/vr-squad-inc-master/frontend/components/Nav.js";
+=======
+var _jsxFileName = "C:\\Users\\jack\\Desktop\\web-dev\\contract\\vr-squad-inc\\content-management-system\\frontend\\components\\Nav.js";
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 
 
@@ -227,7 +243,11 @@ var Nav = function Nav() {
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+<<<<<<< HEAD
       href: "/listings",
+=======
+      href: "/items",
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
       __source: {
         fileName: _jsxFileName,
         lineNumber: 10
@@ -253,7 +273,11 @@ var Nav = function Nav() {
       },
       __self: this
     }, "Sell")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+<<<<<<< HEAD
       href: "/listings",
+=======
+      href: "/orders",
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
       __source: {
         fileName: _jsxFileName,
         lineNumber: 18
@@ -265,7 +289,11 @@ var Nav = function Nav() {
         lineNumber: 19
       },
       __self: this
+<<<<<<< HEAD
     }, "Listings")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+=======
+    }, "Orders")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
       href: "/me",
       __source: {
         fileName: _jsxFileName,
@@ -319,7 +347,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
 /* harmony import */ var _Meta__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Meta */ "./components/Meta.js");
+<<<<<<< HEAD
 var _jsxFileName = "/home/michael/Desktop/web-dev-projects/vr-squad-inc/vr-squad-inc-master/frontend/components/Page.js";
+=======
+var _jsxFileName = "C:\\Users\\jack\\Desktop\\web-dev\\contract\\vr-squad-inc\\content-management-system\\frontend\\components\\Page.js";
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -437,7 +469,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! graphql-tag */ "./node_modules/graphql-tag/src/index.js");
 /* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(graphql_tag__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _User__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./User */ "./components/User.js");
+<<<<<<< HEAD
 var _jsxFileName = "/home/michael/Desktop/web-dev-projects/vr-squad-inc/vr-squad-inc-master/frontend/components/Signout.js";
+=======
+var _jsxFileName = "C:\\Users\\jack\\Desktop\\web-dev\\contract\\vr-squad-inc\\content-management-system\\frontend\\components\\Signout.js";
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 function _templateObject() {
   var data = _taggedTemplateLiteral(["\n  mutation SIGN_OUT_MUTATION {\n    signout {\n      message\n    }\n  }\n"]);
@@ -502,7 +538,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(graphql_tag__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+<<<<<<< HEAD
 var _jsxFileName = "/home/michael/Desktop/web-dev-projects/vr-squad-inc/vr-squad-inc-master/frontend/components/User.js";
+=======
+var _jsxFileName = "C:\\Users\\jack\\Desktop\\web-dev\\contract\\vr-squad-inc\\content-management-system\\frontend\\components\\User.js";
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -14085,7 +14125,11 @@ module.exports = gql;
   !*** ./node_modules/graphql/error/GraphQLError.mjs ***!
   \*****************************************************/
 /*! exports provided: GraphQLError */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -14236,7 +14280,11 @@ GraphQLError.prototype = Object.create(Error.prototype, {
   !*** ./node_modules/graphql/error/formatError.mjs ***!
   \****************************************************/
 /*! exports provided: formatError */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -14281,7 +14329,11 @@ function formatError(error) {
   !*** ./node_modules/graphql/error/index.mjs ***!
   \**********************************************/
 /*! exports provided: GraphQLError, syntaxError, locatedError, printError, formatError */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -14321,7 +14373,11 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/graphql/error/locatedError.mjs ***!
   \*****************************************************/
 /*! exports provided: locatedError */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -14359,7 +14415,11 @@ function locatedError(originalError, nodes, path) {
   !*** ./node_modules/graphql/error/printError.mjs ***!
   \***************************************************/
 /*! exports provided: printError */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -14510,7 +14570,11 @@ function lpad(len, str) {
   !*** ./node_modules/graphql/error/syntaxError.mjs ***!
   \****************************************************/
 /*! exports provided: syntaxError */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -14541,7 +14605,11 @@ function syntaxError(source, position, description) {
   !*** ./node_modules/graphql/execution/execute.mjs ***!
   \****************************************************/
 /*! exports provided: execute, responsePathAsArray, addPath, assertValidExecutionArguments, buildExecutionContext, collectFields, buildResolveInfo, resolveFieldValueOrError, defaultFieldResolver, getFieldDef */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -15374,7 +15442,11 @@ function getFieldDef(schema, parentType, fieldName) {
   !*** ./node_modules/graphql/execution/index.mjs ***!
   \**************************************************/
 /*! exports provided: execute, defaultFieldResolver, responsePathAsArray, getDirectiveValues */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -15406,7 +15478,11 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/graphql/execution/values.mjs ***!
   \***************************************************/
 /*! exports provided: getVariableValues, getArgumentValues, getDirectiveValues */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -15648,7 +15724,11 @@ function hasOwnProperty(obj, prop) {
   !*** ./node_modules/graphql/graphql.mjs ***!
   \******************************************/
 /*! exports provided: graphql, graphqlSync */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -15740,7 +15820,11 @@ function graphqlImpl(schema, source, rootValue, contextValue, variableValues, op
   !*** ./node_modules/graphql/index.mjs ***!
   \****************************************/
 /*! exports provided: graphql, graphqlSync, GraphQLSchema, GraphQLScalarType, GraphQLObjectType, GraphQLInterfaceType, GraphQLUnionType, GraphQLEnumType, GraphQLInputObjectType, GraphQLList, GraphQLNonNull, GraphQLDirective, TypeKind, specifiedScalarTypes, GraphQLInt, GraphQLFloat, GraphQLString, GraphQLBoolean, GraphQLID, specifiedDirectives, GraphQLIncludeDirective, GraphQLSkipDirective, GraphQLDeprecatedDirective, DEFAULT_DEPRECATION_REASON, SchemaMetaFieldDef, TypeMetaFieldDef, TypeNameMetaFieldDef, introspectionTypes, __Schema, __Directive, __DirectiveLocation, __Type, __Field, __InputValue, __EnumValue, __TypeKind, isSchema, isDirective, isType, isScalarType, isObjectType, isInterfaceType, isUnionType, isEnumType, isInputObjectType, isListType, isNonNullType, isInputType, isOutputType, isLeafType, isCompositeType, isAbstractType, isWrappingType, isNullableType, isNamedType, isRequiredArgument, isRequiredInputField, isSpecifiedScalarType, isIntrospectionType, isSpecifiedDirective, assertType, assertScalarType, assertObjectType, assertInterfaceType, assertUnionType, assertEnumType, assertInputObjectType, assertListType, assertNonNullType, assertInputType, assertOutputType, assertLeafType, assertCompositeType, assertAbstractType, assertWrappingType, assertNullableType, assertNamedType, getNullableType, getNamedType, validateSchema, assertValidSchema, Source, getLocation, parse, parseValue, parseType, print, visit, visitInParallel, visitWithTypeInfo, getVisitFn, Kind, TokenKind, DirectiveLocation, BREAK, isDefinitionNode, isExecutableDefinitionNode, isSelectionNode, isValueNode, isTypeNode, isTypeSystemDefinitionNode, isTypeDefinitionNode, isTypeSystemExtensionNode, isTypeExtensionNode, execute, defaultFieldResolver, responsePathAsArray, getDirectiveValues, subscribe, createSourceEventStream, validate, ValidationContext, specifiedRules, FieldsOnCorrectTypeRule, FragmentsOnCompositeTypesRule, KnownArgumentNamesRule, KnownDirectivesRule, KnownFragmentNamesRule, KnownTypeNamesRule, LoneAnonymousOperationRule, NoFragmentCyclesRule, NoUndefinedVariablesRule, NoUnusedFragmentsRule, NoUnusedVariablesRule, OverlappingFieldsCanBeMergedRule, PossibleFragmentSpreadsRule, ProvidedRequiredArgumentsRule, ScalarLeafsRule, SingleFieldSubscriptionsRule, UniqueArgumentNamesRule, UniqueDirectivesPerLocationRule, UniqueFragmentNamesRule, UniqueInputFieldNamesRule, UniqueOperationNamesRule, UniqueVariableNamesRule, ValuesOfCorrectTypeRule, VariablesAreInputTypesRule, VariablesInAllowedPositionRule, GraphQLError, formatError, printError, getIntrospectionQuery, introspectionQuery, getOperationAST, getOperationRootType, introspectionFromSchema, buildClientSchema, buildASTSchema, buildSchema, getDescription, extendSchema, lexicographicSortSchema, printSchema, printIntrospectionSchema, printType, typeFromAST, valueFromAST, valueFromASTUntyped, astFromValue, TypeInfo, coerceValue, isValidJSValue, isValidLiteralValue, concatAST, separateOperations, isEqualType, isTypeSubTypeOf, doTypesOverlap, assertValidName, isValidNameError, findBreakingChanges, findDangerousChanges, BreakingChangeType, DangerousChangeType, findDeprecatedUsages */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16157,7 +16241,11 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/graphql/jsutils/defineToJSON.mjs ***!
   \*******************************************************/
 /*! exports provided: default */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16186,7 +16274,11 @@ function applyToJSON(classObject) {
   !*** ./node_modules/graphql/jsutils/defineToStringTag.mjs ***!
   \************************************************************/
 /*! exports provided: default */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16230,7 +16322,11 @@ function applyToStringTag(classObject) {
   !*** ./node_modules/graphql/jsutils/find.mjs ***!
   \***********************************************/
 /*! exports provided: default */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16258,7 +16354,11 @@ function find(list, predicate) {
   !*** ./node_modules/graphql/jsutils/inspect.mjs ***!
   \**************************************************/
 /*! exports provided: default */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16313,7 +16413,11 @@ function inspect(value) {
   !*** ./node_modules/graphql/jsutils/instanceOf.mjs ***!
   \*****************************************************/
 /*! exports provided: default */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16358,7 +16462,11 @@ function instanceOf(value, constructor) {
   !*** ./node_modules/graphql/jsutils/invariant.mjs ***!
   \****************************************************/
 /*! exports provided: default */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16385,7 +16493,11 @@ function invariant(condition, message) {
   !*** ./node_modules/graphql/jsutils/isFinite.mjs ***!
   \***************************************************/
 /*! exports provided: default */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16413,7 +16525,11 @@ var isFinite = Number.isFinite || function (value) {
   !*** ./node_modules/graphql/jsutils/isInteger.mjs ***!
   \****************************************************/
 /*! exports provided: default */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16441,7 +16557,11 @@ var isInteger = Number.isInteger || function (value) {
   !*** ./node_modules/graphql/jsutils/isInvalid.mjs ***!
   \****************************************************/
 /*! exports provided: default */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16469,7 +16589,11 @@ function isInvalid(value) {
   !*** ./node_modules/graphql/jsutils/isNullish.mjs ***!
   \****************************************************/
 /*! exports provided: default */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16497,7 +16621,11 @@ function isNullish(value) {
   !*** ./node_modules/graphql/jsutils/isPromise.mjs ***!
   \****************************************************/
 /*! exports provided: default */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16527,7 +16655,11 @@ function isPromise(value) {
   !*** ./node_modules/graphql/jsutils/keyMap.mjs ***!
   \*************************************************/
 /*! exports provided: default */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16577,7 +16709,11 @@ function keyMap(list, keyFn) {
   !*** ./node_modules/graphql/jsutils/keyValMap.mjs ***!
   \****************************************************/
 /*! exports provided: default */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16621,7 +16757,11 @@ function keyValMap(list, keyFn, valFn) {
   !*** ./node_modules/graphql/jsutils/memoize3.mjs ***!
   \***************************************************/
 /*! exports provided: default */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16684,7 +16824,11 @@ function memoize3(fn) {
   !*** ./node_modules/graphql/jsutils/objectValues.mjs ***!
   \*******************************************************/
 /*! exports provided: default */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16714,7 +16858,11 @@ var objectValues = Object.values || function (obj) {
   !*** ./node_modules/graphql/jsutils/orList.mjs ***!
   \*************************************************/
 /*! exports provided: default */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16746,7 +16894,11 @@ function orList(items) {
   !*** ./node_modules/graphql/jsutils/promiseForObject.mjs ***!
   \***********************************************************/
 /*! exports provided: default */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16787,7 +16939,11 @@ function promiseForObject(object) {
   !*** ./node_modules/graphql/jsutils/promiseReduce.mjs ***!
   \********************************************************/
 /*! exports provided: default */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16825,7 +16981,11 @@ function promiseReduce(values, callback, initialValue) {
   !*** ./node_modules/graphql/jsutils/quotedOrList.mjs ***!
   \*******************************************************/
 /*! exports provided: default */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16857,7 +17017,11 @@ function quotedOrList(items) {
   !*** ./node_modules/graphql/jsutils/suggestionList.mjs ***!
   \*********************************************************/
 /*! exports provided: default */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16958,7 +17122,11 @@ function lexicalDistance(aStr, bStr) {
   !*** ./node_modules/graphql/language/blockStringValue.mjs ***!
   \************************************************************/
 /*! exports provided: default */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17037,7 +17205,11 @@ function isBlank(str) {
   !*** ./node_modules/graphql/language/directiveLocation.mjs ***!
   \*************************************************************/
 /*! exports provided: DirectiveLocation */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17088,7 +17260,11 @@ var DirectiveLocation = Object.freeze({
   !*** ./node_modules/graphql/language/index.mjs ***!
   \*************************************************/
 /*! exports provided: getLocation, Kind, createLexer, TokenKind, parse, parseValue, parseType, print, Source, visit, visitInParallel, visitWithTypeInfo, getVisitFn, BREAK, isDefinitionNode, isExecutableDefinitionNode, isSelectionNode, isValueNode, isTypeNode, isTypeSystemDefinitionNode, isTypeDefinitionNode, isTypeSystemExtensionNode, isTypeExtensionNode, DirectiveLocation */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17174,7 +17350,11 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/graphql/language/kinds.mjs ***!
   \*************************************************/
 /*! exports provided: Kind */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17258,7 +17438,11 @@ var Kind = Object.freeze({
   !*** ./node_modules/graphql/language/lexer.mjs ***!
   \*************************************************/
 /*! exports provided: createLexer, TokenKind, getTokenDesc */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17907,7 +18091,11 @@ function readName(source, start, line, col, prev) {
   !*** ./node_modules/graphql/language/location.mjs ***!
   \****************************************************/
 /*! exports provided: getLocation */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17953,7 +18141,11 @@ function getLocation(source, position) {
   !*** ./node_modules/graphql/language/parser.mjs ***!
   \**************************************************/
 /*! exports provided: parse, parseValue, parseType, parseConstValue, parseTypeReference, parseNamedType */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -19482,7 +19674,11 @@ function many(lexer, openKind, parseFn, closeKind) {
   !*** ./node_modules/graphql/language/predicates.mjs ***!
   \******************************************************/
 /*! exports provided: isDefinitionNode, isExecutableDefinitionNode, isSelectionNode, isValueNode, isTypeNode, isTypeSystemDefinitionNode, isTypeDefinitionNode, isTypeSystemExtensionNode, isTypeExtensionNode */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -19540,7 +19736,11 @@ function isTypeExtensionNode(node) {
   !*** ./node_modules/graphql/language/printer.mjs ***!
   \***************************************************/
 /*! exports provided: print */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -19864,7 +20064,11 @@ function printBlockString(value, isDescription) {
   !*** ./node_modules/graphql/language/source.mjs ***!
   \**************************************************/
 /*! exports provided: Source */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -19918,7 +20122,11 @@ Object(_jsutils_defineToStringTag__WEBPACK_IMPORTED_MODULE_1__["default"])(Sourc
   !*** ./node_modules/graphql/language/visitor.mjs ***!
   \***************************************************/
 /*! exports provided: QueryDocumentKeys, BREAK, visit, visitInParallel, visitWithTypeInfo, getVisitFn */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -20368,7 +20576,11 @@ function getVisitFn(visitor, kind, isLeaving) {
   !*** ./node_modules/graphql/subscription/index.mjs ***!
   \*****************************************************/
 /*! exports provided: subscribe, createSourceEventStream */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -20394,7 +20606,11 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/graphql/subscription/mapAsyncIterator.mjs ***!
   \****************************************************************/
 /*! exports provided: default */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -20494,7 +20710,11 @@ function iteratorResult(value) {
   !*** ./node_modules/graphql/subscription/subscribe.mjs ***!
   \*********************************************************/
 /*! exports provided: subscribe, createSourceEventStream */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -20669,7 +20889,11 @@ function createSourceEventStream(schema, document, rootValue, contextValue, vari
   !*** ./node_modules/graphql/type/definition.mjs ***!
   \**************************************************/
 /*! exports provided: isType, assertType, isScalarType, assertScalarType, isObjectType, assertObjectType, isInterfaceType, assertInterfaceType, isUnionType, assertUnionType, isEnumType, assertEnumType, isInputObjectType, assertInputObjectType, isListType, assertListType, isNonNullType, assertNonNullType, isInputType, assertInputType, isOutputType, assertOutputType, isLeafType, assertLeafType, isCompositeType, assertCompositeType, isAbstractType, assertAbstractType, GraphQLList, GraphQLNonNull, isWrappingType, assertWrappingType, isNullableType, assertNullableType, getNullableType, isNamedType, assertNamedType, getNamedType, GraphQLScalarType, GraphQLObjectType, isRequiredArgument, GraphQLInterfaceType, GraphQLUnionType, GraphQLEnumType, GraphQLInputObjectType, isRequiredInputField */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -21604,7 +21828,11 @@ function isRequiredInputField(field) {
   !*** ./node_modules/graphql/type/directives.mjs ***!
   \**************************************************/
 /*! exports provided: isDirective, GraphQLDirective, GraphQLIncludeDirective, GraphQLSkipDirective, DEFAULT_DEPRECATION_REASON, GraphQLDeprecatedDirective, specifiedDirectives, isSpecifiedDirective */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -21772,7 +22000,11 @@ function isSpecifiedDirective(directive) {
   !*** ./node_modules/graphql/type/index.mjs ***!
   \*********************************************/
 /*! exports provided: isSchema, GraphQLSchema, isType, isScalarType, isObjectType, isInterfaceType, isUnionType, isEnumType, isInputObjectType, isListType, isNonNullType, isInputType, isOutputType, isLeafType, isCompositeType, isAbstractType, isWrappingType, isNullableType, isNamedType, isRequiredArgument, isRequiredInputField, assertType, assertScalarType, assertObjectType, assertInterfaceType, assertUnionType, assertEnumType, assertInputObjectType, assertListType, assertNonNullType, assertInputType, assertOutputType, assertLeafType, assertCompositeType, assertAbstractType, assertWrappingType, assertNullableType, assertNamedType, getNullableType, getNamedType, GraphQLScalarType, GraphQLObjectType, GraphQLInterfaceType, GraphQLUnionType, GraphQLEnumType, GraphQLInputObjectType, GraphQLList, GraphQLNonNull, isDirective, GraphQLDirective, isSpecifiedDirective, specifiedDirectives, GraphQLIncludeDirective, GraphQLSkipDirective, GraphQLDeprecatedDirective, DEFAULT_DEPRECATION_REASON, isSpecifiedScalarType, specifiedScalarTypes, GraphQLInt, GraphQLFloat, GraphQLString, GraphQLBoolean, GraphQLID, TypeKind, isIntrospectionType, introspectionTypes, __Schema, __Directive, __DirectiveLocation, __Type, __Field, __InputValue, __EnumValue, __TypeKind, SchemaMetaFieldDef, TypeMetaFieldDef, TypeNameMetaFieldDef, validateSchema, assertValidSchema */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -21963,7 +22195,11 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/graphql/type/introspection.mjs ***!
   \*****************************************************/
 /*! exports provided: __Schema, __Directive, __DirectiveLocation, __Type, __Field, __InputValue, __EnumValue, TypeKind, __TypeKind, SchemaMetaFieldDef, TypeMetaFieldDef, TypeNameMetaFieldDef, introspectionTypes, isIntrospectionType */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -22496,7 +22732,11 @@ function isIntrospectionType(type) {
   !*** ./node_modules/graphql/type/scalars.mjs ***!
   \***********************************************/
 /*! exports provided: GraphQLInt, GraphQLFloat, GraphQLString, GraphQLBoolean, GraphQLID, specifiedScalarTypes, isSpecifiedScalarType */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -22742,7 +22982,11 @@ function isSpecifiedScalarType(type) {
   !*** ./node_modules/graphql/type/schema.mjs ***!
   \**********************************************/
 /*! exports provided: isSchema, GraphQLSchema */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -23090,7 +23334,11 @@ function typeMapDirectiveReducer(map, directive) {
   !*** ./node_modules/graphql/type/validate.mjs ***!
   \************************************************/
 /*! exports provided: validateSchema, assertValidSchema */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -23910,7 +24158,11 @@ function getEnumValueNodes(enumType, valueName) {
   !*** ./node_modules/graphql/utilities/TypeInfo.mjs ***!
   \*****************************************************/
 /*! exports provided: TypeInfo */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -24265,7 +24517,11 @@ function getFieldDef(schema, parentType, fieldNode) {
   !*** ./node_modules/graphql/utilities/assertValidName.mjs ***!
   \************************************************************/
 /*! exports provided: assertValidName, isValidNameError */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -24320,7 +24576,11 @@ function isValidNameError(name, node) {
   !*** ./node_modules/graphql/utilities/astFromValue.mjs ***!
   \*********************************************************/
 /*! exports provided: astFromValue */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -24539,7 +24799,11 @@ var integerStringRegExp = /^-?(0|[1-9][0-9]*)$/;
   !*** ./node_modules/graphql/utilities/buildASTSchema.mjs ***!
   \***********************************************************/
 /*! exports provided: buildASTSchema, ASTDefinitionBuilder, getDescription, buildSchema */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -25035,7 +25299,11 @@ function buildSchema(source, options) {
   !*** ./node_modules/graphql/utilities/buildClientSchema.mjs ***!
   \**************************************************************/
 /*! exports provided: buildClientSchema */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -25362,7 +25630,11 @@ function buildClientSchema(introspection, options) {
   !*** ./node_modules/graphql/utilities/coerceValue.mjs ***!
   \********************************************************/
 /*! exports provided: coerceValue */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -25577,7 +25849,11 @@ var hasOwnProperty = Object.prototype.hasOwnProperty;
   !*** ./node_modules/graphql/utilities/concatAST.mjs ***!
   \******************************************************/
 /*! exports provided: concatAST */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -25620,7 +25896,11 @@ function concatAST(asts) {
   !*** ./node_modules/graphql/utilities/extendSchema.mjs ***!
   \*********************************************************/
 /*! exports provided: extendSchema */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -26427,7 +26707,11 @@ function checkExtensionNode(type, node) {
   !*** ./node_modules/graphql/utilities/findBreakingChanges.mjs ***!
   \****************************************************************/
 /*! exports provided: BreakingChangeType, DangerousChangeType, findBreakingChanges, findDangerousChanges, findRemovedTypes, findTypesThatChangedKind, findArgChanges, findFieldsThatChangedTypeOnObjectOrInterfaceTypes, findFieldsThatChangedTypeOnInputObjectTypes, findTypesRemovedFromUnions, findTypesAddedToUnions, findValuesRemovedFromEnums, findValuesAddedToEnums, findInterfacesRemovedFromObjectTypes, findInterfacesAddedToObjectTypes, findRemovedDirectives, findRemovedDirectiveArgs, findAddedNonNullDirectiveArgs, findRemovedLocationsForDirective, findRemovedDirectiveLocations */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -27662,7 +27946,11 @@ function getArgumentMapForDirective(directive) {
   !*** ./node_modules/graphql/utilities/findDeprecatedUsages.mjs ***!
   \*****************************************************************/
 /*! exports provided: findDeprecatedUsages */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -27728,7 +28016,11 @@ function findDeprecatedUsages(schema, ast) {
   !*** ./node_modules/graphql/utilities/getOperationAST.mjs ***!
   \************************************************************/
 /*! exports provided: getOperationAST */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -27781,7 +28073,11 @@ function getOperationAST(documentAST, operationName) {
   !*** ./node_modules/graphql/utilities/getOperationRootType.mjs ***!
   \*****************************************************************/
 /*! exports provided: getOperationRootType */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -27841,7 +28137,11 @@ function getOperationRootType(schema, operation) {
   !*** ./node_modules/graphql/utilities/index.mjs ***!
   \**************************************************/
 /*! exports provided: getIntrospectionQuery, introspectionQuery, getOperationAST, getOperationRootType, introspectionFromSchema, buildClientSchema, buildASTSchema, buildSchema, getDescription, extendSchema, lexicographicSortSchema, printSchema, printType, printIntrospectionSchema, typeFromAST, valueFromAST, valueFromASTUntyped, astFromValue, TypeInfo, coerceValue, isValidJSValue, isValidLiteralValue, concatAST, separateOperations, isEqualType, isTypeSubTypeOf, doTypesOverlap, assertValidName, isValidNameError, BreakingChangeType, DangerousChangeType, findBreakingChanges, findDangerousChanges, findDeprecatedUsages */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -27999,7 +28299,11 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/graphql/utilities/introspectionFromSchema.mjs ***!
   \********************************************************************/
 /*! exports provided: introspectionFromSchema */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -28044,7 +28348,11 @@ function introspectionFromSchema(schema, options) {
   !*** ./node_modules/graphql/utilities/introspectionQuery.mjs ***!
   \***************************************************************/
 /*! exports provided: getIntrospectionQuery, introspectionQuery */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -28077,7 +28385,11 @@ var introspectionQuery = getIntrospectionQuery();
   !*** ./node_modules/graphql/utilities/isValidJSValue.mjs ***!
   \***********************************************************/
 /*! exports provided: isValidJSValue */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -28112,7 +28424,11 @@ function isValidJSValue(value, type) {
   !*** ./node_modules/graphql/utilities/isValidLiteralValue.mjs ***!
   \****************************************************************/
 /*! exports provided: isValidLiteralValue */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -28165,7 +28481,11 @@ function isValidLiteralValue(type, valueNode) {
   !*** ./node_modules/graphql/utilities/lexicographicSortSchema.mjs ***!
   \********************************************************************/
 /*! exports provided: lexicographicSortSchema */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -28397,7 +28717,11 @@ function sortBy(array, mapToKey) {
   !*** ./node_modules/graphql/utilities/schemaPrinter.mjs ***!
   \**********************************************************/
 /*! exports provided: printSchema, printIntrospectionSchema, printType */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -28742,7 +29066,11 @@ function breakLine(line, maxLen) {
   !*** ./node_modules/graphql/utilities/separateOperations.mjs ***!
   \***************************************************************/
 /*! exports provided: separateOperations */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -28851,7 +29179,11 @@ function collectTransitiveDependencies(collected, depGraph, fromName) {
   !*** ./node_modules/graphql/utilities/typeComparators.mjs ***!
   \************************************************************/
 /*! exports provided: isEqualType, isTypeSubTypeOf, doTypesOverlap */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -28984,7 +29316,11 @@ function doTypesOverlap(schema, typeA, typeB) {
   !*** ./node_modules/graphql/utilities/typeFromAST.mjs ***!
   \********************************************************/
 /*! exports provided: typeFromAST */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -29031,7 +29367,11 @@ function typeFromAST(schema, typeNode) {
   !*** ./node_modules/graphql/utilities/valueFromAST.mjs ***!
   \*********************************************************/
 /*! exports provided: valueFromAST */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -29241,7 +29581,11 @@ function isMissingVariable(valueNode, variables) {
   !*** ./node_modules/graphql/utilities/valueFromASTUntyped.mjs ***!
   \****************************************************************/
 /*! exports provided: valueFromASTUntyped */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -29322,7 +29666,11 @@ function valueFromASTUntyped(valueNode, variables) {
   !*** ./node_modules/graphql/validation/ValidationContext.mjs ***!
   \***************************************************************/
 /*! exports provided: ASTValidationContext, SDLValidationContext, ValidationContext */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -29603,7 +29951,11 @@ function (_ASTValidationContext2) {
   !*** ./node_modules/graphql/validation/index.mjs ***!
   \***************************************************/
 /*! exports provided: validate, ValidationContext, specifiedRules, FieldsOnCorrectTypeRule, FragmentsOnCompositeTypesRule, KnownArgumentNamesRule, KnownDirectivesRule, KnownFragmentNamesRule, KnownTypeNamesRule, LoneAnonymousOperationRule, NoFragmentCyclesRule, NoUndefinedVariablesRule, NoUnusedFragmentsRule, NoUnusedVariablesRule, OverlappingFieldsCanBeMergedRule, PossibleFragmentSpreadsRule, ProvidedRequiredArgumentsRule, ScalarLeafsRule, SingleFieldSubscriptionsRule, UniqueArgumentNamesRule, UniqueDirectivesPerLocationRule, UniqueFragmentNamesRule, UniqueInputFieldNamesRule, UniqueOperationNamesRule, UniqueVariableNamesRule, ValuesOfCorrectTypeRule, VariablesAreInputTypesRule, VariablesInAllowedPositionRule */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -29760,7 +30112,11 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/graphql/validation/rules/ExecutableDefinitions.mjs ***!
   \*************************************************************************/
 /*! exports provided: nonExecutableDefinitionMessage, ExecutableDefinitions */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -29832,7 +30188,11 @@ function ExecutableDefinitions(context) {
   !*** ./node_modules/graphql/validation/rules/FieldsOnCorrectType.mjs ***!
   \***********************************************************************/
 /*! exports provided: undefinedFieldMessage, FieldsOnCorrectType */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -29999,7 +30359,11 @@ function getSuggestedFieldNames(schema, type, fieldName) {
   !*** ./node_modules/graphql/validation/rules/FragmentsOnCompositeTypes.mjs ***!
   \*****************************************************************************/
 /*! exports provided: inlineFragmentOnNonCompositeErrorMessage, fragmentOnNonCompositeErrorMessage, FragmentsOnCompositeTypes */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -30066,7 +30430,11 @@ function FragmentsOnCompositeTypes(context) {
   !*** ./node_modules/graphql/validation/rules/KnownArgumentNames.mjs ***!
   \**********************************************************************/
 /*! exports provided: unknownArgMessage, unknownDirectiveArgMessage, KnownArgumentNames, KnownArgumentNamesOnDirectives */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -30247,7 +30615,11 @@ function KnownArgumentNamesOnDirectives(context) {
   !*** ./node_modules/graphql/validation/rules/KnownDirectives.mjs ***!
   \*******************************************************************/
 /*! exports provided: unknownDirectiveMessage, misplacedDirectiveMessage, KnownDirectives */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -30442,7 +30814,11 @@ function getDirectiveLocationForASTPath(ancestors) {
   !*** ./node_modules/graphql/validation/rules/KnownFragmentNames.mjs ***!
   \**********************************************************************/
 /*! exports provided: unknownFragmentMessage, KnownFragmentNames */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -30488,7 +30864,11 @@ function KnownFragmentNames(context) {
   !*** ./node_modules/graphql/validation/rules/KnownTypeNames.mjs ***!
   \******************************************************************/
 /*! exports provided: unknownTypeMessage, KnownTypeNames */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -30560,7 +30940,11 @@ function KnownTypeNames(context) {
   !*** ./node_modules/graphql/validation/rules/LoneAnonymousOperation.mjs ***!
   \**************************************************************************/
 /*! exports provided: anonOperationNotAloneMessage, LoneAnonymousOperation */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -30611,7 +30995,11 @@ function LoneAnonymousOperation(context) {
   !*** ./node_modules/graphql/validation/rules/LoneSchemaDefinition.mjs ***!
   \************************************************************************/
 /*! exports provided: schemaDefinitionNotAloneMessage, canNotDefineSchemaWithinExtensionMessage, LoneSchemaDefinition */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -30667,7 +31055,11 @@ function LoneSchemaDefinition(context) {
   !*** ./node_modules/graphql/validation/rules/NoFragmentCycles.mjs ***!
   \********************************************************************/
 /*! exports provided: cycleErrorMessage, NoFragmentCycles */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -30756,7 +31148,11 @@ function NoFragmentCycles(context) {
   !*** ./node_modules/graphql/validation/rules/NoUndefinedVariables.mjs ***!
   \************************************************************************/
 /*! exports provided: undefinedVarMessage, NoUndefinedVariables */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -30834,7 +31230,11 @@ function NoUndefinedVariables(context) {
   !*** ./node_modules/graphql/validation/rules/NoUnusedFragments.mjs ***!
   \*********************************************************************/
 /*! exports provided: unusedFragMessage, NoUnusedFragments */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -30923,7 +31323,11 @@ function NoUnusedFragments(context) {
   !*** ./node_modules/graphql/validation/rules/NoUnusedVariables.mjs ***!
   \*********************************************************************/
 /*! exports provided: unusedVariableMessage, NoUnusedVariables */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -31008,7 +31412,11 @@ function NoUnusedVariables(context) {
   !*** ./node_modules/graphql/validation/rules/OverlappingFieldsCanBeMerged.mjs ***!
   \********************************************************************************/
 /*! exports provided: fieldsConflictMessage, OverlappingFieldsCanBeMerged */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -31615,7 +32023,11 @@ function _pairSetAdd(data, a, b, areMutuallyExclusive) {
   !*** ./node_modules/graphql/validation/rules/PossibleFragmentSpreads.mjs ***!
   \***************************************************************************/
 /*! exports provided: typeIncompatibleSpreadMessage, typeIncompatibleAnonSpreadMessage, PossibleFragmentSpreads */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -31695,7 +32107,11 @@ function getFragmentType(context, name) {
   !*** ./node_modules/graphql/validation/rules/ProvidedRequiredArguments.mjs ***!
   \*****************************************************************************/
 /*! exports provided: missingFieldArgMessage, missingDirectiveArgMessage, ProvidedRequiredArguments, ProvidedRequiredArgumentsOnDirectives */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -31889,7 +32305,11 @@ function isRequiredArgumentNode(arg) {
   !*** ./node_modules/graphql/validation/rules/ScalarLeafs.mjs ***!
   \***************************************************************/
 /*! exports provided: noSubselectionAllowedMessage, requiredSubselectionMessage, ScalarLeafs */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -31949,7 +32369,11 @@ function ScalarLeafs(context) {
   !*** ./node_modules/graphql/validation/rules/SingleFieldSubscriptions.mjs ***!
   \****************************************************************************/
 /*! exports provided: singleFieldOnlyMessage, SingleFieldSubscriptions */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -31993,7 +32417,11 @@ function SingleFieldSubscriptions(context) {
   !*** ./node_modules/graphql/validation/rules/UniqueArgumentNames.mjs ***!
   \***********************************************************************/
 /*! exports provided: duplicateArgMessage, UniqueArgumentNames */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -32049,7 +32477,11 @@ function UniqueArgumentNames(context) {
   !*** ./node_modules/graphql/validation/rules/UniqueDirectivesPerLocation.mjs ***!
   \*******************************************************************************/
 /*! exports provided: duplicateDirectiveMessage, UniqueDirectivesPerLocation */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -32127,7 +32559,11 @@ function UniqueDirectivesPerLocation(context) {
   !*** ./node_modules/graphql/validation/rules/UniqueFragmentNames.mjs ***!
   \***********************************************************************/
 /*! exports provided: duplicateFragmentNameMessage, UniqueFragmentNames */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -32179,7 +32615,11 @@ function UniqueFragmentNames(context) {
   !*** ./node_modules/graphql/validation/rules/UniqueInputFieldNames.mjs ***!
   \*************************************************************************/
 /*! exports provided: duplicateInputFieldMessage, UniqueInputFieldNames */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -32239,7 +32679,11 @@ function UniqueInputFieldNames(context) {
   !*** ./node_modules/graphql/validation/rules/UniqueOperationNames.mjs ***!
   \************************************************************************/
 /*! exports provided: duplicateOperationNameMessage, UniqueOperationNames */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -32293,7 +32737,11 @@ function UniqueOperationNames(context) {
   !*** ./node_modules/graphql/validation/rules/UniqueVariableNames.mjs ***!
   \***********************************************************************/
 /*! exports provided: duplicateVariableMessage, UniqueVariableNames */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -32343,7 +32791,11 @@ function UniqueVariableNames(context) {
   !*** ./node_modules/graphql/validation/rules/ValuesOfCorrectType.mjs ***!
   \***********************************************************************/
 /*! exports provided: badValueMessage, requiredFieldMessage, unknownFieldMessage, ValuesOfCorrectType */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -32525,7 +32977,11 @@ function enumTypeSuggestion(type, node) {
   !*** ./node_modules/graphql/validation/rules/VariablesAreInputTypes.mjs ***!
   \**************************************************************************/
 /*! exports provided: nonInputTypeOnVarMessage, VariablesAreInputTypes */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -32577,7 +33033,11 @@ function VariablesAreInputTypes(context) {
   !*** ./node_modules/graphql/validation/rules/VariablesInAllowedPosition.mjs ***!
   \******************************************************************************/
 /*! exports provided: badVarPosMessage, VariablesInAllowedPosition */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -32696,7 +33156,11 @@ function allowedVariableUsage(schema, varType, varDefaultValue, locationType, lo
   !*** ./node_modules/graphql/validation/specifiedRules.mjs ***!
   \************************************************************/
 /*! exports provided: specifiedRules, specifiedSDLRules */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -32810,7 +33274,11 @@ var specifiedSDLRules = [_rules_LoneSchemaDefinition__WEBPACK_IMPORTED_MODULE_26
   !*** ./node_modules/graphql/validation/validate.mjs ***!
   \******************************************************/
 /*! exports provided: validate, validateSDL, assertValidSDL, assertValidSDLExtension */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -33246,22 +33714,92 @@ module.exports = Array.isArray || function (arr) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 module.exports = window.fetch || (window.fetch = __webpack_require__(/*! unfetch */ "./node_modules/isomorphic-unfetch/node_modules/unfetch/dist/unfetch.mjs").default || __webpack_require__(/*! unfetch */ "./node_modules/isomorphic-unfetch/node_modules/unfetch/dist/unfetch.mjs"));
+=======
+module.exports = window.fetch || (window.fetch = __webpack_require__(/*! unfetch */ "./node_modules/isomorphic-unfetch/node_modules/unfetch/dist/unfetch.es.js").default || __webpack_require__(/*! unfetch */ "./node_modules/isomorphic-unfetch/node_modules/unfetch/dist/unfetch.es.js"));
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./node_modules/isomorphic-unfetch/node_modules/unfetch/dist/unfetch.mjs":
 /*!*******************************************************************************!*\
   !*** ./node_modules/isomorphic-unfetch/node_modules/unfetch/dist/unfetch.mjs ***!
   \*******************************************************************************/
+=======
+/***/ "./node_modules/isomorphic-unfetch/node_modules/unfetch/dist/unfetch.es.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/isomorphic-unfetch/node_modules/unfetch/dist/unfetch.es.js ***!
+  \*********************************************************************************/
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+<<<<<<< HEAD
 /* harmony default export */ __webpack_exports__["default"] = (function(e,n){return n=n||{},new Promise(function(t,r){var s=new XMLHttpRequest,o=[],u=[],i={},a=function(){return{ok:2==(s.status/100|0),statusText:s.statusText,status:s.status,url:s.responseURL,text:function(){return Promise.resolve(s.responseText)},json:function(){return Promise.resolve(JSON.parse(s.responseText))},blob:function(){return Promise.resolve(new Blob([s.response]))},clone:a,headers:{keys:function(){return o},entries:function(){return u},get:function(e){return i[e.toLowerCase()]},has:function(e){return e.toLowerCase()in i}}}};for(var l in s.open(n.method||"get",e,!0),s.onload=function(){s.getAllResponseHeaders().replace(/^(.*?):[^\S\n]*([\s\S]*?)$/gm,function(e,n,t){o.push(n=n.toLowerCase()),u.push([n,t]),i[n]=i[n]?i[n]+","+t:t}),t(a())},s.onerror=r,s.withCredentials="include"==n.credentials,n.headers)s.setRequestHeader(l,n.headers[l]);s.send(n.body||null)})});
 //# sourceMappingURL=unfetch.mjs.map
+=======
+var index = typeof fetch=='function' ? fetch.bind() : function(url, options) {
+	options = options || {};
+	return new Promise( function (resolve, reject) {
+		var request = new XMLHttpRequest();
+
+		request.open(options.method || 'get', url, true);
+
+		for (var i in options.headers) {
+			request.setRequestHeader(i, options.headers[i]);
+		}
+
+		request.withCredentials = options.credentials=='include';
+
+		request.onload = function () {
+			resolve(response());
+		};
+
+		request.onerror = reject;
+
+		request.send(options.body || null);
+
+		function response() {
+			var keys = [],
+				all = [],
+				headers = {},
+				header;
+
+			request.getAllResponseHeaders().replace(/^(.*?):[^\S\n]*([\s\S]*?)$/gm, function (m, key, value) {
+				keys.push(key = key.toLowerCase());
+				all.push([key, value]);
+				header = headers[key];
+				headers[key] = header ? (header + "," + value) : value;
+			});
+
+			return {
+				ok: (request.status/100|0) == 2,		// 200-299
+				status: request.status,
+				statusText: request.statusText,
+				url: request.responseURL,
+				clone: response,
+				text: function () { return Promise.resolve(request.responseText); },
+				json: function () { return Promise.resolve(request.responseText).then(JSON.parse); },
+				blob: function () { return Promise.resolve(new Blob([request.response])); },
+				headers: {
+					keys: function () { return keys; },
+					entries: function () { return all; },
+					get: function (n) { return headers[n.toLowerCase()]; },
+					has: function (n) { return n.toLowerCase() in headers; }
+				}
+			};
+		}
+	});
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (index);
+//# sourceMappingURL=unfetch.es.js.map
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 
 /***/ }),
@@ -33271,7 +33809,11 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/iterall/index.mjs ***!
   \****************************************/
 /*! exports provided: $$iterator, isIterable, isArrayLike, isCollection, getIterator, getIteratorMethod, createIterator, forEach, $$asyncIterator, isAsyncIterable, getAsyncIterator, getAsyncIteratorMethod, createAsyncIterator, forAwaitEach */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -35738,6 +36280,7 @@ module.exports = lodash;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+<<<<<<< HEAD
 /* WEBPACK VAR INJECTION */(function(process) {
 Object.defineProperty(exports, "__esModule", { value: true });
 // Polyfill fetch
@@ -35767,11 +36310,108 @@ function getClient(clientFn, options) {
         client.cache.restore(options.initialState);
     return client;
 }
+=======
+/* WEBPACK VAR INJECTION */(function(process) {
+Object.defineProperty(exports, "__esModule", { value: true });
+// Polyfill fetch
+__webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
+var _apolloClient;
+var ssrMode = !process.browser;
+function initApollo(clientFn, options) {
+    if (!clientFn) {
+        throw new Error('[withApollo] the first param is missing and is required to get the ApolloClient');
+    }
+    if (ssrMode) {
+        return getClient(clientFn, options);
+    }
+    if (!_apolloClient) {
+        _apolloClient = getClient(clientFn, options);
+    }
+    return _apolloClient;
+}
+exports.default = initApollo;
+function getClient(clientFn, options) {
+    if (options === void 0) { options = {}; }
+    if (typeof clientFn !== 'function') {
+        throw new Error('[withApollo] requires a function that returns an ApolloClient');
+    }
+    var client = clientFn(options);
+    if (options.initialState)
+        client.cache.restore(options.initialState);
+    return client;
+}
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 //# sourceMappingURL=apollo.js.map
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../process/browser.js */ "./node_modules/process/browser.js")))
 
 /***/ }),
 
+<<<<<<< HEAD
+=======
+/***/ "./node_modules/next-with-apollo/lib/apolloApp.js":
+/*!********************************************************!*\
+  !*** ./node_modules/next-with-apollo/lib/apolloApp.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __assign = (this && this.__assign) || Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+            t[p] = s[p];
+    }
+    return t;
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var app_1 = __importStar(__webpack_require__(/*! next/app */ "./node_modules/next/app.js"));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var react_apollo_1 = __webpack_require__(/*! react-apollo */ "./node_modules/react-apollo/react-apollo.browser.umd.js");
+/**
+ * Useful if you don't have a custom _app and don't need one, otherwise
+ * always extend from Next's App
+ */
+var ApolloApp = /** @class */ (function (_super) {
+    __extends(ApolloApp, _super);
+    function ApolloApp() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    ApolloApp.prototype.render = function () {
+        var _a = this.props, Component = _a.Component, pageProps = _a.pageProps, apollo = _a.apollo;
+        return (react_1.default.createElement(app_1.Container, null,
+            react_1.default.createElement(react_apollo_1.ApolloProvider, { client: apollo },
+                react_1.default.createElement(Component, __assign({}, pageProps)))));
+    };
+    return ApolloApp;
+}(app_1.default));
+exports.default = ApolloApp;
+//# sourceMappingURL=apolloApp.js.map
+
+/***/ }),
+
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 /***/ "./node_modules/next-with-apollo/lib/index.js":
 /*!****************************************************!*\
   !*** ./node_modules/next-with-apollo/lib/index.js ***!
@@ -35780,6 +36420,7 @@ function getClient(clientFn, options) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+<<<<<<< HEAD
 
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
@@ -35790,6 +36431,20 @@ exports.withApollo = withApollo_1.default;
 var apollo_1 = __webpack_require__(/*! ./apollo */ "./node_modules/next-with-apollo/lib/apollo.js");
 exports.initApollo = apollo_1.default;
 exports.default = withApollo_1.default;
+=======
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var withApollo_1 = __importDefault(__webpack_require__(/*! ./withApollo */ "./node_modules/next-with-apollo/lib/withApollo.js"));
+exports.withApollo = withApollo_1.default;
+var apollo_1 = __webpack_require__(/*! ./apollo */ "./node_modules/next-with-apollo/lib/apollo.js");
+exports.initApollo = apollo_1.default;
+var apolloApp_1 = __webpack_require__(/*! ./apolloApp */ "./node_modules/next-with-apollo/lib/apolloApp.js");
+exports.ApolloApp = apolloApp_1.default;
+exports.default = withApollo_1.default;
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -35802,6 +36457,7 @@ exports.default = withApollo_1.default;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+<<<<<<< HEAD
 /* WEBPACK VAR INJECTION */(function(process) {
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -35957,6 +36613,158 @@ function withApollo(client, options) {
     };
 }
 exports.default = withApollo;
+=======
+/* WEBPACK VAR INJECTION */(function(process) {
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __assign = (this && this.__assign) || Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+            t[p] = s[p];
+    }
+    return t;
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var head_1 = __importDefault(__webpack_require__(/*! next/head */ "./node_modules/next/head.js"));
+var prop_types_1 = __importDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var react_apollo_1 = __webpack_require__(/*! react-apollo */ "./node_modules/react-apollo/react-apollo.browser.umd.js");
+var apollo_1 = __importDefault(__webpack_require__(/*! ./apollo */ "./node_modules/next-with-apollo/lib/apollo.js"));
+var ssrMode = !process.browser;
+// Gets the display name of a JSX component for dev tools
+function getDisplayName(Component) {
+    return Component.displayName || Component.name || 'Unknown';
+}
+function withApollo(client, options) {
+    var _this = this;
+    if (options === void 0) { options = {}; }
+    if (!options.getDataFromTree) {
+        options.getDataFromTree = 'always';
+    }
+    return function (App) {
+        var _a;
+        return _a = /** @class */ (function (_super) {
+                __extends(WithApollo, _super);
+                function WithApollo(props) {
+                    var _this = _super.call(this, props) || this;
+                    _this.apollo =
+                        props.apollo ||
+                            apollo_1.default(client, { initialState: props.apolloState.data });
+                    return _this;
+                }
+                WithApollo.prototype.render = function () {
+                    return react_1.default.createElement(App, __assign({}, this.props, { apollo: this.apollo }));
+                };
+                return WithApollo;
+            }(react_1.default.Component)),
+            _a.displayName = "WithApollo(" + getDisplayName(App) + ")",
+            _a.propTypes = {
+                apolloState: prop_types_1.default.object,
+                apollo: prop_types_1.default.object
+            },
+            _a.getInitialProps = function (appCtx) { return __awaiter(_this, void 0, void 0, function () {
+                var Component, router, ctx, headers, apollo, apolloState, getInitialProps, appProps, error_1;
+                return __generator(this, function (_a) {
+                    switch (_a.label) {
+                        case 0:
+                            Component = appCtx.Component, router = appCtx.router, ctx = appCtx.ctx;
+                            headers = ctx.req ? ctx.req.headers : {};
+                            apollo = apollo_1.default(client, { headers: headers });
+                            apolloState = {};
+                            getInitialProps = App
+                                .getInitialProps;
+                            appProps = { pageProps: {} };
+                            if (!getInitialProps) return [3 /*break*/, 2];
+                            ctx.apolloClient = apollo;
+                            return [4 /*yield*/, getInitialProps(appCtx)];
+                        case 1:
+                            appProps = _a.sent();
+                            _a.label = 2;
+                        case 2:
+                            if (ctx.res && ctx.res.finished) {
+                                return [2 /*return*/, {}];
+                            }
+                            if (!(options.getDataFromTree === 'always' ||
+                                (options.getDataFromTree === 'ssr' && ssrMode))) return [3 /*break*/, 7];
+                            _a.label = 3;
+                        case 3:
+                            _a.trys.push([3, 5, , 6]);
+                            return [4 /*yield*/, react_apollo_1.getDataFromTree(react_1.default.createElement(App, __assign({}, appProps, { Component: Component, router: router, apolloState: apolloState, apollo: apollo })))];
+                        case 4:
+                            _a.sent();
+                            return [3 /*break*/, 6];
+                        case 5:
+                            error_1 = _a.sent();
+                            // Prevent Apollo Client GraphQL errors from crashing SSR.
+                            if (true) {
+                                // tslint:disable-next-line no-console This is a necessary debugging log
+                                console.error('GraphQL error occurred [getDataFromTree]', error_1);
+                            }
+                            return [3 /*break*/, 6];
+                        case 6:
+                            if (ssrMode) {
+                                // getDataFromTree does not call componentWillUnmount
+                                // head side effect therefore need to be cleared manually
+                                head_1.default.rewind();
+                            }
+                            apolloState.data = apollo.cache.extract();
+                            _a.label = 7;
+                        case 7: return [2 /*return*/, __assign({}, appProps, { apolloState: apolloState })];
+                    }
+                });
+            }); },
+            _a;
+    };
+}
+exports.default = withApollo;
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 //# sourceMappingURL=withApollo.js.map
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../process/browser.js */ "./node_modules/process/browser.js")))
 
@@ -48293,6 +49101,7 @@ module.exports = {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
 var g;
 
 // This works in non-strict mode
@@ -48313,6 +49122,28 @@ try {
 // easier to handle this case. if(!global) { ...}
 
 module.exports = g;
+=======
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1, eval)("this");
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 
 /***/ }),
@@ -48359,6 +49190,7 @@ module.exports = function(originalModule) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
 module.exports = function(module) {
 	if (!module.webpackPolyfill) {
 		module.deprecate = function() {};
@@ -48381,6 +49213,30 @@ module.exports = function(module) {
 	}
 	return module;
 };
+=======
+module.exports = function(module) {
+	if (!module.webpackPolyfill) {
+		module.deprecate = function() {};
+		module.paths = [];
+		// module.parent = undefined by default
+		if (!module.children) module.children = [];
+		Object.defineProperty(module, "loaded", {
+			enumerable: true,
+			get: function() {
+				return module.l;
+			}
+		});
+		Object.defineProperty(module, "id", {
+			enumerable: true,
+			get: function() {
+				return module.i;
+			}
+		});
+		module.webpackPolyfill = 1;
+	}
+	return module;
+};
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 
 /***/ }),
@@ -49071,7 +49927,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_apollo__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _lib_withData__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../lib/withData */ "./lib/withData.js");
 
+<<<<<<< HEAD
 var _jsxFileName = "/home/michael/Desktop/web-dev-projects/vr-squad-inc/vr-squad-inc-master/frontend/pages/_app.js";
+=======
+var _jsxFileName = "C:\\Users\\jack\\Desktop\\web-dev\\contract\\vr-squad-inc\\content-management-system\\frontend\\pages\\_app.js";
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }

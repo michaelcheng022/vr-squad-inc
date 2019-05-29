@@ -112,7 +112,11 @@ module.exports = __webpack_require__(/*! next/error */ "next/error")
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 module.exports = __webpack_require__(/*! /home/michael/Desktop/web-dev-projects/vr-squad-inc/vr-squad-inc-master/frontend/node_modules/next/dist/pages/_error.js */"./node_modules/next/dist/pages/_error.js");
+=======
+module.exports = __webpack_require__(/*! C:\Users\jack\Desktop\web-dev\contract\vr-squad-inc\content-management-system\frontend\node_modules\next\dist\pages\_error.js */"./node_modules/next/dist/pages/_error.js");
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 
 /***/ }),

@@ -5,6 +5,7 @@ type SuccessMessage {
 }
 
 type Mutation {
+<<<<<<< HEAD
   createListing(
     address: String!
     description: String!
@@ -13,6 +14,9 @@ type Mutation {
     lotSize: Int!
     houseSize: Int!
     price: Int!): Listing!
+=======
+  createListing(data: ListingCreateInput!): Listing!
+>>>>>>> ec27e228fafae03753615fd50402c34c6a179620
   updateListing(data: ListingUpdateInput!, where: ListingWhereUniqueInput!): Listing
   deleteListing(id: ID!): Listing
   signup(email: String!, password: String!, name: String!): User!
