@@ -1,0 +1,36 @@
+enum Permission {
+  ADMIN
+  USER
+  LISTINGCREATE
+  LISTINGUPDATE
+  LISTINGDELETE
+  PERMISSIONUPDATE
+}
+
+type User {
+  id: ID! @id
+  name: String!
+  email: String! @unique
+  password: String!
+  resetToken: String
+  resetTokenExpiry: String
+  permissions: [Permission] @scalarList(strategy: RELATION)
+}
+
+type Listing {
+  id: ID! @id
+  address: String!
+  description: String!
+  rooms: Int!
+  bath: Int!
+  lotSize: Int!
+  houseSize: Int!
+  price: Int!
+  user: User! 
+}
+
+type Template {
+  id: ID! @id
+  listing: Listing!
+}
+

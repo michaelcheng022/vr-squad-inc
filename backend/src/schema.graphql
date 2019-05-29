@@ -1,0 +1,38 @@
+# import * from './generated/prisma.graphql'
+
+type SuccessMessage {
+  message: String
+}
+
+type Mutation {
+  createListing(
+    address: String!
+    description: String!
+    rooms: Int!
+    bath: Int!
+    lotSize: Int!
+    houseSize: Int!
+    price: Int!): Listing!
+  updateListing(data: ListingUpdateInput!, where: ListingWhereUniqueInput!): Listing
+  deleteListing(id: ID!): Listing
+  signup(email: String!, password: String!, name: String!): User!
+  signin(email: String!, password: String!): User!
+  signout: SuccessMessage
+  requestReset(email: String!): SuccessMessage
+  resetPassword(resetToken: String!, password: String!, confirmPassword: String!): User!
+}
+
+type Query {
+  listings(where: ListingWhereInput, orderBy: ListingOrderByInput, skip: Int, first: Int): [Listing]!
+  listing(where: ListingWhereUniqueInput!): Listing
+  listingsConnection(where: ListingWhereInput): ListingConnection!
+  me: User
+  users: [User]!
+}
+
+type User{
+  id: ID!
+  name: String!
+  email: String!
+  permissions: [Permission!]!
+}
