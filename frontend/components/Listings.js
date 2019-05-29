@@ -7,6 +7,7 @@ import Item from './Item';
 const ALL_LISTINGS_QUERY = gql`
   query ALL_LISTINGS_QUERY {
     listings {
+      id
       address
       description
       rooms
@@ -43,7 +44,7 @@ class Listings extends Component {
             if (loading) return <p>Loading...</p>;
             if (error) return <p>Error: {error.message}</p>;
             return (
-              <ItemsList>{data.listings.map(listing => <p>{listing.address}</p>)}</ItemsList>
+              <ItemsList>{data.listings.map(listing => <Item item={listing} />)}</ItemsList>
             );
           }}
         </Query>

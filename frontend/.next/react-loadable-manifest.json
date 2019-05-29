@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "/home/michael/Desktop/web-dev-projects/vr-squad-inc/vr-squad-inc-master/frontend/noop": [
-=======
   "./noop": [
->>>>>>> ec27e228fafae03753615fd50402c34c6a179620
     {
       "id": "./node_modules/next/dist/client/noop.js",
       "name": "./node_modules/next/dist/client/noop.js",

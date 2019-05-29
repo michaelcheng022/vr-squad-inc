@@ -11,15 +11,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-<<<<<<< HEAD
     "/listings": [
-=======
-    "/items": [
->>>>>>> ec27e228fafae03753615fd50402c34c6a179620
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/signup": [
+    "/update": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

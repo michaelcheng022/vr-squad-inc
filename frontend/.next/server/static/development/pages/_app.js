@@ -113,11 +113,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! nprogress */ "nprogress");
 /* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Nav */ "./components/Nav.js");
-<<<<<<< HEAD
 var _jsxFileName = "/home/michael/Desktop/web-dev-projects/vr-squad-inc/vr-squad-inc-master/frontend/components/Header.js";
-=======
-var _jsxFileName = "C:\\Users\\jack\\Desktop\\web-dev\\contract\\vr-squad-inc\\content-management-system\\frontend\\components\\Header.js";
->>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 
 
@@ -230,11 +226,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-<<<<<<< HEAD
 var _jsxFileName = "/home/michael/Desktop/web-dev-projects/vr-squad-inc/vr-squad-inc-master/frontend/components/Meta.js";
-=======
-var _jsxFileName = "C:\\Users\\jack\\Desktop\\web-dev\\contract\\vr-squad-inc\\content-management-system\\frontend\\components\\Meta.js";
->>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 
 
@@ -306,11 +298,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_NavStyles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/NavStyles */ "./components/styles/NavStyles.js");
 /* harmony import */ var _User__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./User */ "./components/User.js");
 /* harmony import */ var _Signout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Signout */ "./components/Signout.js");
-<<<<<<< HEAD
 var _jsxFileName = "/home/michael/Desktop/web-dev-projects/vr-squad-inc/vr-squad-inc-master/frontend/components/Nav.js";
-=======
-var _jsxFileName = "C:\\Users\\jack\\Desktop\\web-dev\\contract\\vr-squad-inc\\content-management-system\\frontend\\components\\Nav.js";
->>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 
 
@@ -333,11 +321,7 @@ var Nav = function Nav() {
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-<<<<<<< HEAD
       href: "/listings",
-=======
-      href: "/items",
->>>>>>> ec27e228fafae03753615fd50402c34c6a179620
       __source: {
         fileName: _jsxFileName,
         lineNumber: 10
@@ -363,11 +347,7 @@ var Nav = function Nav() {
       },
       __self: this
     }, "Sell")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-<<<<<<< HEAD
       href: "/listings",
-=======
-      href: "/orders",
->>>>>>> ec27e228fafae03753615fd50402c34c6a179620
       __source: {
         fileName: _jsxFileName,
         lineNumber: 18
@@ -379,11 +359,7 @@ var Nav = function Nav() {
         lineNumber: 19
       },
       __self: this
-<<<<<<< HEAD
     }, "Listings")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-=======
-    }, "Orders")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
->>>>>>> ec27e228fafae03753615fd50402c34c6a179620
       href: "/me",
       __source: {
         fileName: _jsxFileName,
@@ -438,11 +414,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
 /* harmony import */ var _Meta__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Meta */ "./components/Meta.js");
-<<<<<<< HEAD
 var _jsxFileName = "/home/michael/Desktop/web-dev-projects/vr-squad-inc/vr-squad-inc-master/frontend/components/Page.js";
-=======
-var _jsxFileName = "C:\\Users\\jack\\Desktop\\web-dev\\contract\\vr-squad-inc\\content-management-system\\frontend\\components\\Page.js";
->>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -560,11 +532,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! graphql-tag */ "graphql-tag");
 /* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(graphql_tag__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _User__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./User */ "./components/User.js");
-<<<<<<< HEAD
 var _jsxFileName = "/home/michael/Desktop/web-dev-projects/vr-squad-inc/vr-squad-inc-master/frontend/components/Signout.js";
-=======
-var _jsxFileName = "C:\\Users\\jack\\Desktop\\web-dev\\contract\\vr-squad-inc\\content-management-system\\frontend\\components\\Signout.js";
->>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 function _templateObject() {
   var data = _taggedTemplateLiteral(["\n  mutation SIGN_OUT_MUTATION {\n    signout {\n      message\n    }\n  }\n"]);
@@ -629,11 +597,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(graphql_tag__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "prop-types");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
-<<<<<<< HEAD
 var _jsxFileName = "/home/michael/Desktop/web-dev-projects/vr-squad-inc/vr-squad-inc-master/frontend/components/User.js";
-=======
-var _jsxFileName = "C:\\Users\\jack\\Desktop\\web-dev\\contract\\vr-squad-inc\\content-management-system\\frontend\\components\\User.js";
->>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -774,11 +738,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_apollo__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _lib_withData__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../lib/withData */ "./lib/withData.js");
 
-<<<<<<< HEAD
 var _jsxFileName = "/home/michael/Desktop/web-dev-projects/vr-squad-inc/vr-squad-inc-master/frontend/pages/_app.js";
-=======
-var _jsxFileName = "C:\\Users\\jack\\Desktop\\web-dev\\contract\\vr-squad-inc\\content-management-system\\frontend\\pages\\_app.js";
->>>>>>> ec27e228fafae03753615fd50402c34c6a179620
 
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }

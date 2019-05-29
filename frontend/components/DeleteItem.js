@@ -25,7 +25,7 @@ class DeleteItem extends Component {
   render() {
     return (
       <Mutation
-        mutation={DELETE_ITEM_MUTATION}
+        mutation={DELETE_LISTING_MUTATION}
         variables={{ id: this.props.id }}
         update={this.update}
       >

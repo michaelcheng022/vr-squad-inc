@@ -16,7 +16,7 @@ export default class Item extends Component {
     const { item } = this.props;
     return (
       <ItemStyles>
-        {item.image && <img src={item.image} alt={item.title} />}
+        {item.image && <img src={item.image} alt={item.address} />}
 
         <Title>
           <Link
@@ -25,7 +25,7 @@ export default class Item extends Component {
               query: { id: item.id },
             }}
           >
-            <a>{item.title}</a>
+            <a>{item.address}</a>
           </Link>
         </Title>
         <PriceTag>{formatMoney(item.price)}</PriceTag>
@@ -40,7 +40,6 @@ export default class Item extends Component {
           >
             <a>Edit ✏️</a>
           </Link>
-          <button>Add To Cart</button>
           <DeleteItem id={item.id}>Delete This Item</DeleteItem>
         </div>
       </ItemStyles>

@@ -1,8 +1,8 @@
-import SingleItem from '../components/SingleItem';
+import SingleListing from '../components/SingleListing';
 
 const Item = props => (
   <div>
-    <SingleItem id={props.query.id} />
+    <SingleListing id={props.query.id} />
   </div>
 );
 

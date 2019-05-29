@@ -6,23 +6,50 @@ import Form from './styles/Form';
 import formatMoney from '../lib/formatMoney';
 import Error from './ErrorMessage';
 
-const SINGLE_ITEM_QUERY = gql`
-  query SINGLE_ITEM_QUERY($id: ID!) {
-    item(where: { id: $id }) {
-      id
-      title
+const SINGLE_LISTING_QUERY = gql`
+  query SINGLE_LISTING_QUERY($id: ID!) {
+    listing(where: { id: $id }) {
+      address
       description
+      rooms
+      bath
+      lotSize
+      houseSize
       price
     }
   }
 `;
-const UPDATE_ITEM_MUTATION = gql`
-  mutation UPDATE_ITEM_MUTATION($id: ID!, $title: String, $description: String, $price: Int) {
-    updateItem(id: $id, title: $title, description: $description, price: $price) {
-      id
-      title
-      description
-      price
+
+const UPDATE_LISTING_MUTATION = gql`
+  mutation UPDATE_LISTING_MUTATION(
+    $address: String
+    $description: String
+    $rooms: Int
+    $bath: Int
+    $lotSize: Int
+    $houseSize: Int
+    $price: Int, 
+    $id: ID!
+  ) {
+    updateListing(
+      id: $id
+      address: $address
+      description: $description
+      rooms: $rooms
+      bath: $bath
+      lotSize: $lotSize
+      houseSize: $houseSize
+      price: $price
+      
+      
+    ) {
+        address
+        description
+        rooms
+        bath
+        lotSize
+        houseSize
+        price 
     }
   }
 `;
@@ -34,45 +61,111 @@ class UpdateItem extends Component {
     const val = type === 'number' ? parseFloat(value) : value;
     this.setState({ [name]: val });
   };
-  updateItem = async (e, updateItemMutation) => {
+  // kinda confused about passing in updateListingMutation
+  updateListing = async (e, updateListingMutation) => {
     e.preventDefault();
     console.log('Updating Item!!');
     console.log(this.state);
-    const res = await updateItemMutation({
+    const res = await updateListingMutation({
       variables: {
         id: this.props.id,
         ...this.state,
       },
     });
+    console.log(res);
     console.log('Updated!!');
   };
 
   render() {
     return (
       <Query
-        query={SINGLE_ITEM_QUERY}
+        query={SINGLE_LISTING_QUERY}
         variables={{
           id: this.props.id,
         }}
       >
         {({ data, loading }) => {
           if (loading) return <p>Loading...</p>;
-          if (!data.item) return <p>No Item Found for ID {this.props.id}</p>;
+          if (!data.listing) return <p>No Item Found for ID {this.props.id}</p>;
           return (
-            <Mutation mutation={UPDATE_ITEM_MUTATION} variables={this.state}>
-              {(updateItem, { loading, error }) => (
-                <Form onSubmit={e => this.updateItem(e, updateItem)}>
+            <Mutation mutation={UPDATE_LISTING_MUTATION} variables={this.state}>
+              {(updateListing, { loading, error }) => (
+                <Form onSubmit={e => this.updateListing(e, updateListing)}>
                   <Error error={error} />
                   <fieldset disabled={loading} aria-busy={loading}>
-                    <label htmlFor="title">
-                      Title
+                    <label htmlFor="address">
+                      Address
                       <input
                         type="text"
-                        id="title"
-                        name="title"
-                        placeholder="Title"
+                        id="address"
+                        name="address"
+                        placeholder="Address"
                         required
-                        defaultValue={data.item.title}
+                        defaultValue={data.listing.address}
+                        onChange={this.handleChange}
+                      />
+                    </label>
+
+                    <label htmlFor="description">
+                      Description
+                      <textarea
+                        id="description"
+                        name="description"
+                        placeholder="Enter A Description"
+                        required
+                        defaultValue={data.listing.description}
+                        onChange={this.handleChange}
+                      />
+                    </label>
+
+                    <label htmlFor="rooms">
+                      Rooms
+                      <input
+                        type="number"
+                        id="rooms"
+                        name="rooms"
+                        placeholder="Rooms"
+                        required
+                        defaultValue={data.listing.rooms}
+                        onChange={this.handleChange}
+                      />
+                    </label>
+
+                    <label htmlFor="price">
+                      Bath
+                      <input
+                        type="number"
+                        id="bath"
+                        name="bath"
+                        placeholder="Bathrooms"
+                        required
+                        defaultValue={data.listing.bath}
+                        onChange={this.handleChange}
+                      />
+                    </label>
+
+                    <label htmlFor="lotSize">
+                      Lot Size
+                      <input
+                        type="number"
+                        id="lotSize"
+                        name="lotSize"
+                        placeholder="Lot Size"
+                        required
+                        defaultValue={data.listing.lotSize}
+                        onChange={this.handleChange}
+                      />
+                    </label>
+                    
+                    <label htmlFor="houseSize">
+                      House Size
+                      <input
+                        type="number"
+                        id="houseSize"
+                        name="houseSize"
+                        placeholder="houseSize"
+                        required
+                        defaultValue={data.listing.houseSize}
                         onChange={this.handleChange}
                       />
                     </label>
@@ -85,19 +178,7 @@ class UpdateItem extends Component {
                         name="price"
                         placeholder="Price"
                         required
-                        defaultValue={data.item.price}
-                        onChange={this.handleChange}
-                      />
-                    </label>
-
-                    <label htmlFor="description">
-                      Description
-                      <textarea
-                        id="description"
-                        name="description"
-                        placeholder="Enter A Description"
-                        required
-                        defaultValue={data.item.description}
+                        defaultValue={data.listing.price}
                         onChange={this.handleChange}
                       />
                     </label>
@@ -114,4 +195,4 @@ class UpdateItem extends Component {
 }
 
 export default UpdateItem;
-export { UPDATE_ITEM_MUTATION };
+export { UPDATE_LISTING_MUTATION };
