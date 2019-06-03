@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 import styled from 'styled-components';
-import Item from './Item';
+import Listing from './Listing';
 
 const ALL_LISTINGS_QUERY = gql`
   query ALL_LISTINGS_QUERY {
@@ -15,9 +15,13 @@ const ALL_LISTINGS_QUERY = gql`
       lotSize
       houseSize
       price
+      # user {
+      #   id
+      # }
     }
   }
 `;
+
 
 const Center = styled.div`
   text-align: center;
@@ -38,13 +42,14 @@ class Listings extends Component {
         <Query
           query={ALL_LISTINGS_QUERY}
           fetchPolicy="network-only"
-          
         >
           {({ data, error, loading }) => {
+            console.log(data);
+            console.log(this.props.userId);
             if (loading) return <p>Loading...</p>;
             if (error) return <p>Error: {error.message}</p>;
             return (
-              <ItemsList>{data.listings.map(listing => <Item item={listing} />)}</ItemsList>
+              <ItemsList>{data.listings.map(listing => <Listing item={listing} />)}</ItemsList>
             );
           }}
         </Query>

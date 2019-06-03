@@ -2,7 +2,7 @@ import Listings from '../components/Listings';
 
 const Home = props => (
   <div>
-    <Listings />
+    <Listings userId={props.query.id} />
   </div>
 );
 

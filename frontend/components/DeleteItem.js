@@ -18,7 +18,7 @@ class DeleteItem extends Component {
     const data = cache.readQuery({ query: ALL_LISTINGS_QUERY });
     console.log(data, payload);
     // 2. Filter the deleted item out of the page
-    data.items = data.items.filter(item => item.id !== payload.data.deleteItem.id);
+    data.listings = data.listings.filter(listing => listing.id !== payload.data.deleteListing.id);
     // 3. Put the items back!
     cache.writeQuery({ query: ALL_LISTINGS_QUERY, data });
   };
@@ -29,11 +29,11 @@ class DeleteItem extends Component {
         variables={{ id: this.props.id }}
         update={this.update}
       >
-        {(deleteItem, { error }) => (
+        {(deleteListing, { error }) => (
           <button
             onClick={() => {
               if (confirm('Are you sure you want to delete this item?')) {
-                deleteItem();
+                deleteListing();
               }
             }}
           >

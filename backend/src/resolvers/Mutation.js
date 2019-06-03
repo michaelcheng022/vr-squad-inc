@@ -48,7 +48,7 @@ const Mutations = {
   async deleteListing(parent, args, ctx, info) {
     const where = { id: args.id };
     // 1. find the item
-    const listing = await ctx.db.query.listing({ where }, `{ id title}`);
+    const listing = await ctx.db.query.listing({ where }, `{ id address}`);
     // 2. Check if they own that item, or have the permissions
     // TODO
     // 3. Delete it!

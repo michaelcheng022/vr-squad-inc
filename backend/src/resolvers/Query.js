@@ -3,6 +3,17 @@ const { hasPermission } = require('../utils');
 
 const Query = {
   listings: forwardTo('db'),
+  // myListings(parent, args, ctx, info) {
+  //  // const listings = ctx.db.query.listings();
+  //   //console.log(listings);
+  //   console.log(ctx.request.userId);
+  //   // const myListings = listings.filter(listing => {
+  //   //   console.log(ctx.request.userId);
+  //   //   console.log(listing);
+  //   //   return listing !== ctx.request.userId
+  //   // });
+  //   return ctx.db.query.listings(info);;
+  // } ,
   listing: forwardTo('db'),
   listingsConnection: forwardTo('db'),
   me(parent, args, ctx, info) {

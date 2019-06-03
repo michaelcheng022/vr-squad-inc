@@ -175,8 +175,8 @@ function (_Component) {
       });
       console.log(data, payload); // 2. Filter the deleted item out of the page
 
-      data.items = data.items.filter(function (item) {
-        return item.id !== payload.data.deleteItem.id;
+      data.listings = data.listings.filter(function (listing) {
+        return listing.id !== payload.data.deleteListing.id;
       }); // 3. Put the items back!
 
       cache.writeQuery({
@@ -204,12 +204,12 @@ function (_Component) {
           lineNumber: 27
         },
         __self: this
-      }, function (deleteItem, _ref) {
+      }, function (deleteListing, _ref) {
         var error = _ref.error;
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
           onClick: function onClick() {
             if (confirm('Are you sure you want to delete this item?')) {
-              deleteItem();
+              deleteListing();
             }
           },
           __source: {
@@ -229,16 +229,16 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./components/Item.js":
-/*!****************************!*\
-  !*** ./components/Item.js ***!
-  \****************************/
+/***/ "./components/Listing.js":
+/*!*******************************!*\
+  !*** ./components/Listing.js ***!
+  \*******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Item; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Listing; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
@@ -250,7 +250,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_PriceTag__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles/PriceTag */ "./components/styles/PriceTag.js");
 /* harmony import */ var _lib_formatMoney__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../lib/formatMoney */ "./lib/formatMoney.js");
 /* harmony import */ var _DeleteItem__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./DeleteItem */ "./components/DeleteItem.js");
-var _jsxFileName = "/home/michael/Desktop/web-dev-projects/vr-squad-inc/vr-squad-inc-master/frontend/components/Item.js";
+var _jsxFileName = "/home/michael/Desktop/web-dev-projects/vr-squad-inc/vr-squad-inc-master/frontend/components/Listing.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -281,18 +281,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
-var Item =
+var Listing =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(Item, _Component);
+  _inherits(Listing, _Component);
 
-  function Item() {
-    _classCallCheck(this, Item);
+  function Listing() {
+    _classCallCheck(this, Listing);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Item).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Listing).apply(this, arguments));
   }
 
-  _createClass(Item, [{
+  _createClass(Listing, [{
     key: "render",
     value: function render() {
       var item = this.props.item;
@@ -318,7 +318,7 @@ function (_Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
         href: {
-          pathname: '/item',
+          pathname: '/listing',
           query: {
             id: item.id
           }
@@ -382,10 +382,10 @@ function (_Component) {
     }
   }]);
 
-  return Item;
+  return Listing;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
-_defineProperty(Item, "propTypes", {
+_defineProperty(Listing, "propTypes", {
   item: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired
 });
 
@@ -411,7 +411,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(graphql_tag__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _Item__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Item */ "./components/Item.js");
+/* harmony import */ var _Listing__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Listing */ "./components/Listing.js");
 var _jsxFileName = "/home/michael/Desktop/web-dev-projects/vr-squad-inc/vr-squad-inc-master/frontend/components/Listings.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -433,7 +433,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  query ALL_LISTINGS_QUERY {\n    listings {\n      id\n      address\n      description\n      rooms\n      bath\n      lotSize\n      houseSize\n      price\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  query ALL_LISTINGS_QUERY {\n    listings {\n      id\n      address\n      description\n      rooms\n      bath\n      lotSize\n      houseSize\n      price\n      # user {\n      #   id\n      # }\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -475,10 +475,12 @@ function (_Component) {
   _createClass(Listings, [{
     key: "render",
     value: function render() {
+      var _this = this;
+
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Center, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 41
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_1__["Query"], {
@@ -486,39 +488,41 @@ function (_Component) {
         fetchPolicy: "network-only",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 42
         },
         __self: this
       }, function (_ref) {
         var data = _ref.data,
             error = _ref.error,
             loading = _ref.loading;
+        console.log(data);
+        console.log(_this.props.userId);
         if (loading) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 44
+            lineNumber: 49
           },
           __self: this
         }, "Loading...");
         if (error) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 45
+            lineNumber: 50
           },
           __self: this
         }, "Error: ", error.message);
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ItemsList, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 47
+            lineNumber: 52
           },
           __self: this
         }, data.listings.map(function (listing) {
-          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Item__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Listing__WEBPACK_IMPORTED_MODULE_4__["default"], {
             item: listing,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 47
+              lineNumber: 52
             },
             __self: this
           });
@@ -600,7 +604,7 @@ __webpack_require__.r(__webpack_exports__);
 var Title = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.h3.withConfig({
   displayName: "Title",
   componentId: "sc-16nq74k-0"
-})(["margin:0 1rem;text-align:center;transform:skew(-5deg) rotate(-1deg);margin-top:-3rem;text-shadow:2px 2px 0 rgba(0,0,0,0.1);a{background:", ";display:inline;line-height:1.3;font-size:4rem;text-align:center;color:white;padding:0 1rem;}"], function (props) {
+})(["margin:0;text-align:center;margin-top:0;text-shadow:2px 2px 0 rgba(0,0,0,0.1);a{background:", ";display:inline;line-height:1.3;font-size:14pt;text-align:center;color:white;padding:0 1rem;}"], function (props) {
   return props.theme.red;
 });
 /* harmony default export */ __webpack_exports__["default"] = (Title);
@@ -654,6 +658,7 @@ var Home = function Home(props) {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Listings__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    userId: props.query.id,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5

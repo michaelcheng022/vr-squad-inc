@@ -33,6 +33,7 @@ type Query {
   listings(where: ListingWhereInput, orderBy: ListingOrderByInput, skip: Int, first: Int): [Listing]!
   listing(where: ListingWhereUniqueInput!): Listing
   listingsConnection(where: ListingWhereInput): ListingConnection!
+  myListings: [Listing]
   me: User
   users: [User]!
 }
