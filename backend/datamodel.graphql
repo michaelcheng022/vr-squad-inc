@@ -12,6 +12,7 @@ type User {
   name: String!
   email: String! @unique
   password: String!
+  listings: [Listing!]! @relation(name: "ListingsOnUser")
   resetToken: String
   resetTokenExpiry: String
   permissions: [Permission] @scalarList(strategy: RELATION)
@@ -26,7 +27,7 @@ type Listing {
   lotSize: Int!
   houseSize: Int!
   price: Int!
-  user: User!  @relation(name: "UserOnListing")
+  user: User! @relation(name: "UserOnListing")
 }
 
 type Template {

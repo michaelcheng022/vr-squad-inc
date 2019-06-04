@@ -1,5 +1,5 @@
 # source: https://us1.prisma.sh/michael-cheng-639bf1/vr-squad-inc/dev
-# timestamp: Mon Jun 03 2019 11:02:10 GMT-0700 (Pacific Daylight Time)
+# timestamp: Mon Jun 03 2019 12:00:48 GMT-0700 (Pacific Daylight Time)
 
 type AggregateListing {
   count: Int!
@@ -52,6 +52,11 @@ input ListingCreateInput {
   user: UserCreateOneInput!
 }
 
+input ListingCreateManyInput {
+  create: [ListingCreateInput!]
+  connect: [ListingWhereUniqueInput!]
+}
+
 input ListingCreateOneInput {
   create: ListingCreateInput
   connect: ListingWhereUniqueInput
@@ -94,6 +99,247 @@ type ListingPreviousValues {
   lotSize: Int!
   houseSize: Int!
   price: Int!
+}
+
+input ListingScalarWhereInput {
+  """Logical AND on all given filters."""
+  AND: [ListingScalarWhereInput!]
+
+  """Logical OR on all given filters."""
+  OR: [ListingScalarWhereInput!]
+
+  """Logical NOT on all given filters combined by AND."""
+  NOT: [ListingScalarWhereInput!]
+  id: ID
+
+  """All values that are not equal to given value."""
+  id_not: ID
+
+  """All values that are contained in given list."""
+  id_in: [ID!]
+
+  """All values that are not contained in given list."""
+  id_not_in: [ID!]
+
+  """All values less than the given value."""
+  id_lt: ID
+
+  """All values less than or equal the given value."""
+  id_lte: ID
+
+  """All values greater than the given value."""
+  id_gt: ID
+
+  """All values greater than or equal the given value."""
+  id_gte: ID
+
+  """All values containing the given string."""
+  id_contains: ID
+
+  """All values not containing the given string."""
+  id_not_contains: ID
+
+  """All values starting with the given string."""
+  id_starts_with: ID
+
+  """All values not starting with the given string."""
+  id_not_starts_with: ID
+
+  """All values ending with the given string."""
+  id_ends_with: ID
+
+  """All values not ending with the given string."""
+  id_not_ends_with: ID
+  address: String
+
+  """All values that are not equal to given value."""
+  address_not: String
+
+  """All values that are contained in given list."""
+  address_in: [String!]
+
+  """All values that are not contained in given list."""
+  address_not_in: [String!]
+
+  """All values less than the given value."""
+  address_lt: String
+
+  """All values less than or equal the given value."""
+  address_lte: String
+
+  """All values greater than the given value."""
+  address_gt: String
+
+  """All values greater than or equal the given value."""
+  address_gte: String
+
+  """All values containing the given string."""
+  address_contains: String
+
+  """All values not containing the given string."""
+  address_not_contains: String
+
+  """All values starting with the given string."""
+  address_starts_with: String
+
+  """All values not starting with the given string."""
+  address_not_starts_with: String
+
+  """All values ending with the given string."""
+  address_ends_with: String
+
+  """All values not ending with the given string."""
+  address_not_ends_with: String
+  description: String
+
+  """All values that are not equal to given value."""
+  description_not: String
+
+  """All values that are contained in given list."""
+  description_in: [String!]
+
+  """All values that are not contained in given list."""
+  description_not_in: [String!]
+
+  """All values less than the given value."""
+  description_lt: String
+
+  """All values less than or equal the given value."""
+  description_lte: String
+
+  """All values greater than the given value."""
+  description_gt: String
+
+  """All values greater than or equal the given value."""
+  description_gte: String
+
+  """All values containing the given string."""
+  description_contains: String
+
+  """All values not containing the given string."""
+  description_not_contains: String
+
+  """All values starting with the given string."""
+  description_starts_with: String
+
+  """All values not starting with the given string."""
+  description_not_starts_with: String
+
+  """All values ending with the given string."""
+  description_ends_with: String
+
+  """All values not ending with the given string."""
+  description_not_ends_with: String
+  rooms: Int
+
+  """All values that are not equal to given value."""
+  rooms_not: Int
+
+  """All values that are contained in given list."""
+  rooms_in: [Int!]
+
+  """All values that are not contained in given list."""
+  rooms_not_in: [Int!]
+
+  """All values less than the given value."""
+  rooms_lt: Int
+
+  """All values less than or equal the given value."""
+  rooms_lte: Int
+
+  """All values greater than the given value."""
+  rooms_gt: Int
+
+  """All values greater than or equal the given value."""
+  rooms_gte: Int
+  bath: Int
+
+  """All values that are not equal to given value."""
+  bath_not: Int
+
+  """All values that are contained in given list."""
+  bath_in: [Int!]
+
+  """All values that are not contained in given list."""
+  bath_not_in: [Int!]
+
+  """All values less than the given value."""
+  bath_lt: Int
+
+  """All values less than or equal the given value."""
+  bath_lte: Int
+
+  """All values greater than the given value."""
+  bath_gt: Int
+
+  """All values greater than or equal the given value."""
+  bath_gte: Int
+  lotSize: Int
+
+  """All values that are not equal to given value."""
+  lotSize_not: Int
+
+  """All values that are contained in given list."""
+  lotSize_in: [Int!]
+
+  """All values that are not contained in given list."""
+  lotSize_not_in: [Int!]
+
+  """All values less than the given value."""
+  lotSize_lt: Int
+
+  """All values less than or equal the given value."""
+  lotSize_lte: Int
+
+  """All values greater than the given value."""
+  lotSize_gt: Int
+
+  """All values greater than or equal the given value."""
+  lotSize_gte: Int
+  houseSize: Int
+
+  """All values that are not equal to given value."""
+  houseSize_not: Int
+
+  """All values that are contained in given list."""
+  houseSize_in: [Int!]
+
+  """All values that are not contained in given list."""
+  houseSize_not_in: [Int!]
+
+  """All values less than the given value."""
+  houseSize_lt: Int
+
+  """All values less than or equal the given value."""
+  houseSize_lte: Int
+
+  """All values greater than the given value."""
+  houseSize_gt: Int
+
+  """All values greater than or equal the given value."""
+  houseSize_gte: Int
+  price: Int
+
+  """All values that are not equal to given value."""
+  price_not: Int
+
+  """All values that are contained in given list."""
+  price_in: [Int!]
+
+  """All values that are not contained in given list."""
+  price_not_in: [Int!]
+
+  """All values less than the given value."""
+  price_lt: Int
+
+  """All values less than or equal the given value."""
+  price_lte: Int
+
+  """All values greater than the given value."""
+  price_gt: Int
+
+  """All values greater than or equal the given value."""
+  price_gte: Int
 }
 
 type ListingSubscriptionPayload {
@@ -157,6 +403,28 @@ input ListingUpdateInput {
   user: UserUpdateOneRequiredInput
 }
 
+input ListingUpdateManyDataInput {
+  address: String
+  description: String
+  rooms: Int
+  bath: Int
+  lotSize: Int
+  houseSize: Int
+  price: Int
+}
+
+input ListingUpdateManyInput {
+  create: [ListingCreateInput!]
+  connect: [ListingWhereUniqueInput!]
+  set: [ListingWhereUniqueInput!]
+  disconnect: [ListingWhereUniqueInput!]
+  delete: [ListingWhereUniqueInput!]
+  update: [ListingUpdateWithWhereUniqueNestedInput!]
+  updateMany: [ListingUpdateManyWithWhereNestedInput!]
+  deleteMany: [ListingScalarWhereInput!]
+  upsert: [ListingUpsertWithWhereUniqueNestedInput!]
+}
+
 input ListingUpdateManyMutationInput {
   address: String
   description: String
@@ -167,6 +435,11 @@ input ListingUpdateManyMutationInput {
   price: Int
 }
 
+input ListingUpdateManyWithWhereNestedInput {
+  where: ListingScalarWhereInput!
+  data: ListingUpdateManyDataInput!
+}
+
 input ListingUpdateOneRequiredInput {
   create: ListingCreateInput
   connect: ListingWhereUniqueInput
@@ -174,7 +447,18 @@ input ListingUpdateOneRequiredInput {
   upsert: ListingUpsertNestedInput
 }
 
+input ListingUpdateWithWhereUniqueNestedInput {
+  where: ListingWhereUniqueInput!
+  data: ListingUpdateDataInput!
+}
+
 input ListingUpsertNestedInput {
+  update: ListingUpdateDataInput!
+  create: ListingCreateInput!
+}
+
+input ListingUpsertWithWhereUniqueNestedInput {
+  where: ListingWhereUniqueInput!
   update: ListingUpdateDataInput!
   create: ListingCreateInput!
 }
@@ -433,22 +717,22 @@ scalar Long
 
 type Mutation {
   createTemplate(data: TemplateCreateInput!): Template!
-  createListing(data: ListingCreateInput!): Listing!
   createUser(data: UserCreateInput!): User!
+  createListing(data: ListingCreateInput!): Listing!
   updateTemplate(data: TemplateUpdateInput!, where: TemplateWhereUniqueInput!): Template
-  updateListing(data: ListingUpdateInput!, where: ListingWhereUniqueInput!): Listing
   updateUser(data: UserUpdateInput!, where: UserWhereUniqueInput!): User
+  updateListing(data: ListingUpdateInput!, where: ListingWhereUniqueInput!): Listing
   deleteTemplate(where: TemplateWhereUniqueInput!): Template
-  deleteListing(where: ListingWhereUniqueInput!): Listing
   deleteUser(where: UserWhereUniqueInput!): User
+  deleteListing(where: ListingWhereUniqueInput!): Listing
   upsertTemplate(where: TemplateWhereUniqueInput!, create: TemplateCreateInput!, update: TemplateUpdateInput!): Template!
-  upsertListing(where: ListingWhereUniqueInput!, create: ListingCreateInput!, update: ListingUpdateInput!): Listing!
   upsertUser(where: UserWhereUniqueInput!, create: UserCreateInput!, update: UserUpdateInput!): User!
-  updateManyListings(data: ListingUpdateManyMutationInput!, where: ListingWhereInput): BatchPayload!
+  upsertListing(where: ListingWhereUniqueInput!, create: ListingCreateInput!, update: ListingUpdateInput!): Listing!
   updateManyUsers(data: UserUpdateManyMutationInput!, where: UserWhereInput): BatchPayload!
+  updateManyListings(data: ListingUpdateManyMutationInput!, where: ListingWhereInput): BatchPayload!
   deleteManyTemplates(where: TemplateWhereInput): BatchPayload!
-  deleteManyListings(where: ListingWhereInput): BatchPayload!
   deleteManyUsers(where: UserWhereInput): BatchPayload!
+  deleteManyListings(where: ListingWhereInput): BatchPayload!
 }
 
 enum MutationType {
@@ -489,14 +773,14 @@ enum Permission {
 
 type Query {
   templates(where: TemplateWhereInput, orderBy: TemplateOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Template]!
-  listings(where: ListingWhereInput, orderBy: ListingOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Listing]!
   users(where: UserWhereInput, orderBy: UserOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [User]!
+  listings(where: ListingWhereInput, orderBy: ListingOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Listing]!
   template(where: TemplateWhereUniqueInput!): Template
-  listing(where: ListingWhereUniqueInput!): Listing
   user(where: UserWhereUniqueInput!): User
+  listing(where: ListingWhereUniqueInput!): Listing
   templatesConnection(where: TemplateWhereInput, orderBy: TemplateOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): TemplateConnection!
-  listingsConnection(where: ListingWhereInput, orderBy: ListingOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): ListingConnection!
   usersConnection(where: UserWhereInput, orderBy: UserOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): UserConnection!
+  listingsConnection(where: ListingWhereInput, orderBy: ListingOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): ListingConnection!
 
   """Fetches an object given its ID"""
   node(
@@ -507,8 +791,8 @@ type Query {
 
 type Subscription {
   template(where: TemplateSubscriptionWhereInput): TemplateSubscriptionPayload
-  listing(where: ListingSubscriptionWhereInput): ListingSubscriptionPayload
   user(where: UserSubscriptionWhereInput): UserSubscriptionPayload
+  listing(where: ListingSubscriptionWhereInput): ListingSubscriptionPayload
 }
 
 type Template implements Node {
@@ -653,6 +937,7 @@ type User implements Node {
   name: String!
   email: String!
   password: String!
+  listings(where: ListingWhereInput, orderBy: ListingOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Listing!]
   resetToken: String
   resetTokenExpiry: String
   permissions: [Permission!]!
@@ -676,6 +961,7 @@ input UserCreateInput {
   resetToken: String
   resetTokenExpiry: String
   permissions: UserCreatepermissionsInput
+  listings: ListingCreateManyInput
 }
 
 input UserCreateOneInput {
@@ -767,6 +1053,7 @@ input UserUpdateDataInput {
   resetToken: String
   resetTokenExpiry: String
   permissions: UserUpdatepermissionsInput
+  listings: ListingUpdateManyInput
 }
 
 input UserUpdateInput {
@@ -776,6 +1063,7 @@ input UserUpdateInput {
   resetToken: String
   resetTokenExpiry: String
   permissions: UserUpdatepermissionsInput
+  listings: ListingUpdateManyInput
 }
 
 input UserUpdateManyMutationInput {
@@ -1052,6 +1340,9 @@ input UserWhereInput {
 
   """All values not ending with the given string."""
   resetTokenExpiry_not_ends_with: String
+  listings_every: ListingWhereInput
+  listings_some: ListingWhereInput
+  listings_none: ListingWhereInput
 }
 
 input UserWhereUniqueInput {

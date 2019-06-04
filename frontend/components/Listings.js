@@ -15,9 +15,9 @@ const ALL_LISTINGS_QUERY = gql`
       lotSize
       houseSize
       price
-      # user {
-      #   id
-      # }
+      user {
+        id
+      }
     }
   }
 `;

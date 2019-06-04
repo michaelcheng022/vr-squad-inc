@@ -16,7 +16,7 @@ const Mutations = {
           // This is how to create a relationship between the Listing and the User
           user: {
             connect: {
-              id: ctx.request.userId,
+              id: ctx.request.userId
             },
           },
           ...args,

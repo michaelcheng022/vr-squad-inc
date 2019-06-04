@@ -339,7 +339,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  query ALL_LISTINGS_QUERY {\n    listings {\n      id\n      address\n      description\n      rooms\n      bath\n      lotSize\n      houseSize\n      price\n      # user {\n      #   id\n      # }\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  query ALL_LISTINGS_QUERY {\n    listings {\n      id\n      address\n      description\n      rooms\n      bath\n      lotSize\n      houseSize\n      price\n      user {\n        id\n      }\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -29126,7 +29126,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*********************************!*\
   !*** multi ./pages/listings.js ***!
   \*********************************/
@@ -29151,5 +29151,5 @@ module.exports = dll_5d62d38be3592dca3a42;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
+},[[3,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=listings.js.map

@@ -2,18 +2,21 @@ const { forwardTo } = require('prisma-binding');
 const { hasPermission } = require('../utils');
 
 const Query = {
-  listings: forwardTo('db'),
-  // myListings(parent, args, ctx, info) {
-  //  // const listings = ctx.db.query.listings();
-  //   //console.log(listings);
-  //   console.log(ctx.request.userId);
-  //   // const myListings = listings.filter(listing => {
-  //   //   console.log(ctx.request.userId);
-  //   //   console.log(listing);
-  //   //   return listing !== ctx.request.userId
-  //   // });
-  //   return ctx.db.query.listings(info);;
-  // } ,
+  //listings: forwardTo('db'),
+  async listings(parent, args, ctx, info) {
+    if (!ctx.request.userId) {
+      throw new Error('You must be logged in!');
+    }
+    
+    const listings = await ctx.db.query.listings({}, info);
+
+    myListings = listings.filter(listing => {
+      console.log(listing.user.id);
+      console.log(ctx.request);
+      return  ctx.request.userId == listing.user.id
+    });
+    return myListings;
+  },
   listing: forwardTo('db'),
   listingsConnection: forwardTo('db'),
   me(parent, args, ctx, info) {
@@ -41,5 +44,6 @@ const Query = {
     return ctx.db.query.users({}, info);
   },
 };
+
 
 module.exports = Query;
