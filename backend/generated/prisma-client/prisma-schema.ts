@@ -541,9 +541,12 @@ input TemplateWhereUniqueInput {
 
 type User {
   id: ID!
-  name: String!
   email: String!
   password: String!
+  name: String!
+  company: String
+  website: String
+  phone: String
   listings(where: ListingWhereInput, orderBy: ListingOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Listing!]
   resetToken: String
   resetTokenExpiry: String
@@ -558,9 +561,12 @@ type UserConnection {
 
 input UserCreateInput {
   id: ID
-  name: String!
   email: String!
   password: String!
+  name: String!
+  company: String
+  website: String
+  phone: String
   listings: ListingCreateManyWithoutUserInput
   resetToken: String
   resetTokenExpiry: String
@@ -578,9 +584,12 @@ input UserCreatepermissionsInput {
 
 input UserCreateWithoutListingsInput {
   id: ID
-  name: String!
   email: String!
   password: String!
+  name: String!
+  company: String
+  website: String
+  phone: String
   resetToken: String
   resetTokenExpiry: String
   permissions: UserCreatepermissionsInput
@@ -594,12 +603,18 @@ type UserEdge {
 enum UserOrderByInput {
   id_ASC
   id_DESC
-  name_ASC
-  name_DESC
   email_ASC
   email_DESC
   password_ASC
   password_DESC
+  name_ASC
+  name_DESC
+  company_ASC
+  company_DESC
+  website_ASC
+  website_DESC
+  phone_ASC
+  phone_DESC
   resetToken_ASC
   resetToken_DESC
   resetTokenExpiry_ASC
@@ -608,9 +623,12 @@ enum UserOrderByInput {
 
 type UserPreviousValues {
   id: ID!
-  name: String!
   email: String!
   password: String!
+  name: String!
+  company: String
+  website: String
+  phone: String
   resetToken: String
   resetTokenExpiry: String
   permissions: [Permission!]!
@@ -635,9 +653,12 @@ input UserSubscriptionWhereInput {
 }
 
 input UserUpdateInput {
-  name: String
   email: String
   password: String
+  name: String
+  company: String
+  website: String
+  phone: String
   listings: ListingUpdateManyWithoutUserInput
   resetToken: String
   resetTokenExpiry: String
@@ -645,9 +666,12 @@ input UserUpdateInput {
 }
 
 input UserUpdateManyMutationInput {
-  name: String
   email: String
   password: String
+  name: String
+  company: String
+  website: String
+  phone: String
   resetToken: String
   resetTokenExpiry: String
   permissions: UserUpdatepermissionsInput
@@ -665,9 +689,12 @@ input UserUpdatepermissionsInput {
 }
 
 input UserUpdateWithoutListingsDataInput {
-  name: String
   email: String
   password: String
+  name: String
+  company: String
+  website: String
+  phone: String
   resetToken: String
   resetTokenExpiry: String
   permissions: UserUpdatepermissionsInput
@@ -693,20 +720,6 @@ input UserWhereInput {
   id_not_starts_with: ID
   id_ends_with: ID
   id_not_ends_with: ID
-  name: String
-  name_not: String
-  name_in: [String!]
-  name_not_in: [String!]
-  name_lt: String
-  name_lte: String
-  name_gt: String
-  name_gte: String
-  name_contains: String
-  name_not_contains: String
-  name_starts_with: String
-  name_not_starts_with: String
-  name_ends_with: String
-  name_not_ends_with: String
   email: String
   email_not: String
   email_in: [String!]
@@ -735,6 +748,62 @@ input UserWhereInput {
   password_not_starts_with: String
   password_ends_with: String
   password_not_ends_with: String
+  name: String
+  name_not: String
+  name_in: [String!]
+  name_not_in: [String!]
+  name_lt: String
+  name_lte: String
+  name_gt: String
+  name_gte: String
+  name_contains: String
+  name_not_contains: String
+  name_starts_with: String
+  name_not_starts_with: String
+  name_ends_with: String
+  name_not_ends_with: String
+  company: String
+  company_not: String
+  company_in: [String!]
+  company_not_in: [String!]
+  company_lt: String
+  company_lte: String
+  company_gt: String
+  company_gte: String
+  company_contains: String
+  company_not_contains: String
+  company_starts_with: String
+  company_not_starts_with: String
+  company_ends_with: String
+  company_not_ends_with: String
+  website: String
+  website_not: String
+  website_in: [String!]
+  website_not_in: [String!]
+  website_lt: String
+  website_lte: String
+  website_gt: String
+  website_gte: String
+  website_contains: String
+  website_not_contains: String
+  website_starts_with: String
+  website_not_starts_with: String
+  website_ends_with: String
+  website_not_ends_with: String
+  phone: String
+  phone_not: String
+  phone_in: [String!]
+  phone_not_in: [String!]
+  phone_lt: String
+  phone_lte: String
+  phone_gt: String
+  phone_gte: String
+  phone_contains: String
+  phone_not_contains: String
+  phone_starts_with: String
+  phone_not_starts_with: String
+  phone_ends_with: String
+  phone_not_ends_with: String
   listings_every: ListingWhereInput
   listings_some: ListingWhereInput
   listings_none: ListingWhereInput

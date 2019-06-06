@@ -206,12 +206,18 @@ export type TemplateOrderByInput = "id_ASC" | "id_DESC";
 export type UserOrderByInput =
   | "id_ASC"
   | "id_DESC"
-  | "name_ASC"
-  | "name_DESC"
   | "email_ASC"
   | "email_DESC"
   | "password_ASC"
   | "password_DESC"
+  | "name_ASC"
+  | "name_DESC"
+  | "company_ASC"
+  | "company_DESC"
+  | "website_ASC"
+  | "website_DESC"
+  | "phone_ASC"
+  | "phone_DESC"
   | "resetToken_ASC"
   | "resetToken_DESC"
   | "resetTokenExpiry_ASC"
@@ -220,9 +226,12 @@ export type UserOrderByInput =
 export type MutationType = "CREATED" | "UPDATED" | "DELETED";
 
 export interface UserUpdateWithoutListingsDataInput {
-  name?: Maybe<String>;
   email?: Maybe<String>;
   password?: Maybe<String>;
+  name?: Maybe<String>;
+  company?: Maybe<String>;
+  website?: Maybe<String>;
+  phone?: Maybe<String>;
   resetToken?: Maybe<String>;
   resetTokenExpiry?: Maybe<String>;
   permissions?: Maybe<UserUpdatepermissionsInput>;
@@ -257,20 +266,6 @@ export interface UserWhereInput {
   id_not_starts_with?: Maybe<ID_Input>;
   id_ends_with?: Maybe<ID_Input>;
   id_not_ends_with?: Maybe<ID_Input>;
-  name?: Maybe<String>;
-  name_not?: Maybe<String>;
-  name_in?: Maybe<String[] | String>;
-  name_not_in?: Maybe<String[] | String>;
-  name_lt?: Maybe<String>;
-  name_lte?: Maybe<String>;
-  name_gt?: Maybe<String>;
-  name_gte?: Maybe<String>;
-  name_contains?: Maybe<String>;
-  name_not_contains?: Maybe<String>;
-  name_starts_with?: Maybe<String>;
-  name_not_starts_with?: Maybe<String>;
-  name_ends_with?: Maybe<String>;
-  name_not_ends_with?: Maybe<String>;
   email?: Maybe<String>;
   email_not?: Maybe<String>;
   email_in?: Maybe<String[] | String>;
@@ -299,6 +294,62 @@ export interface UserWhereInput {
   password_not_starts_with?: Maybe<String>;
   password_ends_with?: Maybe<String>;
   password_not_ends_with?: Maybe<String>;
+  name?: Maybe<String>;
+  name_not?: Maybe<String>;
+  name_in?: Maybe<String[] | String>;
+  name_not_in?: Maybe<String[] | String>;
+  name_lt?: Maybe<String>;
+  name_lte?: Maybe<String>;
+  name_gt?: Maybe<String>;
+  name_gte?: Maybe<String>;
+  name_contains?: Maybe<String>;
+  name_not_contains?: Maybe<String>;
+  name_starts_with?: Maybe<String>;
+  name_not_starts_with?: Maybe<String>;
+  name_ends_with?: Maybe<String>;
+  name_not_ends_with?: Maybe<String>;
+  company?: Maybe<String>;
+  company_not?: Maybe<String>;
+  company_in?: Maybe<String[] | String>;
+  company_not_in?: Maybe<String[] | String>;
+  company_lt?: Maybe<String>;
+  company_lte?: Maybe<String>;
+  company_gt?: Maybe<String>;
+  company_gte?: Maybe<String>;
+  company_contains?: Maybe<String>;
+  company_not_contains?: Maybe<String>;
+  company_starts_with?: Maybe<String>;
+  company_not_starts_with?: Maybe<String>;
+  company_ends_with?: Maybe<String>;
+  company_not_ends_with?: Maybe<String>;
+  website?: Maybe<String>;
+  website_not?: Maybe<String>;
+  website_in?: Maybe<String[] | String>;
+  website_not_in?: Maybe<String[] | String>;
+  website_lt?: Maybe<String>;
+  website_lte?: Maybe<String>;
+  website_gt?: Maybe<String>;
+  website_gte?: Maybe<String>;
+  website_contains?: Maybe<String>;
+  website_not_contains?: Maybe<String>;
+  website_starts_with?: Maybe<String>;
+  website_not_starts_with?: Maybe<String>;
+  website_ends_with?: Maybe<String>;
+  website_not_ends_with?: Maybe<String>;
+  phone?: Maybe<String>;
+  phone_not?: Maybe<String>;
+  phone_in?: Maybe<String[] | String>;
+  phone_not_in?: Maybe<String[] | String>;
+  phone_lt?: Maybe<String>;
+  phone_lte?: Maybe<String>;
+  phone_gt?: Maybe<String>;
+  phone_gte?: Maybe<String>;
+  phone_contains?: Maybe<String>;
+  phone_not_contains?: Maybe<String>;
+  phone_starts_with?: Maybe<String>;
+  phone_not_starts_with?: Maybe<String>;
+  phone_ends_with?: Maybe<String>;
+  phone_not_ends_with?: Maybe<String>;
   listings_every?: Maybe<ListingWhereInput>;
   listings_some?: Maybe<ListingWhereInput>;
   listings_none?: Maybe<ListingWhereInput>;
@@ -394,9 +445,12 @@ export interface ListingSubscriptionWhereInput {
 
 export interface UserCreateWithoutListingsInput {
   id?: Maybe<ID_Input>;
-  name: String;
   email: String;
   password: String;
+  name: String;
+  company?: Maybe<String>;
+  website?: Maybe<String>;
+  phone?: Maybe<String>;
   resetToken?: Maybe<String>;
   resetTokenExpiry?: Maybe<String>;
   permissions?: Maybe<UserCreatepermissionsInput>;
@@ -564,9 +618,12 @@ export interface UserUpdatepermissionsInput {
 }
 
 export interface UserUpdateInput {
-  name?: Maybe<String>;
   email?: Maybe<String>;
   password?: Maybe<String>;
+  name?: Maybe<String>;
+  company?: Maybe<String>;
+  website?: Maybe<String>;
+  phone?: Maybe<String>;
   listings?: Maybe<ListingUpdateManyWithoutUserInput>;
   resetToken?: Maybe<String>;
   resetTokenExpiry?: Maybe<String>;
@@ -694,9 +751,12 @@ export interface ListingUpdateManyDataInput {
 
 export interface UserCreateInput {
   id?: Maybe<ID_Input>;
-  name: String;
   email: String;
   password: String;
+  name: String;
+  company?: Maybe<String>;
+  website?: Maybe<String>;
+  phone?: Maybe<String>;
   listings?: Maybe<ListingCreateManyWithoutUserInput>;
   resetToken?: Maybe<String>;
   resetTokenExpiry?: Maybe<String>;
@@ -773,9 +833,12 @@ export interface ListingUpdateManyWithWhereNestedInput {
 }
 
 export interface UserUpdateManyMutationInput {
-  name?: Maybe<String>;
   email?: Maybe<String>;
   password?: Maybe<String>;
+  name?: Maybe<String>;
+  company?: Maybe<String>;
+  website?: Maybe<String>;
+  phone?: Maybe<String>;
   resetToken?: Maybe<String>;
   resetTokenExpiry?: Maybe<String>;
   permissions?: Maybe<UserUpdatepermissionsInput>;
@@ -803,9 +866,12 @@ export interface BatchPayloadSubscription
 
 export interface UserPreviousValues {
   id: ID_Output;
-  name: String;
   email: String;
   password: String;
+  name: String;
+  company?: String;
+  website?: String;
+  phone?: String;
   resetToken?: String;
   resetTokenExpiry?: String;
   permissions: Permission[];
@@ -815,9 +881,12 @@ export interface UserPreviousValuesPromise
   extends Promise<UserPreviousValues>,
     Fragmentable {
   id: () => Promise<ID_Output>;
-  name: () => Promise<String>;
   email: () => Promise<String>;
   password: () => Promise<String>;
+  name: () => Promise<String>;
+  company: () => Promise<String>;
+  website: () => Promise<String>;
+  phone: () => Promise<String>;
   resetToken: () => Promise<String>;
   resetTokenExpiry: () => Promise<String>;
   permissions: () => Promise<Permission[]>;
@@ -827,9 +896,12 @@ export interface UserPreviousValuesSubscription
   extends Promise<AsyncIterator<UserPreviousValues>>,
     Fragmentable {
   id: () => Promise<AsyncIterator<ID_Output>>;
-  name: () => Promise<AsyncIterator<String>>;
   email: () => Promise<AsyncIterator<String>>;
   password: () => Promise<AsyncIterator<String>>;
+  name: () => Promise<AsyncIterator<String>>;
+  company: () => Promise<AsyncIterator<String>>;
+  website: () => Promise<AsyncIterator<String>>;
+  phone: () => Promise<AsyncIterator<String>>;
   resetToken: () => Promise<AsyncIterator<String>>;
   resetTokenExpiry: () => Promise<AsyncIterator<String>>;
   permissions: () => Promise<AsyncIterator<Permission[]>>;
@@ -860,9 +932,12 @@ export interface TemplateNullablePromise
 
 export interface User {
   id: ID_Output;
-  name: String;
   email: String;
   password: String;
+  name: String;
+  company?: String;
+  website?: String;
+  phone?: String;
   resetToken?: String;
   resetTokenExpiry?: String;
   permissions: Permission[];
@@ -870,9 +945,12 @@ export interface User {
 
 export interface UserPromise extends Promise<User>, Fragmentable {
   id: () => Promise<ID_Output>;
-  name: () => Promise<String>;
   email: () => Promise<String>;
   password: () => Promise<String>;
+  name: () => Promise<String>;
+  company: () => Promise<String>;
+  website: () => Promise<String>;
+  phone: () => Promise<String>;
   listings: <T = FragmentableArray<Listing>>(args?: {
     where?: ListingWhereInput;
     orderBy?: ListingOrderByInput;
@@ -891,9 +969,12 @@ export interface UserSubscription
   extends Promise<AsyncIterator<User>>,
     Fragmentable {
   id: () => Promise<AsyncIterator<ID_Output>>;
-  name: () => Promise<AsyncIterator<String>>;
   email: () => Promise<AsyncIterator<String>>;
   password: () => Promise<AsyncIterator<String>>;
+  name: () => Promise<AsyncIterator<String>>;
+  company: () => Promise<AsyncIterator<String>>;
+  website: () => Promise<AsyncIterator<String>>;
+  phone: () => Promise<AsyncIterator<String>>;
   listings: <T = Promise<AsyncIterator<ListingSubscription>>>(args?: {
     where?: ListingWhereInput;
     orderBy?: ListingOrderByInput;
@@ -912,9 +993,12 @@ export interface UserNullablePromise
   extends Promise<User | null>,
     Fragmentable {
   id: () => Promise<ID_Output>;
-  name: () => Promise<String>;
   email: () => Promise<String>;
   password: () => Promise<String>;
+  name: () => Promise<String>;
+  company: () => Promise<String>;
+  website: () => Promise<String>;
+  phone: () => Promise<String>;
   listings: <T = FragmentableArray<Listing>>(args?: {
     where?: ListingWhereInput;
     orderBy?: ListingOrderByInput;

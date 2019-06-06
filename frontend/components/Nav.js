@@ -8,7 +8,7 @@ const Nav = () => (
     {({ data: { me } }) => (
       <NavStyles>
         <Link href="/listings">
-          <a>Shop</a>
+          <a>HOME</a>
         </Link>
         {me && (
           <>

@@ -1,5 +1,5 @@
 # source: https://us1.prisma.sh/michael-cheng-639bf1/vr-squad-inc/dev
-# timestamp: Mon Jun 03 2019 12:00:48 GMT-0700 (Pacific Daylight Time)
+# timestamp: Thu Jun 06 2019 11:12:55 GMT-0700 (Pacific Daylight Time)
 
 type AggregateListing {
   count: Int!
@@ -934,9 +934,12 @@ input TemplateWhereUniqueInput {
 
 type User implements Node {
   id: ID!
-  name: String!
   email: String!
   password: String!
+  name: String!
+  company: String
+  website: String
+  phone: String
   listings(where: ListingWhereInput, orderBy: ListingOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Listing!]
   resetToken: String
   resetTokenExpiry: String
@@ -955,9 +958,12 @@ type UserConnection {
 
 input UserCreateInput {
   id: ID
-  name: String!
   email: String!
   password: String!
+  name: String!
+  company: String
+  website: String
+  phone: String
   resetToken: String
   resetTokenExpiry: String
   permissions: UserCreatepermissionsInput
@@ -985,12 +991,18 @@ type UserEdge {
 enum UserOrderByInput {
   id_ASC
   id_DESC
-  name_ASC
-  name_DESC
   email_ASC
   email_DESC
   password_ASC
   password_DESC
+  name_ASC
+  name_DESC
+  company_ASC
+  company_DESC
+  website_ASC
+  website_DESC
+  phone_ASC
+  phone_DESC
   resetToken_ASC
   resetToken_DESC
   resetTokenExpiry_ASC
@@ -999,9 +1011,12 @@ enum UserOrderByInput {
 
 type UserPreviousValues {
   id: ID!
-  name: String!
   email: String!
   password: String!
+  name: String!
+  company: String
+  website: String
+  phone: String
   resetToken: String
   resetTokenExpiry: String
   permissions: [Permission!]!
@@ -1047,9 +1062,12 @@ input UserSubscriptionWhereInput {
 }
 
 input UserUpdateDataInput {
-  name: String
   email: String
   password: String
+  name: String
+  company: String
+  website: String
+  phone: String
   resetToken: String
   resetTokenExpiry: String
   permissions: UserUpdatepermissionsInput
@@ -1057,9 +1075,12 @@ input UserUpdateDataInput {
 }
 
 input UserUpdateInput {
-  name: String
   email: String
   password: String
+  name: String
+  company: String
+  website: String
+  phone: String
   resetToken: String
   resetTokenExpiry: String
   permissions: UserUpdatepermissionsInput
@@ -1067,9 +1088,12 @@ input UserUpdateInput {
 }
 
 input UserUpdateManyMutationInput {
-  name: String
   email: String
   password: String
+  name: String
+  company: String
+  website: String
+  phone: String
   resetToken: String
   resetTokenExpiry: String
   permissions: UserUpdatepermissionsInput
@@ -1140,46 +1164,6 @@ input UserWhereInput {
 
   """All values not ending with the given string."""
   id_not_ends_with: ID
-  name: String
-
-  """All values that are not equal to given value."""
-  name_not: String
-
-  """All values that are contained in given list."""
-  name_in: [String!]
-
-  """All values that are not contained in given list."""
-  name_not_in: [String!]
-
-  """All values less than the given value."""
-  name_lt: String
-
-  """All values less than or equal the given value."""
-  name_lte: String
-
-  """All values greater than the given value."""
-  name_gt: String
-
-  """All values greater than or equal the given value."""
-  name_gte: String
-
-  """All values containing the given string."""
-  name_contains: String
-
-  """All values not containing the given string."""
-  name_not_contains: String
-
-  """All values starting with the given string."""
-  name_starts_with: String
-
-  """All values not starting with the given string."""
-  name_not_starts_with: String
-
-  """All values ending with the given string."""
-  name_ends_with: String
-
-  """All values not ending with the given string."""
-  name_not_ends_with: String
   email: String
 
   """All values that are not equal to given value."""
@@ -1260,6 +1244,166 @@ input UserWhereInput {
 
   """All values not ending with the given string."""
   password_not_ends_with: String
+  name: String
+
+  """All values that are not equal to given value."""
+  name_not: String
+
+  """All values that are contained in given list."""
+  name_in: [String!]
+
+  """All values that are not contained in given list."""
+  name_not_in: [String!]
+
+  """All values less than the given value."""
+  name_lt: String
+
+  """All values less than or equal the given value."""
+  name_lte: String
+
+  """All values greater than the given value."""
+  name_gt: String
+
+  """All values greater than or equal the given value."""
+  name_gte: String
+
+  """All values containing the given string."""
+  name_contains: String
+
+  """All values not containing the given string."""
+  name_not_contains: String
+
+  """All values starting with the given string."""
+  name_starts_with: String
+
+  """All values not starting with the given string."""
+  name_not_starts_with: String
+
+  """All values ending with the given string."""
+  name_ends_with: String
+
+  """All values not ending with the given string."""
+  name_not_ends_with: String
+  company: String
+
+  """All values that are not equal to given value."""
+  company_not: String
+
+  """All values that are contained in given list."""
+  company_in: [String!]
+
+  """All values that are not contained in given list."""
+  company_not_in: [String!]
+
+  """All values less than the given value."""
+  company_lt: String
+
+  """All values less than or equal the given value."""
+  company_lte: String
+
+  """All values greater than the given value."""
+  company_gt: String
+
+  """All values greater than or equal the given value."""
+  company_gte: String
+
+  """All values containing the given string."""
+  company_contains: String
+
+  """All values not containing the given string."""
+  company_not_contains: String
+
+  """All values starting with the given string."""
+  company_starts_with: String
+
+  """All values not starting with the given string."""
+  company_not_starts_with: String
+
+  """All values ending with the given string."""
+  company_ends_with: String
+
+  """All values not ending with the given string."""
+  company_not_ends_with: String
+  website: String
+
+  """All values that are not equal to given value."""
+  website_not: String
+
+  """All values that are contained in given list."""
+  website_in: [String!]
+
+  """All values that are not contained in given list."""
+  website_not_in: [String!]
+
+  """All values less than the given value."""
+  website_lt: String
+
+  """All values less than or equal the given value."""
+  website_lte: String
+
+  """All values greater than the given value."""
+  website_gt: String
+
+  """All values greater than or equal the given value."""
+  website_gte: String
+
+  """All values containing the given string."""
+  website_contains: String
+
+  """All values not containing the given string."""
+  website_not_contains: String
+
+  """All values starting with the given string."""
+  website_starts_with: String
+
+  """All values not starting with the given string."""
+  website_not_starts_with: String
+
+  """All values ending with the given string."""
+  website_ends_with: String
+
+  """All values not ending with the given string."""
+  website_not_ends_with: String
+  phone: String
+
+  """All values that are not equal to given value."""
+  phone_not: String
+
+  """All values that are contained in given list."""
+  phone_in: [String!]
+
+  """All values that are not contained in given list."""
+  phone_not_in: [String!]
+
+  """All values less than the given value."""
+  phone_lt: String
+
+  """All values less than or equal the given value."""
+  phone_lte: String
+
+  """All values greater than the given value."""
+  phone_gt: String
+
+  """All values greater than or equal the given value."""
+  phone_gte: String
+
+  """All values containing the given string."""
+  phone_contains: String
+
+  """All values not containing the given string."""
+  phone_not_contains: String
+
+  """All values starting with the given string."""
+  phone_starts_with: String
+
+  """All values not starting with the given string."""
+  phone_not_starts_with: String
+
+  """All values ending with the given string."""
+  phone_ends_with: String
+
+  """All values not ending with the given string."""
+  phone_not_ends_with: String
   resetToken: String
 
   """All values that are not equal to given value."""

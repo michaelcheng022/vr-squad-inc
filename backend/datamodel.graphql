@@ -9,9 +9,12 @@ enum Permission {
 
 type User {
   id: ID! @id
-  name: String!
   email: String! @unique
   password: String!
+  name: String!
+  company: String 
+  website: String
+  phone: String 
   listings: [Listing!]! @relation(name: "ListingsOnUser")
   resetToken: String
   resetTokenExpiry: String
