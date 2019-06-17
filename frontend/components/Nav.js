@@ -19,7 +19,7 @@ const Nav = () => (
               <a>Listings</a>
             </Link>
             <Link href="/me">
-              <a>Account</a>
+              <a>My Account</a>
             </Link>
             <Signout />
           </>

@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 import Title from './styles/Title';
 import ItemStyles from './styles/ItemStyles';
-import PriceTag from './styles/PriceTag';
-import formatMoney from '../lib/formatMoney';
 import DeleteItem from './DeleteItem';
 
 export default class Listing extends Component {
@@ -16,7 +14,7 @@ export default class Listing extends Component {
     const { item } = this.props;
     return (
       <ItemStyles>
-        {item.image && <img src={item.image} alt={item.address} />}
+        {item.mainImage && <img src={item.mainImage} alt={item.address} />}
 
         <Title>
           <Link
@@ -28,9 +26,6 @@ export default class Listing extends Component {
             <a>{item.address}</a>
           </Link>
         </Title>
-        <PriceTag>{formatMoney(item.price)}</PriceTag>
-        <p>{item.description}</p>
-
         <div className="buttonList">
           <Link
             href={{

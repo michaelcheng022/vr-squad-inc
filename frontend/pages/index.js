@@ -1,9 +1,10 @@
 import Listings from '../components/Listings';
+import PleaseSignIn from '../components/PleaseSignIn';
 
 const Home = props => (
-  <div>
+  <PleaseSignIn>
     <Listings userId={props.query.id} />
-  </div>
+  </PleaseSignIn>
 );
 
 export default Home;

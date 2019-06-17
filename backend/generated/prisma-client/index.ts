@@ -182,6 +182,8 @@ export type ListingOrderByInput =
   | "address_DESC"
   | "description_ASC"
   | "description_DESC"
+  | "mainImage_ASC"
+  | "mainImage_DESC"
   | "rooms_ASC"
   | "rooms_DESC"
   | "bath_ASC"
@@ -225,30 +227,20 @@ export type UserOrderByInput =
 
 export type MutationType = "CREATED" | "UPDATED" | "DELETED";
 
-export interface UserUpdateWithoutListingsDataInput {
-  email?: Maybe<String>;
-  password?: Maybe<String>;
-  name?: Maybe<String>;
-  company?: Maybe<String>;
-  website?: Maybe<String>;
-  phone?: Maybe<String>;
-  resetToken?: Maybe<String>;
-  resetTokenExpiry?: Maybe<String>;
-  permissions?: Maybe<UserUpdatepermissionsInput>;
+export interface UserUpdateOneRequiredWithoutListingsInput {
+  create?: Maybe<UserCreateWithoutListingsInput>;
+  update?: Maybe<UserUpdateWithoutListingsDataInput>;
+  upsert?: Maybe<UserUpsertWithoutListingsInput>;
+  connect?: Maybe<UserWhereUniqueInput>;
 }
 
 export type ListingWhereUniqueInput = AtLeastOne<{
   id: Maybe<ID_Input>;
 }>;
 
-export interface ListingUpdateManyMutationInput {
-  address?: Maybe<String>;
-  description?: Maybe<String>;
-  rooms?: Maybe<Int>;
-  bath?: Maybe<Int>;
-  lotSize?: Maybe<Int>;
-  houseSize?: Maybe<Int>;
-  price?: Maybe<Int>;
+export interface UserUpsertWithoutListingsInput {
+  update: UserUpdateWithoutListingsDataInput;
+  create: UserCreateWithoutListingsInput;
 }
 
 export interface UserWhereInput {
@@ -386,15 +378,18 @@ export interface UserWhereInput {
   NOT?: Maybe<UserWhereInput[] | UserWhereInput>;
 }
 
-export interface UserSubscriptionWhereInput {
-  mutation_in?: Maybe<MutationType[] | MutationType>;
-  updatedFields_contains?: Maybe<String>;
-  updatedFields_contains_every?: Maybe<String[] | String>;
-  updatedFields_contains_some?: Maybe<String[] | String>;
-  node?: Maybe<UserWhereInput>;
-  AND?: Maybe<UserSubscriptionWhereInput[] | UserSubscriptionWhereInput>;
-  OR?: Maybe<UserSubscriptionWhereInput[] | UserSubscriptionWhereInput>;
-  NOT?: Maybe<UserSubscriptionWhereInput[] | UserSubscriptionWhereInput>;
+export interface ListingCreateInput {
+  id?: Maybe<ID_Input>;
+  address: String;
+  description: String;
+  mainImage: String;
+  images?: Maybe<ListingCreateimagesInput>;
+  rooms: Int;
+  bath: Int;
+  lotSize: Int;
+  houseSize: Int;
+  price: Int;
+  user: UserCreateOneWithoutListingsInput;
 }
 
 export interface ListingUpdateOneRequiredInput {
@@ -404,235 +399,25 @@ export interface ListingUpdateOneRequiredInput {
   connect?: Maybe<ListingWhereUniqueInput>;
 }
 
-export interface ListingCreateInput {
-  id?: Maybe<ID_Input>;
-  address: String;
-  description: String;
-  rooms: Int;
-  bath: Int;
-  lotSize: Int;
-  houseSize: Int;
-  price: Int;
-  user: UserCreateOneWithoutListingsInput;
+export interface ListingCreateimagesInput {
+  set?: Maybe<String[] | String>;
 }
 
-export interface ListingUpdateDataInput {
+export interface ListingUpdateManyMutationInput {
   address?: Maybe<String>;
   description?: Maybe<String>;
+  mainImage?: Maybe<String>;
+  images?: Maybe<ListingUpdateimagesInput>;
   rooms?: Maybe<Int>;
   bath?: Maybe<Int>;
   lotSize?: Maybe<Int>;
   houseSize?: Maybe<Int>;
   price?: Maybe<Int>;
-  user?: Maybe<UserUpdateOneRequiredWithoutListingsInput>;
 }
 
 export interface UserCreateOneWithoutListingsInput {
   create?: Maybe<UserCreateWithoutListingsInput>;
   connect?: Maybe<UserWhereUniqueInput>;
-}
-
-export interface ListingSubscriptionWhereInput {
-  mutation_in?: Maybe<MutationType[] | MutationType>;
-  updatedFields_contains?: Maybe<String>;
-  updatedFields_contains_every?: Maybe<String[] | String>;
-  updatedFields_contains_some?: Maybe<String[] | String>;
-  node?: Maybe<ListingWhereInput>;
-  AND?: Maybe<ListingSubscriptionWhereInput[] | ListingSubscriptionWhereInput>;
-  OR?: Maybe<ListingSubscriptionWhereInput[] | ListingSubscriptionWhereInput>;
-  NOT?: Maybe<ListingSubscriptionWhereInput[] | ListingSubscriptionWhereInput>;
-}
-
-export interface UserCreateWithoutListingsInput {
-  id?: Maybe<ID_Input>;
-  email: String;
-  password: String;
-  name: String;
-  company?: Maybe<String>;
-  website?: Maybe<String>;
-  phone?: Maybe<String>;
-  resetToken?: Maybe<String>;
-  resetTokenExpiry?: Maybe<String>;
-  permissions?: Maybe<UserCreatepermissionsInput>;
-}
-
-export type TemplateWhereUniqueInput = AtLeastOne<{
-  id: Maybe<ID_Input>;
-}>;
-
-export interface UserCreatepermissionsInput {
-  set?: Maybe<Permission[] | Permission>;
-}
-
-export interface TemplateWhereInput {
-  id?: Maybe<ID_Input>;
-  id_not?: Maybe<ID_Input>;
-  id_in?: Maybe<ID_Input[] | ID_Input>;
-  id_not_in?: Maybe<ID_Input[] | ID_Input>;
-  id_lt?: Maybe<ID_Input>;
-  id_lte?: Maybe<ID_Input>;
-  id_gt?: Maybe<ID_Input>;
-  id_gte?: Maybe<ID_Input>;
-  id_contains?: Maybe<ID_Input>;
-  id_not_contains?: Maybe<ID_Input>;
-  id_starts_with?: Maybe<ID_Input>;
-  id_not_starts_with?: Maybe<ID_Input>;
-  id_ends_with?: Maybe<ID_Input>;
-  id_not_ends_with?: Maybe<ID_Input>;
-  listing?: Maybe<ListingWhereInput>;
-  AND?: Maybe<TemplateWhereInput[] | TemplateWhereInput>;
-  OR?: Maybe<TemplateWhereInput[] | TemplateWhereInput>;
-  NOT?: Maybe<TemplateWhereInput[] | TemplateWhereInput>;
-}
-
-export interface ListingUpdateInput {
-  address?: Maybe<String>;
-  description?: Maybe<String>;
-  rooms?: Maybe<Int>;
-  bath?: Maybe<Int>;
-  lotSize?: Maybe<Int>;
-  houseSize?: Maybe<Int>;
-  price?: Maybe<Int>;
-  user?: Maybe<UserUpdateOneRequiredWithoutListingsInput>;
-}
-
-export interface ListingScalarWhereInput {
-  id?: Maybe<ID_Input>;
-  id_not?: Maybe<ID_Input>;
-  id_in?: Maybe<ID_Input[] | ID_Input>;
-  id_not_in?: Maybe<ID_Input[] | ID_Input>;
-  id_lt?: Maybe<ID_Input>;
-  id_lte?: Maybe<ID_Input>;
-  id_gt?: Maybe<ID_Input>;
-  id_gte?: Maybe<ID_Input>;
-  id_contains?: Maybe<ID_Input>;
-  id_not_contains?: Maybe<ID_Input>;
-  id_starts_with?: Maybe<ID_Input>;
-  id_not_starts_with?: Maybe<ID_Input>;
-  id_ends_with?: Maybe<ID_Input>;
-  id_not_ends_with?: Maybe<ID_Input>;
-  address?: Maybe<String>;
-  address_not?: Maybe<String>;
-  address_in?: Maybe<String[] | String>;
-  address_not_in?: Maybe<String[] | String>;
-  address_lt?: Maybe<String>;
-  address_lte?: Maybe<String>;
-  address_gt?: Maybe<String>;
-  address_gte?: Maybe<String>;
-  address_contains?: Maybe<String>;
-  address_not_contains?: Maybe<String>;
-  address_starts_with?: Maybe<String>;
-  address_not_starts_with?: Maybe<String>;
-  address_ends_with?: Maybe<String>;
-  address_not_ends_with?: Maybe<String>;
-  description?: Maybe<String>;
-  description_not?: Maybe<String>;
-  description_in?: Maybe<String[] | String>;
-  description_not_in?: Maybe<String[] | String>;
-  description_lt?: Maybe<String>;
-  description_lte?: Maybe<String>;
-  description_gt?: Maybe<String>;
-  description_gte?: Maybe<String>;
-  description_contains?: Maybe<String>;
-  description_not_contains?: Maybe<String>;
-  description_starts_with?: Maybe<String>;
-  description_not_starts_with?: Maybe<String>;
-  description_ends_with?: Maybe<String>;
-  description_not_ends_with?: Maybe<String>;
-  rooms?: Maybe<Int>;
-  rooms_not?: Maybe<Int>;
-  rooms_in?: Maybe<Int[] | Int>;
-  rooms_not_in?: Maybe<Int[] | Int>;
-  rooms_lt?: Maybe<Int>;
-  rooms_lte?: Maybe<Int>;
-  rooms_gt?: Maybe<Int>;
-  rooms_gte?: Maybe<Int>;
-  bath?: Maybe<Int>;
-  bath_not?: Maybe<Int>;
-  bath_in?: Maybe<Int[] | Int>;
-  bath_not_in?: Maybe<Int[] | Int>;
-  bath_lt?: Maybe<Int>;
-  bath_lte?: Maybe<Int>;
-  bath_gt?: Maybe<Int>;
-  bath_gte?: Maybe<Int>;
-  lotSize?: Maybe<Int>;
-  lotSize_not?: Maybe<Int>;
-  lotSize_in?: Maybe<Int[] | Int>;
-  lotSize_not_in?: Maybe<Int[] | Int>;
-  lotSize_lt?: Maybe<Int>;
-  lotSize_lte?: Maybe<Int>;
-  lotSize_gt?: Maybe<Int>;
-  lotSize_gte?: Maybe<Int>;
-  houseSize?: Maybe<Int>;
-  houseSize_not?: Maybe<Int>;
-  houseSize_in?: Maybe<Int[] | Int>;
-  houseSize_not_in?: Maybe<Int[] | Int>;
-  houseSize_lt?: Maybe<Int>;
-  houseSize_lte?: Maybe<Int>;
-  houseSize_gt?: Maybe<Int>;
-  houseSize_gte?: Maybe<Int>;
-  price?: Maybe<Int>;
-  price_not?: Maybe<Int>;
-  price_in?: Maybe<Int[] | Int>;
-  price_not_in?: Maybe<Int[] | Int>;
-  price_lt?: Maybe<Int>;
-  price_lte?: Maybe<Int>;
-  price_gt?: Maybe<Int>;
-  price_gte?: Maybe<Int>;
-  AND?: Maybe<ListingScalarWhereInput[] | ListingScalarWhereInput>;
-  OR?: Maybe<ListingScalarWhereInput[] | ListingScalarWhereInput>;
-  NOT?: Maybe<ListingScalarWhereInput[] | ListingScalarWhereInput>;
-}
-
-export interface UserUpdateOneRequiredWithoutListingsInput {
-  create?: Maybe<UserCreateWithoutListingsInput>;
-  update?: Maybe<UserUpdateWithoutListingsDataInput>;
-  upsert?: Maybe<UserUpsertWithoutListingsInput>;
-  connect?: Maybe<UserWhereUniqueInput>;
-}
-
-export interface ListingUpdateWithoutUserDataInput {
-  address?: Maybe<String>;
-  description?: Maybe<String>;
-  rooms?: Maybe<Int>;
-  bath?: Maybe<Int>;
-  lotSize?: Maybe<Int>;
-  houseSize?: Maybe<Int>;
-  price?: Maybe<Int>;
-}
-
-export interface ListingCreateManyWithoutUserInput {
-  create?: Maybe<
-    ListingCreateWithoutUserInput[] | ListingCreateWithoutUserInput
-  >;
-  connect?: Maybe<ListingWhereUniqueInput[] | ListingWhereUniqueInput>;
-}
-
-export interface ListingUpdateWithWhereUniqueWithoutUserInput {
-  where: ListingWhereUniqueInput;
-  data: ListingUpdateWithoutUserDataInput;
-}
-
-export interface UserUpdatepermissionsInput {
-  set?: Maybe<Permission[] | Permission>;
-}
-
-export interface UserUpdateInput {
-  email?: Maybe<String>;
-  password?: Maybe<String>;
-  name?: Maybe<String>;
-  company?: Maybe<String>;
-  website?: Maybe<String>;
-  phone?: Maybe<String>;
-  listings?: Maybe<ListingUpdateManyWithoutUserInput>;
-  resetToken?: Maybe<String>;
-  resetTokenExpiry?: Maybe<String>;
-  permissions?: Maybe<UserUpdatepermissionsInput>;
-}
-
-export interface UserUpsertWithoutListingsInput {
-  update: UserUpdateWithoutListingsDataInput;
-  create: UserCreateWithoutListingsInput;
 }
 
 export interface TemplateSubscriptionWhereInput {
@@ -648,6 +433,139 @@ export interface TemplateSubscriptionWhereInput {
   NOT?: Maybe<
     TemplateSubscriptionWhereInput[] | TemplateSubscriptionWhereInput
   >;
+}
+
+export interface UserCreateWithoutListingsInput {
+  id?: Maybe<ID_Input>;
+  email: String;
+  password: String;
+  name: String;
+  company?: Maybe<String>;
+  website?: Maybe<String>;
+  phone?: Maybe<String>;
+  resetToken?: Maybe<String>;
+  resetTokenExpiry?: Maybe<String>;
+  permissions?: Maybe<UserCreatepermissionsInput>;
+}
+
+export interface UserUpdateManyMutationInput {
+  email?: Maybe<String>;
+  password?: Maybe<String>;
+  name?: Maybe<String>;
+  company?: Maybe<String>;
+  website?: Maybe<String>;
+  phone?: Maybe<String>;
+  resetToken?: Maybe<String>;
+  resetTokenExpiry?: Maybe<String>;
+  permissions?: Maybe<UserUpdatepermissionsInput>;
+}
+
+export interface UserCreatepermissionsInput {
+  set?: Maybe<Permission[] | Permission>;
+}
+
+export interface ListingUpdateManyDataInput {
+  address?: Maybe<String>;
+  description?: Maybe<String>;
+  mainImage?: Maybe<String>;
+  images?: Maybe<ListingUpdateimagesInput>;
+  rooms?: Maybe<Int>;
+  bath?: Maybe<Int>;
+  lotSize?: Maybe<Int>;
+  houseSize?: Maybe<Int>;
+  price?: Maybe<Int>;
+}
+
+export interface ListingUpdateInput {
+  address?: Maybe<String>;
+  description?: Maybe<String>;
+  mainImage?: Maybe<String>;
+  images?: Maybe<ListingUpdateimagesInput>;
+  rooms?: Maybe<Int>;
+  bath?: Maybe<Int>;
+  lotSize?: Maybe<Int>;
+  houseSize?: Maybe<Int>;
+  price?: Maybe<Int>;
+  user?: Maybe<UserUpdateOneRequiredWithoutListingsInput>;
+}
+
+export interface ListingUpdateManyWithWhereNestedInput {
+  where: ListingScalarWhereInput;
+  data: ListingUpdateManyDataInput;
+}
+
+export interface ListingUpdateimagesInput {
+  set?: Maybe<String[] | String>;
+}
+
+export interface ListingUpsertWithWhereUniqueWithoutUserInput {
+  where: ListingWhereUniqueInput;
+  update: ListingUpdateWithoutUserDataInput;
+  create: ListingCreateWithoutUserInput;
+}
+
+export interface ListingCreateManyWithoutUserInput {
+  create?: Maybe<
+    ListingCreateWithoutUserInput[] | ListingCreateWithoutUserInput
+  >;
+  connect?: Maybe<ListingWhereUniqueInput[] | ListingWhereUniqueInput>;
+}
+
+export type UserWhereUniqueInput = AtLeastOne<{
+  id: Maybe<ID_Input>;
+  email?: Maybe<String>;
+}>;
+
+export interface UserUpdateWithoutListingsDataInput {
+  email?: Maybe<String>;
+  password?: Maybe<String>;
+  name?: Maybe<String>;
+  company?: Maybe<String>;
+  website?: Maybe<String>;
+  phone?: Maybe<String>;
+  resetToken?: Maybe<String>;
+  resetTokenExpiry?: Maybe<String>;
+  permissions?: Maybe<UserUpdatepermissionsInput>;
+}
+
+export interface ListingUpdateManyWithoutUserInput {
+  create?: Maybe<
+    ListingCreateWithoutUserInput[] | ListingCreateWithoutUserInput
+  >;
+  delete?: Maybe<ListingWhereUniqueInput[] | ListingWhereUniqueInput>;
+  connect?: Maybe<ListingWhereUniqueInput[] | ListingWhereUniqueInput>;
+  set?: Maybe<ListingWhereUniqueInput[] | ListingWhereUniqueInput>;
+  disconnect?: Maybe<ListingWhereUniqueInput[] | ListingWhereUniqueInput>;
+  update?: Maybe<
+    | ListingUpdateWithWhereUniqueWithoutUserInput[]
+    | ListingUpdateWithWhereUniqueWithoutUserInput
+  >;
+  upsert?: Maybe<
+    | ListingUpsertWithWhereUniqueWithoutUserInput[]
+    | ListingUpsertWithWhereUniqueWithoutUserInput
+  >;
+  deleteMany?: Maybe<ListingScalarWhereInput[] | ListingScalarWhereInput>;
+  updateMany?: Maybe<
+    | ListingUpdateManyWithWhereNestedInput[]
+    | ListingUpdateManyWithWhereNestedInput
+  >;
+}
+
+export interface UserUpdatepermissionsInput {
+  set?: Maybe<Permission[] | Permission>;
+}
+
+export interface ListingCreateWithoutUserInput {
+  id?: Maybe<ID_Input>;
+  address: String;
+  description: String;
+  mainImage: String;
+  images?: Maybe<ListingCreateimagesInput>;
+  rooms: Int;
+  bath: Int;
+  lotSize: Int;
+  houseSize: Int;
+  price: Int;
 }
 
 export interface ListingWhereInput {
@@ -693,6 +611,20 @@ export interface ListingWhereInput {
   description_not_starts_with?: Maybe<String>;
   description_ends_with?: Maybe<String>;
   description_not_ends_with?: Maybe<String>;
+  mainImage?: Maybe<String>;
+  mainImage_not?: Maybe<String>;
+  mainImage_in?: Maybe<String[] | String>;
+  mainImage_not_in?: Maybe<String[] | String>;
+  mainImage_lt?: Maybe<String>;
+  mainImage_lte?: Maybe<String>;
+  mainImage_gt?: Maybe<String>;
+  mainImage_gte?: Maybe<String>;
+  mainImage_contains?: Maybe<String>;
+  mainImage_not_contains?: Maybe<String>;
+  mainImage_starts_with?: Maybe<String>;
+  mainImage_not_starts_with?: Maybe<String>;
+  mainImage_ends_with?: Maybe<String>;
+  mainImage_not_ends_with?: Maybe<String>;
   rooms?: Maybe<Int>;
   rooms_not?: Maybe<Int>;
   rooms_in?: Maybe<Int[] | Int>;
@@ -739,14 +671,15 @@ export interface ListingWhereInput {
   NOT?: Maybe<ListingWhereInput[] | ListingWhereInput>;
 }
 
-export interface ListingUpdateManyDataInput {
-  address?: Maybe<String>;
-  description?: Maybe<String>;
-  rooms?: Maybe<Int>;
-  bath?: Maybe<Int>;
-  lotSize?: Maybe<Int>;
-  houseSize?: Maybe<Int>;
-  price?: Maybe<Int>;
+export interface UserSubscriptionWhereInput {
+  mutation_in?: Maybe<MutationType[] | MutationType>;
+  updatedFields_contains?: Maybe<String>;
+  updatedFields_contains_every?: Maybe<String[] | String>;
+  updatedFields_contains_some?: Maybe<String[] | String>;
+  node?: Maybe<UserWhereInput>;
+  AND?: Maybe<UserSubscriptionWhereInput[] | UserSubscriptionWhereInput>;
+  OR?: Maybe<UserSubscriptionWhereInput[] | UserSubscriptionWhereInput>;
+  NOT?: Maybe<UserSubscriptionWhereInput[] | UserSubscriptionWhereInput>;
 }
 
 export interface UserCreateInput {
@@ -763,33 +696,120 @@ export interface UserCreateInput {
   permissions?: Maybe<UserCreatepermissionsInput>;
 }
 
-export interface ListingUpsertWithWhereUniqueWithoutUserInput {
-  where: ListingWhereUniqueInput;
-  update: ListingUpdateWithoutUserDataInput;
-  create: ListingCreateWithoutUserInput;
+export type TemplateWhereUniqueInput = AtLeastOne<{
+  id: Maybe<ID_Input>;
+}>;
+
+export interface ListingUpsertNestedInput {
+  update: ListingUpdateDataInput;
+  create: ListingCreateInput;
 }
 
-export interface ListingUpdateManyWithoutUserInput {
-  create?: Maybe<
-    ListingCreateWithoutUserInput[] | ListingCreateWithoutUserInput
-  >;
-  delete?: Maybe<ListingWhereUniqueInput[] | ListingWhereUniqueInput>;
-  connect?: Maybe<ListingWhereUniqueInput[] | ListingWhereUniqueInput>;
-  set?: Maybe<ListingWhereUniqueInput[] | ListingWhereUniqueInput>;
-  disconnect?: Maybe<ListingWhereUniqueInput[] | ListingWhereUniqueInput>;
-  update?: Maybe<
-    | ListingUpdateWithWhereUniqueWithoutUserInput[]
-    | ListingUpdateWithWhereUniqueWithoutUserInput
-  >;
-  upsert?: Maybe<
-    | ListingUpsertWithWhereUniqueWithoutUserInput[]
-    | ListingUpsertWithWhereUniqueWithoutUserInput
-  >;
-  deleteMany?: Maybe<ListingScalarWhereInput[] | ListingScalarWhereInput>;
-  updateMany?: Maybe<
-    | ListingUpdateManyWithWhereNestedInput[]
-    | ListingUpdateManyWithWhereNestedInput
-  >;
+export interface ListingScalarWhereInput {
+  id?: Maybe<ID_Input>;
+  id_not?: Maybe<ID_Input>;
+  id_in?: Maybe<ID_Input[] | ID_Input>;
+  id_not_in?: Maybe<ID_Input[] | ID_Input>;
+  id_lt?: Maybe<ID_Input>;
+  id_lte?: Maybe<ID_Input>;
+  id_gt?: Maybe<ID_Input>;
+  id_gte?: Maybe<ID_Input>;
+  id_contains?: Maybe<ID_Input>;
+  id_not_contains?: Maybe<ID_Input>;
+  id_starts_with?: Maybe<ID_Input>;
+  id_not_starts_with?: Maybe<ID_Input>;
+  id_ends_with?: Maybe<ID_Input>;
+  id_not_ends_with?: Maybe<ID_Input>;
+  address?: Maybe<String>;
+  address_not?: Maybe<String>;
+  address_in?: Maybe<String[] | String>;
+  address_not_in?: Maybe<String[] | String>;
+  address_lt?: Maybe<String>;
+  address_lte?: Maybe<String>;
+  address_gt?: Maybe<String>;
+  address_gte?: Maybe<String>;
+  address_contains?: Maybe<String>;
+  address_not_contains?: Maybe<String>;
+  address_starts_with?: Maybe<String>;
+  address_not_starts_with?: Maybe<String>;
+  address_ends_with?: Maybe<String>;
+  address_not_ends_with?: Maybe<String>;
+  description?: Maybe<String>;
+  description_not?: Maybe<String>;
+  description_in?: Maybe<String[] | String>;
+  description_not_in?: Maybe<String[] | String>;
+  description_lt?: Maybe<String>;
+  description_lte?: Maybe<String>;
+  description_gt?: Maybe<String>;
+  description_gte?: Maybe<String>;
+  description_contains?: Maybe<String>;
+  description_not_contains?: Maybe<String>;
+  description_starts_with?: Maybe<String>;
+  description_not_starts_with?: Maybe<String>;
+  description_ends_with?: Maybe<String>;
+  description_not_ends_with?: Maybe<String>;
+  mainImage?: Maybe<String>;
+  mainImage_not?: Maybe<String>;
+  mainImage_in?: Maybe<String[] | String>;
+  mainImage_not_in?: Maybe<String[] | String>;
+  mainImage_lt?: Maybe<String>;
+  mainImage_lte?: Maybe<String>;
+  mainImage_gt?: Maybe<String>;
+  mainImage_gte?: Maybe<String>;
+  mainImage_contains?: Maybe<String>;
+  mainImage_not_contains?: Maybe<String>;
+  mainImage_starts_with?: Maybe<String>;
+  mainImage_not_starts_with?: Maybe<String>;
+  mainImage_ends_with?: Maybe<String>;
+  mainImage_not_ends_with?: Maybe<String>;
+  rooms?: Maybe<Int>;
+  rooms_not?: Maybe<Int>;
+  rooms_in?: Maybe<Int[] | Int>;
+  rooms_not_in?: Maybe<Int[] | Int>;
+  rooms_lt?: Maybe<Int>;
+  rooms_lte?: Maybe<Int>;
+  rooms_gt?: Maybe<Int>;
+  rooms_gte?: Maybe<Int>;
+  bath?: Maybe<Int>;
+  bath_not?: Maybe<Int>;
+  bath_in?: Maybe<Int[] | Int>;
+  bath_not_in?: Maybe<Int[] | Int>;
+  bath_lt?: Maybe<Int>;
+  bath_lte?: Maybe<Int>;
+  bath_gt?: Maybe<Int>;
+  bath_gte?: Maybe<Int>;
+  lotSize?: Maybe<Int>;
+  lotSize_not?: Maybe<Int>;
+  lotSize_in?: Maybe<Int[] | Int>;
+  lotSize_not_in?: Maybe<Int[] | Int>;
+  lotSize_lt?: Maybe<Int>;
+  lotSize_lte?: Maybe<Int>;
+  lotSize_gt?: Maybe<Int>;
+  lotSize_gte?: Maybe<Int>;
+  houseSize?: Maybe<Int>;
+  houseSize_not?: Maybe<Int>;
+  houseSize_in?: Maybe<Int[] | Int>;
+  houseSize_not_in?: Maybe<Int[] | Int>;
+  houseSize_lt?: Maybe<Int>;
+  houseSize_lte?: Maybe<Int>;
+  houseSize_gt?: Maybe<Int>;
+  houseSize_gte?: Maybe<Int>;
+  price?: Maybe<Int>;
+  price_not?: Maybe<Int>;
+  price_in?: Maybe<Int[] | Int>;
+  price_not_in?: Maybe<Int[] | Int>;
+  price_lt?: Maybe<Int>;
+  price_lte?: Maybe<Int>;
+  price_gt?: Maybe<Int>;
+  price_gte?: Maybe<Int>;
+  AND?: Maybe<ListingScalarWhereInput[] | ListingScalarWhereInput>;
+  OR?: Maybe<ListingScalarWhereInput[] | ListingScalarWhereInput>;
+  NOT?: Maybe<ListingScalarWhereInput[] | ListingScalarWhereInput>;
+}
+
+export interface ListingUpdateWithWhereUniqueWithoutUserInput {
+  where: ListingWhereUniqueInput;
+  data: ListingUpdateWithoutUserDataInput;
 }
 
 export interface TemplateUpdateInput {
@@ -806,62 +826,78 @@ export interface TemplateCreateInput {
   listing: ListingCreateOneInput;
 }
 
-export interface ListingUpsertNestedInput {
-  update: ListingUpdateDataInput;
-  create: ListingCreateInput;
+export interface ListingUpdateDataInput {
+  address?: Maybe<String>;
+  description?: Maybe<String>;
+  mainImage?: Maybe<String>;
+  images?: Maybe<ListingUpdateimagesInput>;
+  rooms?: Maybe<Int>;
+  bath?: Maybe<Int>;
+  lotSize?: Maybe<Int>;
+  houseSize?: Maybe<Int>;
+  price?: Maybe<Int>;
+  user?: Maybe<UserUpdateOneRequiredWithoutListingsInput>;
 }
 
-export interface ListingCreateWithoutUserInput {
-  id?: Maybe<ID_Input>;
-  address: String;
-  description: String;
-  rooms: Int;
-  bath: Int;
-  lotSize: Int;
-  houseSize: Int;
-  price: Int;
-}
-
-export type UserWhereUniqueInput = AtLeastOne<{
-  id: Maybe<ID_Input>;
-  email?: Maybe<String>;
-}>;
-
-export interface ListingUpdateManyWithWhereNestedInput {
-  where: ListingScalarWhereInput;
-  data: ListingUpdateManyDataInput;
-}
-
-export interface UserUpdateManyMutationInput {
+export interface UserUpdateInput {
   email?: Maybe<String>;
   password?: Maybe<String>;
   name?: Maybe<String>;
   company?: Maybe<String>;
   website?: Maybe<String>;
   phone?: Maybe<String>;
+  listings?: Maybe<ListingUpdateManyWithoutUserInput>;
   resetToken?: Maybe<String>;
   resetTokenExpiry?: Maybe<String>;
   permissions?: Maybe<UserUpdatepermissionsInput>;
 }
 
+export interface ListingUpdateWithoutUserDataInput {
+  address?: Maybe<String>;
+  description?: Maybe<String>;
+  mainImage?: Maybe<String>;
+  images?: Maybe<ListingUpdateimagesInput>;
+  rooms?: Maybe<Int>;
+  bath?: Maybe<Int>;
+  lotSize?: Maybe<Int>;
+  houseSize?: Maybe<Int>;
+  price?: Maybe<Int>;
+}
+
+export interface TemplateWhereInput {
+  id?: Maybe<ID_Input>;
+  id_not?: Maybe<ID_Input>;
+  id_in?: Maybe<ID_Input[] | ID_Input>;
+  id_not_in?: Maybe<ID_Input[] | ID_Input>;
+  id_lt?: Maybe<ID_Input>;
+  id_lte?: Maybe<ID_Input>;
+  id_gt?: Maybe<ID_Input>;
+  id_gte?: Maybe<ID_Input>;
+  id_contains?: Maybe<ID_Input>;
+  id_not_contains?: Maybe<ID_Input>;
+  id_starts_with?: Maybe<ID_Input>;
+  id_not_starts_with?: Maybe<ID_Input>;
+  id_ends_with?: Maybe<ID_Input>;
+  id_not_ends_with?: Maybe<ID_Input>;
+  listing?: Maybe<ListingWhereInput>;
+  AND?: Maybe<TemplateWhereInput[] | TemplateWhereInput>;
+  OR?: Maybe<TemplateWhereInput[] | TemplateWhereInput>;
+  NOT?: Maybe<TemplateWhereInput[] | TemplateWhereInput>;
+}
+
+export interface ListingSubscriptionWhereInput {
+  mutation_in?: Maybe<MutationType[] | MutationType>;
+  updatedFields_contains?: Maybe<String>;
+  updatedFields_contains_every?: Maybe<String[] | String>;
+  updatedFields_contains_some?: Maybe<String[] | String>;
+  node?: Maybe<ListingWhereInput>;
+  AND?: Maybe<ListingSubscriptionWhereInput[] | ListingSubscriptionWhereInput>;
+  OR?: Maybe<ListingSubscriptionWhereInput[] | ListingSubscriptionWhereInput>;
+  NOT?: Maybe<ListingSubscriptionWhereInput[] | ListingSubscriptionWhereInput>;
+}
+
 export interface NodeNode {
   id: ID_Output;
-}
-
-export interface BatchPayload {
-  count: Long;
-}
-
-export interface BatchPayloadPromise
-  extends Promise<BatchPayload>,
-    Fragmentable {
-  count: () => Promise<Long>;
-}
-
-export interface BatchPayloadSubscription
-  extends Promise<AsyncIterator<BatchPayload>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Long>>;
 }
 
 export interface UserPreviousValues {
@@ -1013,6 +1049,22 @@ export interface UserNullablePromise
   permissions: () => Promise<Permission[]>;
 }
 
+export interface AggregateListing {
+  count: Int;
+}
+
+export interface AggregateListingPromise
+  extends Promise<AggregateListing>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateListingSubscription
+  extends Promise<AsyncIterator<AggregateListing>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
 export interface ListingConnection {
   pageInfo: PageInfo;
   edges: ListingEdge[];
@@ -1034,29 +1086,21 @@ export interface ListingConnectionSubscription
   aggregate: <T = AggregateListingSubscription>() => T;
 }
 
-export interface TemplateSubscriptionPayload {
-  mutation: MutationType;
-  node: Template;
-  updatedFields: String[];
-  previousValues: TemplatePreviousValues;
+export interface ListingEdge {
+  node: Listing;
+  cursor: String;
 }
 
-export interface TemplateSubscriptionPayloadPromise
-  extends Promise<TemplateSubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = TemplatePromise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = TemplatePreviousValuesPromise>() => T;
+export interface ListingEdgePromise extends Promise<ListingEdge>, Fragmentable {
+  node: <T = ListingPromise>() => T;
+  cursor: () => Promise<String>;
 }
 
-export interface TemplateSubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<TemplateSubscriptionPayload>>,
+export interface ListingEdgeSubscription
+  extends Promise<AsyncIterator<ListingEdge>>,
     Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = TemplateSubscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = TemplatePreviousValuesSubscription>() => T;
+  node: <T = ListingSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
 }
 
 export interface AggregateUser {
@@ -1075,37 +1119,63 @@ export interface AggregateUserSubscription
   count: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface AggregateListing {
-  count: Int;
+export interface Listing {
+  id: ID_Output;
+  address: String;
+  description: String;
+  mainImage: String;
+  images: String[];
+  rooms: Int;
+  bath: Int;
+  lotSize: Int;
+  houseSize: Int;
+  price: Int;
 }
 
-export interface AggregateListingPromise
-  extends Promise<AggregateListing>,
+export interface ListingPromise extends Promise<Listing>, Fragmentable {
+  id: () => Promise<ID_Output>;
+  address: () => Promise<String>;
+  description: () => Promise<String>;
+  mainImage: () => Promise<String>;
+  images: () => Promise<String[]>;
+  rooms: () => Promise<Int>;
+  bath: () => Promise<Int>;
+  lotSize: () => Promise<Int>;
+  houseSize: () => Promise<Int>;
+  price: () => Promise<Int>;
+  user: <T = UserPromise>() => T;
+}
+
+export interface ListingSubscription
+  extends Promise<AsyncIterator<Listing>>,
     Fragmentable {
-  count: () => Promise<Int>;
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  address: () => Promise<AsyncIterator<String>>;
+  description: () => Promise<AsyncIterator<String>>;
+  mainImage: () => Promise<AsyncIterator<String>>;
+  images: () => Promise<AsyncIterator<String[]>>;
+  rooms: () => Promise<AsyncIterator<Int>>;
+  bath: () => Promise<AsyncIterator<Int>>;
+  lotSize: () => Promise<AsyncIterator<Int>>;
+  houseSize: () => Promise<AsyncIterator<Int>>;
+  price: () => Promise<AsyncIterator<Int>>;
+  user: <T = UserSubscription>() => T;
 }
 
-export interface AggregateListingSubscription
-  extends Promise<AsyncIterator<AggregateListing>>,
+export interface ListingNullablePromise
+  extends Promise<Listing | null>,
     Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface ListingEdge {
-  node: Listing;
-  cursor: String;
-}
-
-export interface ListingEdgePromise extends Promise<ListingEdge>, Fragmentable {
-  node: <T = ListingPromise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface ListingEdgeSubscription
-  extends Promise<AsyncIterator<ListingEdge>>,
-    Fragmentable {
-  node: <T = ListingSubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
+  id: () => Promise<ID_Output>;
+  address: () => Promise<String>;
+  description: () => Promise<String>;
+  mainImage: () => Promise<String>;
+  images: () => Promise<String[]>;
+  rooms: () => Promise<Int>;
+  bath: () => Promise<Int>;
+  lotSize: () => Promise<Int>;
+  houseSize: () => Promise<Int>;
+  price: () => Promise<Int>;
+  user: <T = UserPromise>() => T;
 }
 
 export interface UserConnection {
@@ -1127,75 +1197,6 @@ export interface UserConnectionSubscription
   pageInfo: <T = PageInfoSubscription>() => T;
   edges: <T = Promise<AsyncIterator<UserEdgeSubscription>>>() => T;
   aggregate: <T = AggregateUserSubscription>() => T;
-}
-
-export interface AggregateTemplate {
-  count: Int;
-}
-
-export interface AggregateTemplatePromise
-  extends Promise<AggregateTemplate>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateTemplateSubscription
-  extends Promise<AsyncIterator<AggregateTemplate>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface TemplatePreviousValues {
-  id: ID_Output;
-}
-
-export interface TemplatePreviousValuesPromise
-  extends Promise<TemplatePreviousValues>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-}
-
-export interface TemplatePreviousValuesSubscription
-  extends Promise<AsyncIterator<TemplatePreviousValues>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-}
-
-export interface ListingPreviousValues {
-  id: ID_Output;
-  address: String;
-  description: String;
-  rooms: Int;
-  bath: Int;
-  lotSize: Int;
-  houseSize: Int;
-  price: Int;
-}
-
-export interface ListingPreviousValuesPromise
-  extends Promise<ListingPreviousValues>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-  address: () => Promise<String>;
-  description: () => Promise<String>;
-  rooms: () => Promise<Int>;
-  bath: () => Promise<Int>;
-  lotSize: () => Promise<Int>;
-  houseSize: () => Promise<Int>;
-  price: () => Promise<Int>;
-}
-
-export interface ListingPreviousValuesSubscription
-  extends Promise<AsyncIterator<ListingPreviousValues>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  address: () => Promise<AsyncIterator<String>>;
-  description: () => Promise<AsyncIterator<String>>;
-  rooms: () => Promise<AsyncIterator<Int>>;
-  bath: () => Promise<AsyncIterator<Int>>;
-  lotSize: () => Promise<AsyncIterator<Int>>;
-  houseSize: () => Promise<AsyncIterator<Int>>;
-  price: () => Promise<AsyncIterator<Int>>;
 }
 
 export interface ListingSubscriptionPayload {
@@ -1223,10 +1224,28 @@ export interface ListingSubscriptionPayloadSubscription
   previousValues: <T = ListingPreviousValuesSubscription>() => T;
 }
 
-export interface Listing {
+export interface AggregateTemplate {
+  count: Int;
+}
+
+export interface AggregateTemplatePromise
+  extends Promise<AggregateTemplate>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateTemplateSubscription
+  extends Promise<AsyncIterator<AggregateTemplate>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface ListingPreviousValues {
   id: ID_Output;
   address: String;
   description: String;
+  mainImage: String;
+  images: String[];
   rooms: Int;
   bath: Int;
   lotSize: Int;
@@ -1234,44 +1253,119 @@ export interface Listing {
   price: Int;
 }
 
-export interface ListingPromise extends Promise<Listing>, Fragmentable {
+export interface ListingPreviousValuesPromise
+  extends Promise<ListingPreviousValues>,
+    Fragmentable {
   id: () => Promise<ID_Output>;
   address: () => Promise<String>;
   description: () => Promise<String>;
+  mainImage: () => Promise<String>;
+  images: () => Promise<String[]>;
   rooms: () => Promise<Int>;
   bath: () => Promise<Int>;
   lotSize: () => Promise<Int>;
   houseSize: () => Promise<Int>;
   price: () => Promise<Int>;
-  user: <T = UserPromise>() => T;
 }
 
-export interface ListingSubscription
-  extends Promise<AsyncIterator<Listing>>,
+export interface ListingPreviousValuesSubscription
+  extends Promise<AsyncIterator<ListingPreviousValues>>,
     Fragmentable {
   id: () => Promise<AsyncIterator<ID_Output>>;
   address: () => Promise<AsyncIterator<String>>;
   description: () => Promise<AsyncIterator<String>>;
+  mainImage: () => Promise<AsyncIterator<String>>;
+  images: () => Promise<AsyncIterator<String[]>>;
   rooms: () => Promise<AsyncIterator<Int>>;
   bath: () => Promise<AsyncIterator<Int>>;
   lotSize: () => Promise<AsyncIterator<Int>>;
   houseSize: () => Promise<AsyncIterator<Int>>;
   price: () => Promise<AsyncIterator<Int>>;
-  user: <T = UserSubscription>() => T;
 }
 
-export interface ListingNullablePromise
-  extends Promise<Listing | null>,
+export interface TemplateConnection {
+  pageInfo: PageInfo;
+  edges: TemplateEdge[];
+}
+
+export interface TemplateConnectionPromise
+  extends Promise<TemplateConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<TemplateEdge>>() => T;
+  aggregate: <T = AggregateTemplatePromise>() => T;
+}
+
+export interface TemplateConnectionSubscription
+  extends Promise<AsyncIterator<TemplateConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<TemplateEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateTemplateSubscription>() => T;
+}
+
+export interface TemplateSubscriptionPayload {
+  mutation: MutationType;
+  node: Template;
+  updatedFields: String[];
+  previousValues: TemplatePreviousValues;
+}
+
+export interface TemplateSubscriptionPayloadPromise
+  extends Promise<TemplateSubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = TemplatePromise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = TemplatePreviousValuesPromise>() => T;
+}
+
+export interface TemplateSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<TemplateSubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = TemplateSubscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = TemplatePreviousValuesSubscription>() => T;
+}
+
+export interface TemplatePreviousValues {
+  id: ID_Output;
+}
+
+export interface TemplatePreviousValuesPromise
+  extends Promise<TemplatePreviousValues>,
     Fragmentable {
   id: () => Promise<ID_Output>;
-  address: () => Promise<String>;
-  description: () => Promise<String>;
-  rooms: () => Promise<Int>;
-  bath: () => Promise<Int>;
-  lotSize: () => Promise<Int>;
-  houseSize: () => Promise<Int>;
-  price: () => Promise<Int>;
-  user: <T = UserPromise>() => T;
+}
+
+export interface TemplatePreviousValuesSubscription
+  extends Promise<AsyncIterator<TemplatePreviousValues>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+}
+
+export interface PageInfo {
+  hasNextPage: Boolean;
+  hasPreviousPage: Boolean;
+  startCursor?: String;
+  endCursor?: String;
+}
+
+export interface PageInfoPromise extends Promise<PageInfo>, Fragmentable {
+  hasNextPage: () => Promise<Boolean>;
+  hasPreviousPage: () => Promise<Boolean>;
+  startCursor: () => Promise<String>;
+  endCursor: () => Promise<String>;
+}
+
+export interface PageInfoSubscription
+  extends Promise<AsyncIterator<PageInfo>>,
+    Fragmentable {
+  hasNextPage: () => Promise<AsyncIterator<Boolean>>;
+  hasPreviousPage: () => Promise<AsyncIterator<Boolean>>;
+  startCursor: () => Promise<AsyncIterator<String>>;
+  endCursor: () => Promise<AsyncIterator<String>>;
 }
 
 export interface TemplateEdge {
@@ -1335,57 +1429,28 @@ export interface UserEdgeSubscription
   cursor: () => Promise<AsyncIterator<String>>;
 }
 
-export interface PageInfo {
-  hasNextPage: Boolean;
-  hasPreviousPage: Boolean;
-  startCursor?: String;
-  endCursor?: String;
+export interface BatchPayload {
+  count: Long;
 }
 
-export interface PageInfoPromise extends Promise<PageInfo>, Fragmentable {
-  hasNextPage: () => Promise<Boolean>;
-  hasPreviousPage: () => Promise<Boolean>;
-  startCursor: () => Promise<String>;
-  endCursor: () => Promise<String>;
-}
-
-export interface PageInfoSubscription
-  extends Promise<AsyncIterator<PageInfo>>,
+export interface BatchPayloadPromise
+  extends Promise<BatchPayload>,
     Fragmentable {
-  hasNextPage: () => Promise<AsyncIterator<Boolean>>;
-  hasPreviousPage: () => Promise<AsyncIterator<Boolean>>;
-  startCursor: () => Promise<AsyncIterator<String>>;
-  endCursor: () => Promise<AsyncIterator<String>>;
+  count: () => Promise<Long>;
 }
 
-export interface TemplateConnection {
-  pageInfo: PageInfo;
-  edges: TemplateEdge[];
-}
-
-export interface TemplateConnectionPromise
-  extends Promise<TemplateConnection>,
+export interface BatchPayloadSubscription
+  extends Promise<AsyncIterator<BatchPayload>>,
     Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<TemplateEdge>>() => T;
-  aggregate: <T = AggregateTemplatePromise>() => T;
+  count: () => Promise<AsyncIterator<Long>>;
 }
-
-export interface TemplateConnectionSubscription
-  extends Promise<AsyncIterator<TemplateConnection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<TemplateEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateTemplateSubscription>() => T;
-}
-
-export type Long = string;
 
 /*
-The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `"4"`) or integer (such as `4`) input value will be accepted as an ID.
+The `Boolean` scalar type represents `true` or `false`.
 */
-export type ID_Input = string | number;
-export type ID_Output = string;
+export type Boolean = boolean;
+
+export type Long = string;
 
 /*
 The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
@@ -1398,9 +1463,10 @@ The `Int` scalar type represents non-fractional signed whole numeric values. Int
 export type Int = number;
 
 /*
-The `Boolean` scalar type represents `true` or `false`.
+The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `"4"`) or integer (such as `4`) input value will be accepted as an ID.
 */
-export type Boolean = boolean;
+export type ID_Input = string | number;
+export type ID_Output = string;
 
 /**
  * Model Metadata

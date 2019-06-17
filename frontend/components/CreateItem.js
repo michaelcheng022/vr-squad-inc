@@ -10,6 +10,7 @@ const CREATE_LISTING_MUTATION = gql`
   mutation CREATE_LISTING_MUTATION(
     $address: String!
     $description: String!
+    $mainImage: String!
     $rooms: Int!
     $bath: Int!
     $lotSize: Int!
@@ -20,6 +21,7 @@ const CREATE_LISTING_MUTATION = gql`
     createListing(
       address: $address
       description: $description
+      mainImage: $mainImage
       rooms: $rooms
       bath: $bath
       lotSize: $lotSize
@@ -36,11 +38,12 @@ class CreateItem extends Component {
   state = {
     address: '',
     description: '',
-    rooms: 0,
-    bath: 0,
-    lotSize: 0,
-    houseSize: 0,
-    price: 0
+    mainImage: '',
+    rooms: '',
+    bath: '',
+    lotSize: '',
+    houseSize: '',
+    price: ''
   };
   handleChange = e => {
     const { name, type, value } = e.target;
@@ -92,6 +95,18 @@ class CreateItem extends Component {
                 />
               </label>
 
+              <label htmlFor="mainImage">
+              Thumbnail Image
+              <textarea
+                id="mainImage"
+                name="mainImage"
+                placeholder="Enter Image URL"
+                required
+                value={this.state.mainImage}
+                onChange={this.handleChange}
+              />
+            </label>
+
               <label htmlFor="rooms">
                 Rooms
                 <input
@@ -105,7 +120,7 @@ class CreateItem extends Component {
                 />
               </label>
 
-              <label htmlFor="price">
+              <label htmlFor="bath">
                 Bath
                 <input
                   type="number"
@@ -115,6 +130,7 @@ class CreateItem extends Component {
                   required
                   value={this.state.bath}
                   onChange={this.handleChange}
+                  step="any"
                 />
               </label>
 

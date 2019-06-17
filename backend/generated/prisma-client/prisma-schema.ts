@@ -22,6 +22,8 @@ type Listing {
   id: ID!
   address: String!
   description: String!
+  mainImage: String!
+  images: [String!]!
   rooms: Int!
   bath: Int!
   lotSize: Int!
@@ -36,10 +38,16 @@ type ListingConnection {
   aggregate: AggregateListing!
 }
 
+input ListingCreateimagesInput {
+  set: [String!]
+}
+
 input ListingCreateInput {
   id: ID
   address: String!
   description: String!
+  mainImage: String!
+  images: ListingCreateimagesInput
   rooms: Int!
   bath: Int!
   lotSize: Int!
@@ -62,6 +70,8 @@ input ListingCreateWithoutUserInput {
   id: ID
   address: String!
   description: String!
+  mainImage: String!
+  images: ListingCreateimagesInput
   rooms: Int!
   bath: Int!
   lotSize: Int!
@@ -81,6 +91,8 @@ enum ListingOrderByInput {
   address_DESC
   description_ASC
   description_DESC
+  mainImage_ASC
+  mainImage_DESC
   rooms_ASC
   rooms_DESC
   bath_ASC
@@ -97,6 +109,8 @@ type ListingPreviousValues {
   id: ID!
   address: String!
   description: String!
+  mainImage: String!
+  images: [String!]!
   rooms: Int!
   bath: Int!
   lotSize: Int!
@@ -147,6 +161,20 @@ input ListingScalarWhereInput {
   description_not_starts_with: String
   description_ends_with: String
   description_not_ends_with: String
+  mainImage: String
+  mainImage_not: String
+  mainImage_in: [String!]
+  mainImage_not_in: [String!]
+  mainImage_lt: String
+  mainImage_lte: String
+  mainImage_gt: String
+  mainImage_gte: String
+  mainImage_contains: String
+  mainImage_not_contains: String
+  mainImage_starts_with: String
+  mainImage_not_starts_with: String
+  mainImage_ends_with: String
+  mainImage_not_ends_with: String
   rooms: Int
   rooms_not: Int
   rooms_in: [Int!]
@@ -213,6 +241,8 @@ input ListingSubscriptionWhereInput {
 input ListingUpdateDataInput {
   address: String
   description: String
+  mainImage: String
+  images: ListingUpdateimagesInput
   rooms: Int
   bath: Int
   lotSize: Int
@@ -221,9 +251,15 @@ input ListingUpdateDataInput {
   user: UserUpdateOneRequiredWithoutListingsInput
 }
 
+input ListingUpdateimagesInput {
+  set: [String!]
+}
+
 input ListingUpdateInput {
   address: String
   description: String
+  mainImage: String
+  images: ListingUpdateimagesInput
   rooms: Int
   bath: Int
   lotSize: Int
@@ -235,6 +271,8 @@ input ListingUpdateInput {
 input ListingUpdateManyDataInput {
   address: String
   description: String
+  mainImage: String
+  images: ListingUpdateimagesInput
   rooms: Int
   bath: Int
   lotSize: Int
@@ -245,6 +283,8 @@ input ListingUpdateManyDataInput {
 input ListingUpdateManyMutationInput {
   address: String
   description: String
+  mainImage: String
+  images: ListingUpdateimagesInput
   rooms: Int
   bath: Int
   lotSize: Int
@@ -279,6 +319,8 @@ input ListingUpdateOneRequiredInput {
 input ListingUpdateWithoutUserDataInput {
   address: String
   description: String
+  mainImage: String
+  images: ListingUpdateimagesInput
   rooms: Int
   bath: Int
   lotSize: Int
@@ -345,6 +387,20 @@ input ListingWhereInput {
   description_not_starts_with: String
   description_ends_with: String
   description_not_ends_with: String
+  mainImage: String
+  mainImage_not: String
+  mainImage_in: [String!]
+  mainImage_not_in: [String!]
+  mainImage_lt: String
+  mainImage_lte: String
+  mainImage_gt: String
+  mainImage_gte: String
+  mainImage_contains: String
+  mainImage_not_contains: String
+  mainImage_starts_with: String
+  mainImage_not_starts_with: String
+  mainImage_ends_with: String
+  mainImage_not_ends_with: String
   rooms: Int
   rooms_not: Int
   rooms_in: [Int!]

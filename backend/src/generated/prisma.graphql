@@ -1,5 +1,5 @@
 # source: https://us1.prisma.sh/michael-cheng-639bf1/vr-squad-inc/dev
-# timestamp: Thu Jun 06 2019 11:12:55 GMT-0700 (Pacific Daylight Time)
+# timestamp: Mon Jun 10 2019 10:59:39 GMT-0700 (Pacific Daylight Time)
 
 type AggregateListing {
   count: Int!
@@ -22,6 +22,8 @@ type Listing implements Node {
   id: ID!
   address: String!
   description: String!
+  mainImage: String!
+  images: [String!]!
   rooms: Int!
   bath: Int!
   lotSize: Int!
@@ -40,15 +42,21 @@ type ListingConnection {
   aggregate: AggregateListing!
 }
 
+input ListingCreateimagesInput {
+  set: [String!]
+}
+
 input ListingCreateInput {
   id: ID
   address: String!
   description: String!
+  mainImage: String!
   rooms: Int!
   bath: Int!
   lotSize: Int!
   houseSize: Int!
   price: Int!
+  images: ListingCreateimagesInput
   user: UserCreateOneInput!
 }
 
@@ -78,6 +86,8 @@ enum ListingOrderByInput {
   address_DESC
   description_ASC
   description_DESC
+  mainImage_ASC
+  mainImage_DESC
   rooms_ASC
   rooms_DESC
   bath_ASC
@@ -94,6 +104,8 @@ type ListingPreviousValues {
   id: ID!
   address: String!
   description: String!
+  mainImage: String!
+  images: [String!]!
   rooms: Int!
   bath: Int!
   lotSize: Int!
@@ -230,6 +242,46 @@ input ListingScalarWhereInput {
 
   """All values not ending with the given string."""
   description_not_ends_with: String
+  mainImage: String
+
+  """All values that are not equal to given value."""
+  mainImage_not: String
+
+  """All values that are contained in given list."""
+  mainImage_in: [String!]
+
+  """All values that are not contained in given list."""
+  mainImage_not_in: [String!]
+
+  """All values less than the given value."""
+  mainImage_lt: String
+
+  """All values less than or equal the given value."""
+  mainImage_lte: String
+
+  """All values greater than the given value."""
+  mainImage_gt: String
+
+  """All values greater than or equal the given value."""
+  mainImage_gte: String
+
+  """All values containing the given string."""
+  mainImage_contains: String
+
+  """All values not containing the given string."""
+  mainImage_not_contains: String
+
+  """All values starting with the given string."""
+  mainImage_starts_with: String
+
+  """All values not starting with the given string."""
+  mainImage_not_starts_with: String
+
+  """All values ending with the given string."""
+  mainImage_ends_with: String
+
+  """All values not ending with the given string."""
+  mainImage_not_ends_with: String
   rooms: Int
 
   """All values that are not equal to given value."""
@@ -384,33 +436,43 @@ input ListingSubscriptionWhereInput {
 input ListingUpdateDataInput {
   address: String
   description: String
+  mainImage: String
   rooms: Int
   bath: Int
   lotSize: Int
   houseSize: Int
   price: Int
+  images: ListingUpdateimagesInput
   user: UserUpdateOneRequiredInput
+}
+
+input ListingUpdateimagesInput {
+  set: [String!]
 }
 
 input ListingUpdateInput {
   address: String
   description: String
+  mainImage: String
   rooms: Int
   bath: Int
   lotSize: Int
   houseSize: Int
   price: Int
+  images: ListingUpdateimagesInput
   user: UserUpdateOneRequiredInput
 }
 
 input ListingUpdateManyDataInput {
   address: String
   description: String
+  mainImage: String
   rooms: Int
   bath: Int
   lotSize: Int
   houseSize: Int
   price: Int
+  images: ListingUpdateimagesInput
 }
 
 input ListingUpdateManyInput {
@@ -428,11 +490,13 @@ input ListingUpdateManyInput {
 input ListingUpdateManyMutationInput {
   address: String
   description: String
+  mainImage: String
   rooms: Int
   bath: Int
   lotSize: Int
   houseSize: Int
   price: Int
+  images: ListingUpdateimagesInput
 }
 
 input ListingUpdateManyWithWhereNestedInput {
@@ -592,6 +656,46 @@ input ListingWhereInput {
 
   """All values not ending with the given string."""
   description_not_ends_with: String
+  mainImage: String
+
+  """All values that are not equal to given value."""
+  mainImage_not: String
+
+  """All values that are contained in given list."""
+  mainImage_in: [String!]
+
+  """All values that are not contained in given list."""
+  mainImage_not_in: [String!]
+
+  """All values less than the given value."""
+  mainImage_lt: String
+
+  """All values less than or equal the given value."""
+  mainImage_lte: String
+
+  """All values greater than the given value."""
+  mainImage_gt: String
+
+  """All values greater than or equal the given value."""
+  mainImage_gte: String
+
+  """All values containing the given string."""
+  mainImage_contains: String
+
+  """All values not containing the given string."""
+  mainImage_not_contains: String
+
+  """All values starting with the given string."""
+  mainImage_starts_with: String
+
+  """All values not starting with the given string."""
+  mainImage_not_starts_with: String
+
+  """All values ending with the given string."""
+  mainImage_ends_with: String
+
+  """All values not ending with the given string."""
+  mainImage_not_ends_with: String
   rooms: Int
 
   """All values that are not equal to given value."""

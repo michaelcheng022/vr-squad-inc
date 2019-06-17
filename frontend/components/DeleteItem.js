@@ -30,7 +30,7 @@ class DeleteItem extends Component {
         update={this.update}
       >
         {(deleteListing, { error }) => (
-          <button
+          <span
             onClick={() => {
               if (confirm('Are you sure you want to delete this item?')) {
                 deleteListing();
@@ -38,7 +38,7 @@ class DeleteItem extends Component {
             }}
           >
             {this.props.children}
-          </button>
+          </span>
         )}
       </Mutation>
     );

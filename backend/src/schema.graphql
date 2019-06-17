@@ -8,6 +8,7 @@ type Mutation {
   createListing(
     address: String!
     description: String!
+    mainImage: String!
     rooms: Int!
     bath: Int!
     lotSize: Int!

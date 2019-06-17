@@ -10,6 +10,7 @@ const ALL_LISTINGS_QUERY = gql`
       id
       address
       description
+      mainImage
       rooms
       bath
       lotSize
@@ -29,10 +30,24 @@ const Center = styled.div`
 
 const ItemsList = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 60px;
   max-width: ${props => props.theme.maxWidth};
   margin: 0 auto;
+
+  @media (max-width: 1300px) {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 10vw;
+  }
+
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr;
+    margin: 0 100px;
+  }
+
+  @media (max-width: 700px) {
+    margin: 0 5vw;
+  }
 `;
 
 class Listings extends Component {
