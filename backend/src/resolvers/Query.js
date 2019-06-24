@@ -11,8 +11,8 @@ const Query = {
     const listings = await ctx.db.query.listings({}, info);
 
     myListings = listings.filter(listing => {
-      console.log(listing.user.id);
-      console.log(ctx.request);
+      // console.log(listing.user.id);
+      // console.log(ctx.request);
       return  ctx.request.userId == listing.user.id
     });
     return myListings;

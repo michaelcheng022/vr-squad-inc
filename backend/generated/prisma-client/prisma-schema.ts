@@ -600,6 +600,7 @@ type User {
   email: String!
   password: String!
   name: String!
+  profilePicture: String
   company: String
   website: String
   phone: String
@@ -620,6 +621,7 @@ input UserCreateInput {
   email: String!
   password: String!
   name: String!
+  profilePicture: String
   company: String
   website: String
   phone: String
@@ -643,6 +645,7 @@ input UserCreateWithoutListingsInput {
   email: String!
   password: String!
   name: String!
+  profilePicture: String
   company: String
   website: String
   phone: String
@@ -665,6 +668,8 @@ enum UserOrderByInput {
   password_DESC
   name_ASC
   name_DESC
+  profilePicture_ASC
+  profilePicture_DESC
   company_ASC
   company_DESC
   website_ASC
@@ -682,6 +687,7 @@ type UserPreviousValues {
   email: String!
   password: String!
   name: String!
+  profilePicture: String
   company: String
   website: String
   phone: String
@@ -712,6 +718,7 @@ input UserUpdateInput {
   email: String
   password: String
   name: String
+  profilePicture: String
   company: String
   website: String
   phone: String
@@ -725,6 +732,7 @@ input UserUpdateManyMutationInput {
   email: String
   password: String
   name: String
+  profilePicture: String
   company: String
   website: String
   phone: String
@@ -748,6 +756,7 @@ input UserUpdateWithoutListingsDataInput {
   email: String
   password: String
   name: String
+  profilePicture: String
   company: String
   website: String
   phone: String
@@ -818,6 +827,20 @@ input UserWhereInput {
   name_not_starts_with: String
   name_ends_with: String
   name_not_ends_with: String
+  profilePicture: String
+  profilePicture_not: String
+  profilePicture_in: [String!]
+  profilePicture_not_in: [String!]
+  profilePicture_lt: String
+  profilePicture_lte: String
+  profilePicture_gt: String
+  profilePicture_gte: String
+  profilePicture_contains: String
+  profilePicture_not_contains: String
+  profilePicture_starts_with: String
+  profilePicture_not_starts_with: String
+  profilePicture_ends_with: String
+  profilePicture_not_ends_with: String
   company: String
   company_not: String
   company_in: [String!]

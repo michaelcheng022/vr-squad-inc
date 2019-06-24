@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -654,7 +654,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  query SINGLE_LISTING_QUERY($id: ID!) {\n    listing(where: { id: $id }) {\n      id\n      address\n      description\n      mainImage\n      rooms\n      bath\n      lotSize\n      houseSize\n      price\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  query SINGLE_LISTING_QUERY($id: ID!) {\n    listing(where: { id: $id }) {\n      id\n      address\n      description\n      mainImage\n      images\n      rooms\n      bath\n      lotSize\n      houseSize\n      price\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -705,7 +705,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 93
         },
         __self: this
       }, function (_ref) {
@@ -716,54 +716,55 @@ function (_Component) {
           error: error,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 99
+            lineNumber: 100
           },
           __self: this
         });
         if (loading) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 100
+            lineNumber: 101
           },
           __self: this
         }, "Loading...");
         if (!data.listing) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 101
+            lineNumber: 102
           },
           __self: this
         }, "No listing Found for ", _this.props.id);
         var listing = data.listing;
+        console.log(listing);
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SingleListingStyles, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 104
+            lineNumber: 106
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_6___default.a, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 105
+            lineNumber: 107
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 106
+            lineNumber: 108
           },
           __self: this
         }, "Sick Fits | ", listing.address)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "details",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 108
+            lineNumber: 110
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 109
+            lineNumber: 111
           },
           __self: this
         }, listing.address), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -771,94 +772,94 @@ function (_Component) {
           alt: listing.description,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 110
+            lineNumber: 112
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "section",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 111
+            lineNumber: 113
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 112
+            lineNumber: 114
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 112
+            lineNumber: 114
           },
           __self: this
         }, "DESCRIPTION")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 113
+            lineNumber: 115
           },
           __self: this
         }, listing.description)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "section",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 115
+            lineNumber: 117
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 116
+            lineNumber: 118
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 116
+            lineNumber: 118
           },
           __self: this
         }, "SPECIFICATIONS")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 117
+            lineNumber: 119
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 118
+            lineNumber: 120
           },
           __self: this
         }, "PRICE: ", Object(_lib_formatMoney__WEBPACK_IMPORTED_MODULE_7__["default"])(listing.price)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 119
+            lineNumber: 121
           },
           __self: this
         }, listing.rooms, " BED"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 120
+            lineNumber: 122
           },
           __self: this
         }, listing.bath, " BATH"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 121
+            lineNumber: 123
           },
           __self: this
         }, "HOUSE SIZE: ", listing.houseSize, " SQ FT"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 122
+            lineNumber: 124
           },
           __self: this
         }, "LOT SIZE: ", listing.lotSize, " SQFT"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "button-container",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 125
+            lineNumber: 127
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -870,28 +871,28 @@ function (_Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 126
+            lineNumber: 128
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
           className: "btn btn-edit",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 132
+            lineNumber: 134
           },
           __self: this
         }, "EDIT")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
           className: "btn btn-delete",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 134
+            lineNumber: 136
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DeleteItem__WEBPACK_IMPORTED_MODULE_8__["default"], {
           id: listing.id,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 134
+            lineNumber: 136
           },
           __self: this
         }, "DELETE")))));
@@ -1014,7 +1015,7 @@ var Listing = function Listing(props) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 6:
 /*!********************************!*\
   !*** multi ./pages/listing.js ***!
   \********************************/

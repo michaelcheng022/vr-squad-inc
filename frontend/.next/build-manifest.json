@@ -11,27 +11,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/listing": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/update": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/listings": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/sell": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/": [
+    "/listing": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

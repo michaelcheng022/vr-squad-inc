@@ -214,6 +214,8 @@ export type UserOrderByInput =
   | "password_DESC"
   | "name_ASC"
   | "name_DESC"
+  | "profilePicture_ASC"
+  | "profilePicture_DESC"
   | "company_ASC"
   | "company_DESC"
   | "website_ASC"
@@ -300,6 +302,20 @@ export interface UserWhereInput {
   name_not_starts_with?: Maybe<String>;
   name_ends_with?: Maybe<String>;
   name_not_ends_with?: Maybe<String>;
+  profilePicture?: Maybe<String>;
+  profilePicture_not?: Maybe<String>;
+  profilePicture_in?: Maybe<String[] | String>;
+  profilePicture_not_in?: Maybe<String[] | String>;
+  profilePicture_lt?: Maybe<String>;
+  profilePicture_lte?: Maybe<String>;
+  profilePicture_gt?: Maybe<String>;
+  profilePicture_gte?: Maybe<String>;
+  profilePicture_contains?: Maybe<String>;
+  profilePicture_not_contains?: Maybe<String>;
+  profilePicture_starts_with?: Maybe<String>;
+  profilePicture_not_starts_with?: Maybe<String>;
+  profilePicture_ends_with?: Maybe<String>;
+  profilePicture_not_ends_with?: Maybe<String>;
   company?: Maybe<String>;
   company_not?: Maybe<String>;
   company_in?: Maybe<String[] | String>;
@@ -440,6 +456,7 @@ export interface UserCreateWithoutListingsInput {
   email: String;
   password: String;
   name: String;
+  profilePicture?: Maybe<String>;
   company?: Maybe<String>;
   website?: Maybe<String>;
   phone?: Maybe<String>;
@@ -452,6 +469,7 @@ export interface UserUpdateManyMutationInput {
   email?: Maybe<String>;
   password?: Maybe<String>;
   name?: Maybe<String>;
+  profilePicture?: Maybe<String>;
   company?: Maybe<String>;
   website?: Maybe<String>;
   phone?: Maybe<String>;
@@ -520,6 +538,7 @@ export interface UserUpdateWithoutListingsDataInput {
   email?: Maybe<String>;
   password?: Maybe<String>;
   name?: Maybe<String>;
+  profilePicture?: Maybe<String>;
   company?: Maybe<String>;
   website?: Maybe<String>;
   phone?: Maybe<String>;
@@ -687,6 +706,7 @@ export interface UserCreateInput {
   email: String;
   password: String;
   name: String;
+  profilePicture?: Maybe<String>;
   company?: Maybe<String>;
   website?: Maybe<String>;
   phone?: Maybe<String>;
@@ -843,6 +863,7 @@ export interface UserUpdateInput {
   email?: Maybe<String>;
   password?: Maybe<String>;
   name?: Maybe<String>;
+  profilePicture?: Maybe<String>;
   company?: Maybe<String>;
   website?: Maybe<String>;
   phone?: Maybe<String>;
@@ -905,6 +926,7 @@ export interface UserPreviousValues {
   email: String;
   password: String;
   name: String;
+  profilePicture?: String;
   company?: String;
   website?: String;
   phone?: String;
@@ -920,6 +942,7 @@ export interface UserPreviousValuesPromise
   email: () => Promise<String>;
   password: () => Promise<String>;
   name: () => Promise<String>;
+  profilePicture: () => Promise<String>;
   company: () => Promise<String>;
   website: () => Promise<String>;
   phone: () => Promise<String>;
@@ -935,6 +958,7 @@ export interface UserPreviousValuesSubscription
   email: () => Promise<AsyncIterator<String>>;
   password: () => Promise<AsyncIterator<String>>;
   name: () => Promise<AsyncIterator<String>>;
+  profilePicture: () => Promise<AsyncIterator<String>>;
   company: () => Promise<AsyncIterator<String>>;
   website: () => Promise<AsyncIterator<String>>;
   phone: () => Promise<AsyncIterator<String>>;
@@ -971,6 +995,7 @@ export interface User {
   email: String;
   password: String;
   name: String;
+  profilePicture?: String;
   company?: String;
   website?: String;
   phone?: String;
@@ -984,6 +1009,7 @@ export interface UserPromise extends Promise<User>, Fragmentable {
   email: () => Promise<String>;
   password: () => Promise<String>;
   name: () => Promise<String>;
+  profilePicture: () => Promise<String>;
   company: () => Promise<String>;
   website: () => Promise<String>;
   phone: () => Promise<String>;
@@ -1008,6 +1034,7 @@ export interface UserSubscription
   email: () => Promise<AsyncIterator<String>>;
   password: () => Promise<AsyncIterator<String>>;
   name: () => Promise<AsyncIterator<String>>;
+  profilePicture: () => Promise<AsyncIterator<String>>;
   company: () => Promise<AsyncIterator<String>>;
   website: () => Promise<AsyncIterator<String>>;
   phone: () => Promise<AsyncIterator<String>>;
@@ -1032,6 +1059,7 @@ export interface UserNullablePromise
   email: () => Promise<String>;
   password: () => Promise<String>;
   name: () => Promise<String>;
+  profilePicture: () => Promise<String>;
   company: () => Promise<String>;
   website: () => Promise<String>;
   phone: () => Promise<String>;

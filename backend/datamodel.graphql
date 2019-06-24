@@ -12,6 +12,7 @@ type User {
   email: String! @unique
   password: String!
   name: String!
+  profilePicture: String
   company: String  
   website: String
   phone: String 
@@ -26,7 +27,7 @@ type Listing {
   address: String!
   description: String!
   mainImage: String!
-  images: [String!]! @scalarList(strategy: RELATION)
+  images: [String!] @scalarList(strategy: RELATION)
   rooms: Int!
   bath: Int!
   lotSize: Int!

@@ -11,6 +11,7 @@ const CREATE_LISTING_MUTATION = gql`
     $address: String!
     $description: String!
     $mainImage: String!
+    $images: ListingCreateimagesInput
     $rooms: Int!
     $bath: Int!
     $lotSize: Int!
@@ -22,6 +23,7 @@ const CREATE_LISTING_MUTATION = gql`
       address: $address
       description: $description
       mainImage: $mainImage
+      images: $images
       rooms: $rooms
       bath: $bath
       lotSize: $lotSize
@@ -29,7 +31,9 @@ const CREATE_LISTING_MUTATION = gql`
       price: $price
     ) {
       id
-      
+      address
+      images
+      mainImage
     }
   }
 `;
@@ -39,6 +43,7 @@ class CreateItem extends Component {
     address: '',
     description: '',
     mainImage: '',
+    images: { set: []},
     rooms: '',
     bath: '',
     lotSize: '',
@@ -50,6 +55,14 @@ class CreateItem extends Component {
     const val = type === 'number' ? parseFloat(value) : value;
     this.setState({ [name]: val });
   };
+  handleImages = e => {
+    console.log(e.target.value);
+    const value = e.target.value;
+    const imgArr = value.split('+').map(e => e.trim());
+    console.log(imgArr);
+    
+    this.setState({ images: {set: imgArr}});
+  };
   render() {
     return (
       <Mutation mutation={CREATE_LISTING_MUTATION} variables={this.state}>
@@ -58,6 +71,8 @@ class CreateItem extends Component {
             onSubmit={async e => {
               // Stop the form from submitting
               e.preventDefault();
+              
+              console.log(this.state);
               // call the mutation
               const res = await createListing();
               // change them to the single item page
@@ -96,16 +111,29 @@ class CreateItem extends Component {
               </label>
 
               <label htmlFor="mainImage">
-              Thumbnail Image
-              <textarea
-                id="mainImage"
-                name="mainImage"
-                placeholder="Enter Image URL"
-                required
-                value={this.state.mainImage}
-                onChange={this.handleChange}
-              />
-            </label>
+                Thumbnail Image
+                <textarea
+                  id="mainImage"
+                  name="mainImage"
+                  placeholder="Enter Image URL"
+                  required
+                  value={this.state.mainImage}
+                  onChange={this.handleChange}
+                />
+              </label>
+
+              <label htmlFor="images">
+                Gallery
+                <textarea
+                  type="text"
+                  id="images"
+                  name="images"
+                  placeholder="Place ' + ' between image urls"
+                  required
+                  
+                  onChange={this.handleImages}
+                />
+              </label>
 
               <label htmlFor="rooms">
                 Rooms

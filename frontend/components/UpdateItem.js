@@ -24,6 +24,8 @@ const UPDATE_LISTING_MUTATION = gql`
   mutation UPDATE_LISTING_MUTATION(
     $address: String
     $description: String
+    $mainImage: String
+    $images: ListingUpdateimagesInput
     $rooms: Int
     $bath: Int
     $lotSize: Int
@@ -34,6 +36,8 @@ const UPDATE_LISTING_MUTATION = gql`
     updateListing(
       id: $id
       address: $address
+      mainImage: $mainImage
+      images: $images
       description: $description
       rooms: $rooms
       bath: $bath
@@ -60,6 +64,14 @@ class UpdateItem extends Component {
     const { name, type, value } = e.target;
     const val = type === 'number' ? parseFloat(value) : value;
     this.setState({ [name]: val });
+  };
+  handleImages = e => {
+    console.log(e.target.value);
+    const value = e.target.value;
+    const imgArr = value.split('+').map(e => e.trim());
+    console.log(imgArr);
+    
+    this.setState({ images: {set: imgArr}});
   };
   // kinda confused about passing in updateListingMutation
   updateListing = async (e, updateListingMutation) => {
@@ -115,6 +127,31 @@ class UpdateItem extends Component {
                         required
                         defaultValue={data.listing.description}
                         onChange={this.handleChange}
+                      />
+                    </label>
+
+                    <label htmlFor="mainImage">
+                      Thumbnail Image
+                      <textarea
+                        id="mainImage"
+                        name="mainImage"
+                        placeholder="Enter Image URL"
+                        required
+                        defaultValue={data.listing.mainImage}
+                        onChange={this.handleChange}
+                      />
+                    </label>
+
+                    <label htmlFor="images">
+                      Gallery
+                      <textarea
+                        type="text"
+                        id="images"
+                        name="images"
+                        placeholder="Place ' + ' between image urls"
+                        required
+                        defaultValue={data.listing.images.join(' + ')}
+                        onChange={this.handleImages}
                       />
                     </label>
 

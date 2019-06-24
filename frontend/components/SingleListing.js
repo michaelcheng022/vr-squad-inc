@@ -77,6 +77,7 @@ const SINGLE_LISTING_QUERY = gql`
       address
       description
       mainImage
+      images
       rooms
       bath
       lotSize
@@ -100,6 +101,7 @@ class SingleListing extends Component {
           if (loading) return <p>Loading...</p>;
           if (!data.listing) return <p>No listing Found for {this.props.id}</p>;
           const listing = data.listing;
+          console.log(listing);
           return (
             <SingleListingStyles>
               <Head>
