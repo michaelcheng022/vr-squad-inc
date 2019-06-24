@@ -29,7 +29,7 @@ type Listing {
   mainImage: String!
   images: [String!] @scalarList(strategy: RELATION)
   rooms: Int!
-  bath: Int!
+  bath: Float!
   lotSize: Int!
   houseSize: Int!
   price: Int!

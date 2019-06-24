@@ -1,5 +1,5 @@
 # source: https://us1.prisma.sh/michael-cheng-639bf1/vr-squad-inc/dev
-# timestamp: Mon Jun 24 2019 09:36:31 GMT-0700 (Pacific Daylight Time)
+# timestamp: Mon Jun 24 2019 12:40:30 GMT-0700 (Pacific Daylight Time)
 
 type AggregateListing {
   count: Int!
@@ -25,7 +25,7 @@ type Listing implements Node {
   mainImage: String!
   images: [String!]!
   rooms: Int!
-  bath: Int!
+  bath: Float!
   lotSize: Int!
   houseSize: Int!
   price: Int!
@@ -52,7 +52,7 @@ input ListingCreateInput {
   description: String!
   mainImage: String!
   rooms: Int!
-  bath: Int!
+  bath: Float!
   lotSize: Int!
   houseSize: Int!
   price: Int!
@@ -107,7 +107,7 @@ type ListingPreviousValues {
   mainImage: String!
   images: [String!]!
   rooms: Int!
-  bath: Int!
+  bath: Float!
   lotSize: Int!
   houseSize: Int!
   price: Int!
@@ -304,28 +304,28 @@ input ListingScalarWhereInput {
 
   """All values greater than or equal the given value."""
   rooms_gte: Int
-  bath: Int
+  bath: Float
 
   """All values that are not equal to given value."""
-  bath_not: Int
+  bath_not: Float
 
   """All values that are contained in given list."""
-  bath_in: [Int!]
+  bath_in: [Float!]
 
   """All values that are not contained in given list."""
-  bath_not_in: [Int!]
+  bath_not_in: [Float!]
 
   """All values less than the given value."""
-  bath_lt: Int
+  bath_lt: Float
 
   """All values less than or equal the given value."""
-  bath_lte: Int
+  bath_lte: Float
 
   """All values greater than the given value."""
-  bath_gt: Int
+  bath_gt: Float
 
   """All values greater than or equal the given value."""
-  bath_gte: Int
+  bath_gte: Float
   lotSize: Int
 
   """All values that are not equal to given value."""
@@ -438,7 +438,7 @@ input ListingUpdateDataInput {
   description: String
   mainImage: String
   rooms: Int
-  bath: Int
+  bath: Float
   lotSize: Int
   houseSize: Int
   price: Int
@@ -455,7 +455,7 @@ input ListingUpdateInput {
   description: String
   mainImage: String
   rooms: Int
-  bath: Int
+  bath: Float
   lotSize: Int
   houseSize: Int
   price: Int
@@ -468,7 +468,7 @@ input ListingUpdateManyDataInput {
   description: String
   mainImage: String
   rooms: Int
-  bath: Int
+  bath: Float
   lotSize: Int
   houseSize: Int
   price: Int
@@ -492,7 +492,7 @@ input ListingUpdateManyMutationInput {
   description: String
   mainImage: String
   rooms: Int
-  bath: Int
+  bath: Float
   lotSize: Int
   houseSize: Int
   price: Int
@@ -718,28 +718,28 @@ input ListingWhereInput {
 
   """All values greater than or equal the given value."""
   rooms_gte: Int
-  bath: Int
+  bath: Float
 
   """All values that are not equal to given value."""
-  bath_not: Int
+  bath_not: Float
 
   """All values that are contained in given list."""
-  bath_in: [Int!]
+  bath_in: [Float!]
 
   """All values that are not contained in given list."""
-  bath_not_in: [Int!]
+  bath_not_in: [Float!]
 
   """All values less than the given value."""
-  bath_lt: Int
+  bath_lt: Float
 
   """All values less than or equal the given value."""
-  bath_lte: Int
+  bath_lte: Float
 
   """All values greater than the given value."""
-  bath_gt: Int
+  bath_gt: Float
 
   """All values greater than or equal the given value."""
-  bath_gte: Int
+  bath_gte: Float
   lotSize: Int
 
   """All values that are not equal to given value."""

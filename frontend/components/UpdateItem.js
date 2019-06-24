@@ -11,6 +11,8 @@ const SINGLE_LISTING_QUERY = gql`
     listing(where: { id: $id }) {
       address
       description
+      mainImage
+      images
       rooms
       bath
       lotSize
@@ -27,7 +29,7 @@ const UPDATE_LISTING_MUTATION = gql`
     $mainImage: String
     $images: ListingUpdateimagesInput
     $rooms: Int
-    $bath: Int
+    $bath: Float
     $lotSize: Int
     $houseSize: Int
     $price: Int, 
@@ -44,11 +46,11 @@ const UPDATE_LISTING_MUTATION = gql`
       lotSize: $lotSize
       houseSize: $houseSize
       price: $price
-      
-      
     ) {
         address
         description
+        mainImage
+        images
         rooms
         bath
         lotSize
@@ -66,12 +68,12 @@ class UpdateItem extends Component {
     this.setState({ [name]: val });
   };
   handleImages = e => {
-    console.log(e.target.value);
     const value = e.target.value;
-    const imgArr = value.split('+').map(e => e.trim());
+    const imgArr = value.split(' + ').map(e => e.trim());
     console.log(imgArr);
     
     this.setState({ images: {set: imgArr}});
+   
   };
   // kinda confused about passing in updateListingMutation
   updateListing = async (e, updateListingMutation) => {
@@ -172,6 +174,7 @@ class UpdateItem extends Component {
                       Bath
                       <input
                         type="number"
+                        step="any"  
                         id="bath"
                         name="bath"
                         placeholder="Bathrooms"

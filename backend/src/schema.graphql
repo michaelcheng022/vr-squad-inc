@@ -11,17 +11,17 @@ type Mutation {
     mainImage: String!
     images: ListingCreateimagesInput 
     rooms: Int!
-    bath: Int!
+    bath: Float!
     lotSize: Int!
     houseSize: Int!
     price: Int!): Listing!
   updateListing(
     address: String
     description: String
-    mainImage: String!
-    images: [String!]!
+    mainImage: String
+    images: ListingUpdateimagesInput
     rooms: Int
-    bath: Int
+    bath: Float
     lotSize: Int
     houseSize: Int
     price: Int, id: ID!): Listing!
@@ -51,4 +51,8 @@ type User {
 
 input ListingCreateimagesInput {
   set: [String!]!
+}
+
+input ListingUpdateimagesInput {
+  set: [String!]
 }

@@ -13,7 +13,7 @@ const CREATE_LISTING_MUTATION = gql`
     $mainImage: String!
     $images: ListingCreateimagesInput
     $rooms: Int!
-    $bath: Int!
+    $bath: Float!
     $lotSize: Int!
     $houseSize: Int!
     $price: Int!

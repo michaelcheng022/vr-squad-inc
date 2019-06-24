@@ -25,7 +25,7 @@ type Listing {
   mainImage: String!
   images: [String!]!
   rooms: Int!
-  bath: Int!
+  bath: Float!
   lotSize: Int!
   houseSize: Int!
   price: Int!
@@ -49,7 +49,7 @@ input ListingCreateInput {
   mainImage: String!
   images: ListingCreateimagesInput
   rooms: Int!
-  bath: Int!
+  bath: Float!
   lotSize: Int!
   houseSize: Int!
   price: Int!
@@ -73,7 +73,7 @@ input ListingCreateWithoutUserInput {
   mainImage: String!
   images: ListingCreateimagesInput
   rooms: Int!
-  bath: Int!
+  bath: Float!
   lotSize: Int!
   houseSize: Int!
   price: Int!
@@ -112,7 +112,7 @@ type ListingPreviousValues {
   mainImage: String!
   images: [String!]!
   rooms: Int!
-  bath: Int!
+  bath: Float!
   lotSize: Int!
   houseSize: Int!
   price: Int!
@@ -183,14 +183,14 @@ input ListingScalarWhereInput {
   rooms_lte: Int
   rooms_gt: Int
   rooms_gte: Int
-  bath: Int
-  bath_not: Int
-  bath_in: [Int!]
-  bath_not_in: [Int!]
-  bath_lt: Int
-  bath_lte: Int
-  bath_gt: Int
-  bath_gte: Int
+  bath: Float
+  bath_not: Float
+  bath_in: [Float!]
+  bath_not_in: [Float!]
+  bath_lt: Float
+  bath_lte: Float
+  bath_gt: Float
+  bath_gte: Float
   lotSize: Int
   lotSize_not: Int
   lotSize_in: [Int!]
@@ -244,7 +244,7 @@ input ListingUpdateDataInput {
   mainImage: String
   images: ListingUpdateimagesInput
   rooms: Int
-  bath: Int
+  bath: Float
   lotSize: Int
   houseSize: Int
   price: Int
@@ -261,7 +261,7 @@ input ListingUpdateInput {
   mainImage: String
   images: ListingUpdateimagesInput
   rooms: Int
-  bath: Int
+  bath: Float
   lotSize: Int
   houseSize: Int
   price: Int
@@ -274,7 +274,7 @@ input ListingUpdateManyDataInput {
   mainImage: String
   images: ListingUpdateimagesInput
   rooms: Int
-  bath: Int
+  bath: Float
   lotSize: Int
   houseSize: Int
   price: Int
@@ -286,7 +286,7 @@ input ListingUpdateManyMutationInput {
   mainImage: String
   images: ListingUpdateimagesInput
   rooms: Int
-  bath: Int
+  bath: Float
   lotSize: Int
   houseSize: Int
   price: Int
@@ -322,7 +322,7 @@ input ListingUpdateWithoutUserDataInput {
   mainImage: String
   images: ListingUpdateimagesInput
   rooms: Int
-  bath: Int
+  bath: Float
   lotSize: Int
   houseSize: Int
   price: Int
@@ -409,14 +409,14 @@ input ListingWhereInput {
   rooms_lte: Int
   rooms_gt: Int
   rooms_gte: Int
-  bath: Int
-  bath_not: Int
-  bath_in: [Int!]
-  bath_not_in: [Int!]
-  bath_lt: Int
-  bath_lte: Int
-  bath_gt: Int
-  bath_gte: Int
+  bath: Float
+  bath_not: Float
+  bath_in: [Float!]
+  bath_not_in: [Float!]
+  bath_lt: Float
+  bath_lte: Float
+  bath_gt: Float
+  bath_gte: Float
   lotSize: Int
   lotSize_not: Int
   lotSize_in: [Int!]
