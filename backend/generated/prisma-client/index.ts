@@ -184,6 +184,8 @@ export type ListingOrderByInput =
   | "description_DESC"
   | "mainImage_ASC"
   | "mainImage_DESC"
+  | "video_ASC"
+  | "video_DESC"
   | "rooms_ASC"
   | "rooms_DESC"
   | "bath_ASC"
@@ -216,6 +218,8 @@ export type UserOrderByInput =
   | "name_DESC"
   | "profilePicture_ASC"
   | "profilePicture_DESC"
+  | "contactEmail_ASC"
+  | "contactEmail_DESC"
   | "company_ASC"
   | "company_DESC"
   | "website_ASC"
@@ -299,6 +303,20 @@ export interface ListingWhereInput {
   mainImage_not_starts_with?: Maybe<String>;
   mainImage_ends_with?: Maybe<String>;
   mainImage_not_ends_with?: Maybe<String>;
+  video?: Maybe<String>;
+  video_not?: Maybe<String>;
+  video_in?: Maybe<String[] | String>;
+  video_not_in?: Maybe<String[] | String>;
+  video_lt?: Maybe<String>;
+  video_lte?: Maybe<String>;
+  video_gt?: Maybe<String>;
+  video_gte?: Maybe<String>;
+  video_contains?: Maybe<String>;
+  video_not_contains?: Maybe<String>;
+  video_starts_with?: Maybe<String>;
+  video_not_starts_with?: Maybe<String>;
+  video_ends_with?: Maybe<String>;
+  video_not_ends_with?: Maybe<String>;
   rooms?: Maybe<Int>;
   rooms_not?: Maybe<Int>;
   rooms_in?: Maybe<Int[] | Int>;
@@ -354,6 +372,7 @@ export interface ListingUpdateManyMutationInput {
   description?: Maybe<String>;
   mainImage?: Maybe<String>;
   images?: Maybe<ListingUpdateimagesInput>;
+  video?: Maybe<String>;
   rooms?: Maybe<Int>;
   bath?: Maybe<Float>;
   lotSize?: Maybe<Int>;
@@ -367,6 +386,7 @@ export interface ListingCreateInput {
   description: String;
   mainImage: String;
   images?: Maybe<ListingCreateimagesInput>;
+  video?: Maybe<String>;
   rooms: Int;
   bath: Float;
   lotSize: Int;
@@ -399,6 +419,7 @@ export interface UserUpdateManyMutationInput {
   password?: Maybe<String>;
   name?: Maybe<String>;
   profilePicture?: Maybe<String>;
+  contactEmail?: Maybe<String>;
   company?: Maybe<String>;
   website?: Maybe<String>;
   phone?: Maybe<String>;
@@ -422,6 +443,7 @@ export interface UserCreateWithoutListingsInput {
   password: String;
   name: String;
   profilePicture?: Maybe<String>;
+  contactEmail?: Maybe<String>;
   company?: Maybe<String>;
   website?: Maybe<String>;
   phone?: Maybe<String>;
@@ -466,6 +488,7 @@ export interface ListingUpdateInput {
   description?: Maybe<String>;
   mainImage?: Maybe<String>;
   images?: Maybe<ListingUpdateimagesInput>;
+  video?: Maybe<String>;
   rooms?: Maybe<Int>;
   bath?: Maybe<Float>;
   lotSize?: Maybe<Int>;
@@ -485,6 +508,7 @@ export interface UserCreateInput {
   password: String;
   name: String;
   profilePicture?: Maybe<String>;
+  contactEmail?: Maybe<String>;
   company?: Maybe<String>;
   website?: Maybe<String>;
   phone?: Maybe<String>;
@@ -530,6 +554,7 @@ export interface ListingCreateWithoutUserInput {
   description: String;
   mainImage: String;
   images?: Maybe<ListingCreateimagesInput>;
+  video?: Maybe<String>;
   rooms: Int;
   bath: Float;
   lotSize: Int;
@@ -542,6 +567,7 @@ export interface UserUpdateWithoutListingsDataInput {
   password?: Maybe<String>;
   name?: Maybe<String>;
   profilePicture?: Maybe<String>;
+  contactEmail?: Maybe<String>;
   company?: Maybe<String>;
   website?: Maybe<String>;
   phone?: Maybe<String>;
@@ -570,6 +596,7 @@ export interface ListingUpdateManyDataInput {
   description?: Maybe<String>;
   mainImage?: Maybe<String>;
   images?: Maybe<ListingUpdateimagesInput>;
+  video?: Maybe<String>;
   rooms?: Maybe<Int>;
   bath?: Maybe<Float>;
   lotSize?: Maybe<Int>;
@@ -648,6 +675,20 @@ export interface UserWhereInput {
   profilePicture_not_starts_with?: Maybe<String>;
   profilePicture_ends_with?: Maybe<String>;
   profilePicture_not_ends_with?: Maybe<String>;
+  contactEmail?: Maybe<String>;
+  contactEmail_not?: Maybe<String>;
+  contactEmail_in?: Maybe<String[] | String>;
+  contactEmail_not_in?: Maybe<String[] | String>;
+  contactEmail_lt?: Maybe<String>;
+  contactEmail_lte?: Maybe<String>;
+  contactEmail_gt?: Maybe<String>;
+  contactEmail_gte?: Maybe<String>;
+  contactEmail_contains?: Maybe<String>;
+  contactEmail_not_contains?: Maybe<String>;
+  contactEmail_starts_with?: Maybe<String>;
+  contactEmail_not_starts_with?: Maybe<String>;
+  contactEmail_ends_with?: Maybe<String>;
+  contactEmail_not_ends_with?: Maybe<String>;
   company?: Maybe<String>;
   company_not?: Maybe<String>;
   company_in?: Maybe<String[] | String>;
@@ -783,6 +824,20 @@ export interface ListingScalarWhereInput {
   mainImage_not_starts_with?: Maybe<String>;
   mainImage_ends_with?: Maybe<String>;
   mainImage_not_ends_with?: Maybe<String>;
+  video?: Maybe<String>;
+  video_not?: Maybe<String>;
+  video_in?: Maybe<String[] | String>;
+  video_not_in?: Maybe<String[] | String>;
+  video_lt?: Maybe<String>;
+  video_lte?: Maybe<String>;
+  video_gt?: Maybe<String>;
+  video_gte?: Maybe<String>;
+  video_contains?: Maybe<String>;
+  video_not_contains?: Maybe<String>;
+  video_starts_with?: Maybe<String>;
+  video_not_starts_with?: Maybe<String>;
+  video_ends_with?: Maybe<String>;
+  video_not_ends_with?: Maybe<String>;
   rooms?: Maybe<Int>;
   rooms_not?: Maybe<Int>;
   rooms_in?: Maybe<Int[] | Int>;
@@ -860,6 +915,7 @@ export interface ListingUpdateDataInput {
   description?: Maybe<String>;
   mainImage?: Maybe<String>;
   images?: Maybe<ListingUpdateimagesInput>;
+  video?: Maybe<String>;
   rooms?: Maybe<Int>;
   bath?: Maybe<Float>;
   lotSize?: Maybe<Int>;
@@ -873,6 +929,7 @@ export interface UserUpdateInput {
   password?: Maybe<String>;
   name?: Maybe<String>;
   profilePicture?: Maybe<String>;
+  contactEmail?: Maybe<String>;
   company?: Maybe<String>;
   website?: Maybe<String>;
   phone?: Maybe<String>;
@@ -887,6 +944,7 @@ export interface ListingUpdateWithoutUserDataInput {
   description?: Maybe<String>;
   mainImage?: Maybe<String>;
   images?: Maybe<ListingUpdateimagesInput>;
+  video?: Maybe<String>;
   rooms?: Maybe<Int>;
   bath?: Maybe<Float>;
   lotSize?: Maybe<Int>;
@@ -927,6 +985,7 @@ export interface UserPreviousValues {
   password: String;
   name: String;
   profilePicture?: String;
+  contactEmail?: String;
   company?: String;
   website?: String;
   phone?: String;
@@ -943,6 +1002,7 @@ export interface UserPreviousValuesPromise
   password: () => Promise<String>;
   name: () => Promise<String>;
   profilePicture: () => Promise<String>;
+  contactEmail: () => Promise<String>;
   company: () => Promise<String>;
   website: () => Promise<String>;
   phone: () => Promise<String>;
@@ -959,6 +1019,7 @@ export interface UserPreviousValuesSubscription
   password: () => Promise<AsyncIterator<String>>;
   name: () => Promise<AsyncIterator<String>>;
   profilePicture: () => Promise<AsyncIterator<String>>;
+  contactEmail: () => Promise<AsyncIterator<String>>;
   company: () => Promise<AsyncIterator<String>>;
   website: () => Promise<AsyncIterator<String>>;
   phone: () => Promise<AsyncIterator<String>>;
@@ -996,6 +1057,7 @@ export interface User {
   password: String;
   name: String;
   profilePicture?: String;
+  contactEmail?: String;
   company?: String;
   website?: String;
   phone?: String;
@@ -1010,6 +1072,7 @@ export interface UserPromise extends Promise<User>, Fragmentable {
   password: () => Promise<String>;
   name: () => Promise<String>;
   profilePicture: () => Promise<String>;
+  contactEmail: () => Promise<String>;
   company: () => Promise<String>;
   website: () => Promise<String>;
   phone: () => Promise<String>;
@@ -1035,6 +1098,7 @@ export interface UserSubscription
   password: () => Promise<AsyncIterator<String>>;
   name: () => Promise<AsyncIterator<String>>;
   profilePicture: () => Promise<AsyncIterator<String>>;
+  contactEmail: () => Promise<AsyncIterator<String>>;
   company: () => Promise<AsyncIterator<String>>;
   website: () => Promise<AsyncIterator<String>>;
   phone: () => Promise<AsyncIterator<String>>;
@@ -1060,6 +1124,7 @@ export interface UserNullablePromise
   password: () => Promise<String>;
   name: () => Promise<String>;
   profilePicture: () => Promise<String>;
+  contactEmail: () => Promise<String>;
   company: () => Promise<String>;
   website: () => Promise<String>;
   phone: () => Promise<String>;
@@ -1253,6 +1318,7 @@ export interface ListingPreviousValues {
   description: String;
   mainImage: String;
   images: String[];
+  video?: String;
   rooms: Int;
   bath: Float;
   lotSize: Int;
@@ -1268,6 +1334,7 @@ export interface ListingPreviousValuesPromise
   description: () => Promise<String>;
   mainImage: () => Promise<String>;
   images: () => Promise<String[]>;
+  video: () => Promise<String>;
   rooms: () => Promise<Int>;
   bath: () => Promise<Float>;
   lotSize: () => Promise<Int>;
@@ -1283,6 +1350,7 @@ export interface ListingPreviousValuesSubscription
   description: () => Promise<AsyncIterator<String>>;
   mainImage: () => Promise<AsyncIterator<String>>;
   images: () => Promise<AsyncIterator<String[]>>;
+  video: () => Promise<AsyncIterator<String>>;
   rooms: () => Promise<AsyncIterator<Int>>;
   bath: () => Promise<AsyncIterator<Float>>;
   lotSize: () => Promise<AsyncIterator<Int>>;
@@ -1321,6 +1389,7 @@ export interface Listing {
   description: String;
   mainImage: String;
   images: String[];
+  video?: String;
   rooms: Int;
   bath: Float;
   lotSize: Int;
@@ -1334,6 +1403,7 @@ export interface ListingPromise extends Promise<Listing>, Fragmentable {
   description: () => Promise<String>;
   mainImage: () => Promise<String>;
   images: () => Promise<String[]>;
+  video: () => Promise<String>;
   rooms: () => Promise<Int>;
   bath: () => Promise<Float>;
   lotSize: () => Promise<Int>;
@@ -1350,6 +1420,7 @@ export interface ListingSubscription
   description: () => Promise<AsyncIterator<String>>;
   mainImage: () => Promise<AsyncIterator<String>>;
   images: () => Promise<AsyncIterator<String[]>>;
+  video: () => Promise<AsyncIterator<String>>;
   rooms: () => Promise<AsyncIterator<Int>>;
   bath: () => Promise<AsyncIterator<Float>>;
   lotSize: () => Promise<AsyncIterator<Int>>;
@@ -1366,6 +1437,7 @@ export interface ListingNullablePromise
   description: () => Promise<String>;
   mainImage: () => Promise<String>;
   images: () => Promise<String[]>;
+  video: () => Promise<String>;
   rooms: () => Promise<Int>;
   bath: () => Promise<Float>;
   lotSize: () => Promise<Int>;

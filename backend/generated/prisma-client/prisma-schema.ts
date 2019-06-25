@@ -24,6 +24,7 @@ type Listing {
   description: String!
   mainImage: String!
   images: [String!]!
+  video: String
   rooms: Int!
   bath: Float!
   lotSize: Int!
@@ -48,6 +49,7 @@ input ListingCreateInput {
   description: String!
   mainImage: String!
   images: ListingCreateimagesInput
+  video: String
   rooms: Int!
   bath: Float!
   lotSize: Int!
@@ -72,6 +74,7 @@ input ListingCreateWithoutUserInput {
   description: String!
   mainImage: String!
   images: ListingCreateimagesInput
+  video: String
   rooms: Int!
   bath: Float!
   lotSize: Int!
@@ -93,6 +96,8 @@ enum ListingOrderByInput {
   description_DESC
   mainImage_ASC
   mainImage_DESC
+  video_ASC
+  video_DESC
   rooms_ASC
   rooms_DESC
   bath_ASC
@@ -111,6 +116,7 @@ type ListingPreviousValues {
   description: String!
   mainImage: String!
   images: [String!]!
+  video: String
   rooms: Int!
   bath: Float!
   lotSize: Int!
@@ -175,6 +181,20 @@ input ListingScalarWhereInput {
   mainImage_not_starts_with: String
   mainImage_ends_with: String
   mainImage_not_ends_with: String
+  video: String
+  video_not: String
+  video_in: [String!]
+  video_not_in: [String!]
+  video_lt: String
+  video_lte: String
+  video_gt: String
+  video_gte: String
+  video_contains: String
+  video_not_contains: String
+  video_starts_with: String
+  video_not_starts_with: String
+  video_ends_with: String
+  video_not_ends_with: String
   rooms: Int
   rooms_not: Int
   rooms_in: [Int!]
@@ -243,6 +263,7 @@ input ListingUpdateDataInput {
   description: String
   mainImage: String
   images: ListingUpdateimagesInput
+  video: String
   rooms: Int
   bath: Float
   lotSize: Int
@@ -260,6 +281,7 @@ input ListingUpdateInput {
   description: String
   mainImage: String
   images: ListingUpdateimagesInput
+  video: String
   rooms: Int
   bath: Float
   lotSize: Int
@@ -273,6 +295,7 @@ input ListingUpdateManyDataInput {
   description: String
   mainImage: String
   images: ListingUpdateimagesInput
+  video: String
   rooms: Int
   bath: Float
   lotSize: Int
@@ -285,6 +308,7 @@ input ListingUpdateManyMutationInput {
   description: String
   mainImage: String
   images: ListingUpdateimagesInput
+  video: String
   rooms: Int
   bath: Float
   lotSize: Int
@@ -321,6 +345,7 @@ input ListingUpdateWithoutUserDataInput {
   description: String
   mainImage: String
   images: ListingUpdateimagesInput
+  video: String
   rooms: Int
   bath: Float
   lotSize: Int
@@ -401,6 +426,20 @@ input ListingWhereInput {
   mainImage_not_starts_with: String
   mainImage_ends_with: String
   mainImage_not_ends_with: String
+  video: String
+  video_not: String
+  video_in: [String!]
+  video_not_in: [String!]
+  video_lt: String
+  video_lte: String
+  video_gt: String
+  video_gte: String
+  video_contains: String
+  video_not_contains: String
+  video_starts_with: String
+  video_not_starts_with: String
+  video_ends_with: String
+  video_not_ends_with: String
   rooms: Int
   rooms_not: Int
   rooms_in: [Int!]
@@ -601,6 +640,7 @@ type User {
   password: String!
   name: String!
   profilePicture: String
+  contactEmail: String
   company: String
   website: String
   phone: String
@@ -622,6 +662,7 @@ input UserCreateInput {
   password: String!
   name: String!
   profilePicture: String
+  contactEmail: String
   company: String
   website: String
   phone: String
@@ -646,6 +687,7 @@ input UserCreateWithoutListingsInput {
   password: String!
   name: String!
   profilePicture: String
+  contactEmail: String
   company: String
   website: String
   phone: String
@@ -670,6 +712,8 @@ enum UserOrderByInput {
   name_DESC
   profilePicture_ASC
   profilePicture_DESC
+  contactEmail_ASC
+  contactEmail_DESC
   company_ASC
   company_DESC
   website_ASC
@@ -688,6 +732,7 @@ type UserPreviousValues {
   password: String!
   name: String!
   profilePicture: String
+  contactEmail: String
   company: String
   website: String
   phone: String
@@ -719,6 +764,7 @@ input UserUpdateInput {
   password: String
   name: String
   profilePicture: String
+  contactEmail: String
   company: String
   website: String
   phone: String
@@ -733,6 +779,7 @@ input UserUpdateManyMutationInput {
   password: String
   name: String
   profilePicture: String
+  contactEmail: String
   company: String
   website: String
   phone: String
@@ -757,6 +804,7 @@ input UserUpdateWithoutListingsDataInput {
   password: String
   name: String
   profilePicture: String
+  contactEmail: String
   company: String
   website: String
   phone: String
@@ -841,6 +889,20 @@ input UserWhereInput {
   profilePicture_not_starts_with: String
   profilePicture_ends_with: String
   profilePicture_not_ends_with: String
+  contactEmail: String
+  contactEmail_not: String
+  contactEmail_in: [String!]
+  contactEmail_not_in: [String!]
+  contactEmail_lt: String
+  contactEmail_lte: String
+  contactEmail_gt: String
+  contactEmail_gte: String
+  contactEmail_contains: String
+  contactEmail_not_contains: String
+  contactEmail_starts_with: String
+  contactEmail_not_starts_with: String
+  contactEmail_ends_with: String
+  contactEmail_not_ends_with: String
   company: String
   company_not: String
   company_in: [String!]

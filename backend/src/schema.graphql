@@ -29,6 +29,14 @@ type Mutation {
   signup(email: String!, password: String!, name: String!): User!
   signin(email: String!, password: String!): User!
   signout: SuccessMessage
+  updateUser(
+    name: String
+    phone: String
+    company: String
+    website: String
+    profilePicture: String
+    contactEmail: String,
+    id: ID!): User
   requestReset(email: String!): SuccessMessage
   resetPassword(resetToken: String!, password: String!, confirmPassword: String!): User!
 }
@@ -45,6 +53,11 @@ type User {
   id: ID!
   name: String!
   email: String!
+  profilePicture: String
+  company: String  
+  website: String
+  contactEmail: String
+  phone: String 
   userListings: [Listing!]!
   permissions: [Permission!]!
 }

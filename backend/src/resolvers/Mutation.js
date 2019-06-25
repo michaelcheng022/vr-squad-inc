@@ -133,6 +133,23 @@ const Mutations = {
     // 4. Return the message
     return { message: 'Thanks!' };
   },
+  updateUser(parent, args, ctx, info) {
+    // first take a copy of the updates
+    const updates = { ...args };
+    // remove the ID from the updates
+    delete updates.id;
+    console.log(args.id);
+    // run the update method
+    return ctx.db.mutation.updateUser(
+      {
+        data: updates,
+        where: {
+          id: args.id,
+        },
+      },
+      info
+    );
+  },
   async resetPassword(parent, args, ctx, info) {
     // 1. check if the passwords match
     if (args.password !== args.confirmPassword) {

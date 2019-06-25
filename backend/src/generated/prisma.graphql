@@ -1,5 +1,5 @@
 # source: https://us1.prisma.sh/michael-cheng-639bf1/vr-squad-inc/dev
-# timestamp: Mon Jun 24 2019 12:40:30 GMT-0700 (Pacific Daylight Time)
+# timestamp: Tue Jun 25 2019 12:11:54 GMT-0700 (Pacific Daylight Time)
 
 type AggregateListing {
   count: Int!
@@ -24,6 +24,7 @@ type Listing implements Node {
   description: String!
   mainImage: String!
   images: [String!]!
+  video: String
   rooms: Int!
   bath: Float!
   lotSize: Int!
@@ -51,6 +52,7 @@ input ListingCreateInput {
   address: String!
   description: String!
   mainImage: String!
+  video: String
   rooms: Int!
   bath: Float!
   lotSize: Int!
@@ -88,6 +90,8 @@ enum ListingOrderByInput {
   description_DESC
   mainImage_ASC
   mainImage_DESC
+  video_ASC
+  video_DESC
   rooms_ASC
   rooms_DESC
   bath_ASC
@@ -106,6 +110,7 @@ type ListingPreviousValues {
   description: String!
   mainImage: String!
   images: [String!]!
+  video: String
   rooms: Int!
   bath: Float!
   lotSize: Int!
@@ -282,6 +287,46 @@ input ListingScalarWhereInput {
 
   """All values not ending with the given string."""
   mainImage_not_ends_with: String
+  video: String
+
+  """All values that are not equal to given value."""
+  video_not: String
+
+  """All values that are contained in given list."""
+  video_in: [String!]
+
+  """All values that are not contained in given list."""
+  video_not_in: [String!]
+
+  """All values less than the given value."""
+  video_lt: String
+
+  """All values less than or equal the given value."""
+  video_lte: String
+
+  """All values greater than the given value."""
+  video_gt: String
+
+  """All values greater than or equal the given value."""
+  video_gte: String
+
+  """All values containing the given string."""
+  video_contains: String
+
+  """All values not containing the given string."""
+  video_not_contains: String
+
+  """All values starting with the given string."""
+  video_starts_with: String
+
+  """All values not starting with the given string."""
+  video_not_starts_with: String
+
+  """All values ending with the given string."""
+  video_ends_with: String
+
+  """All values not ending with the given string."""
+  video_not_ends_with: String
   rooms: Int
 
   """All values that are not equal to given value."""
@@ -437,6 +482,7 @@ input ListingUpdateDataInput {
   address: String
   description: String
   mainImage: String
+  video: String
   rooms: Int
   bath: Float
   lotSize: Int
@@ -454,6 +500,7 @@ input ListingUpdateInput {
   address: String
   description: String
   mainImage: String
+  video: String
   rooms: Int
   bath: Float
   lotSize: Int
@@ -467,6 +514,7 @@ input ListingUpdateManyDataInput {
   address: String
   description: String
   mainImage: String
+  video: String
   rooms: Int
   bath: Float
   lotSize: Int
@@ -491,6 +539,7 @@ input ListingUpdateManyMutationInput {
   address: String
   description: String
   mainImage: String
+  video: String
   rooms: Int
   bath: Float
   lotSize: Int
@@ -696,6 +745,46 @@ input ListingWhereInput {
 
   """All values not ending with the given string."""
   mainImage_not_ends_with: String
+  video: String
+
+  """All values that are not equal to given value."""
+  video_not: String
+
+  """All values that are contained in given list."""
+  video_in: [String!]
+
+  """All values that are not contained in given list."""
+  video_not_in: [String!]
+
+  """All values less than the given value."""
+  video_lt: String
+
+  """All values less than or equal the given value."""
+  video_lte: String
+
+  """All values greater than the given value."""
+  video_gt: String
+
+  """All values greater than or equal the given value."""
+  video_gte: String
+
+  """All values containing the given string."""
+  video_contains: String
+
+  """All values not containing the given string."""
+  video_not_contains: String
+
+  """All values starting with the given string."""
+  video_starts_with: String
+
+  """All values not starting with the given string."""
+  video_not_starts_with: String
+
+  """All values ending with the given string."""
+  video_ends_with: String
+
+  """All values not ending with the given string."""
+  video_not_ends_with: String
   rooms: Int
 
   """All values that are not equal to given value."""
@@ -1042,6 +1131,7 @@ type User implements Node {
   password: String!
   name: String!
   profilePicture: String
+  contactEmail: String
   company: String
   website: String
   phone: String
@@ -1067,6 +1157,7 @@ input UserCreateInput {
   password: String!
   name: String!
   profilePicture: String
+  contactEmail: String
   company: String
   website: String
   phone: String
@@ -1105,6 +1196,8 @@ enum UserOrderByInput {
   name_DESC
   profilePicture_ASC
   profilePicture_DESC
+  contactEmail_ASC
+  contactEmail_DESC
   company_ASC
   company_DESC
   website_ASC
@@ -1123,6 +1216,7 @@ type UserPreviousValues {
   password: String!
   name: String!
   profilePicture: String
+  contactEmail: String
   company: String
   website: String
   phone: String
@@ -1175,6 +1269,7 @@ input UserUpdateDataInput {
   password: String
   name: String
   profilePicture: String
+  contactEmail: String
   company: String
   website: String
   phone: String
@@ -1189,6 +1284,7 @@ input UserUpdateInput {
   password: String
   name: String
   profilePicture: String
+  contactEmail: String
   company: String
   website: String
   phone: String
@@ -1203,6 +1299,7 @@ input UserUpdateManyMutationInput {
   password: String
   name: String
   profilePicture: String
+  contactEmail: String
   company: String
   website: String
   phone: String
@@ -1436,6 +1533,46 @@ input UserWhereInput {
 
   """All values not ending with the given string."""
   profilePicture_not_ends_with: String
+  contactEmail: String
+
+  """All values that are not equal to given value."""
+  contactEmail_not: String
+
+  """All values that are contained in given list."""
+  contactEmail_in: [String!]
+
+  """All values that are not contained in given list."""
+  contactEmail_not_in: [String!]
+
+  """All values less than the given value."""
+  contactEmail_lt: String
+
+  """All values less than or equal the given value."""
+  contactEmail_lte: String
+
+  """All values greater than the given value."""
+  contactEmail_gt: String
+
+  """All values greater than or equal the given value."""
+  contactEmail_gte: String
+
+  """All values containing the given string."""
+  contactEmail_contains: String
+
+  """All values not containing the given string."""
+  contactEmail_not_contains: String
+
+  """All values starting with the given string."""
+  contactEmail_starts_with: String
+
+  """All values not starting with the given string."""
+  contactEmail_not_starts_with: String
+
+  """All values ending with the given string."""
+  contactEmail_ends_with: String
+
+  """All values not ending with the given string."""
+  contactEmail_not_ends_with: String
   company: String
 
   """All values that are not equal to given value."""

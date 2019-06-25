@@ -13,6 +13,7 @@ type User {
   password: String!
   name: String!
   profilePicture: String
+  contactEmail: String
   company: String  
   website: String
   phone: String 
@@ -28,6 +29,7 @@ type Listing {
   description: String!
   mainImage: String!
   images: [String!] @scalarList(strategy: RELATION)
+  video: String
   rooms: Int!
   bath: Float!
   lotSize: Int!

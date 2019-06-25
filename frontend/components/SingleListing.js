@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import gql from 'graphql-tag';
 import { Query } from 'react-apollo';
-import ImageGallery from 'react-image-gallery';
 import Link from 'next/link';
 import Error from './ErrorMessage';
 import styled from 'styled-components';
 import Head from 'next/head';
+import ImageGallery from './ImageGallery';
 import formatMoney from '../lib/formatMoney';
 import DeleteItem from './DeleteItem';
 
 
 const SingleListingStyles = styled.div`
   max-width: 1200px;
+  min-width: 300px;
   margin: 2rem auto;
   box-shadow: ${props => props.theme.bs};
   display: grid;
@@ -103,10 +104,6 @@ class SingleListing extends Component {
           if (loading) return <p>Loading...</p>;
           if (!data.listing) return <p>No listing Found for {this.props.id}</p>;
           const listing = data.listing;
-          const images = listing.images.map(e => {
-            let obj = {original: e}
-            return obj
-          })
           return (
             <SingleListingStyles>
               <Head>
@@ -131,7 +128,7 @@ class SingleListing extends Component {
                 </div>
                 <div className="section">
                   <h3><span>GALLERY</span></h3>
-                  <ImageGallery items={images} />
+                  <ImageGallery images={listing.images} />
                 </div>
                 <div className="button-container">
                   <Link
