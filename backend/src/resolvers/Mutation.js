@@ -138,7 +138,6 @@ const Mutations = {
     const updates = { ...args };
     // remove the ID from the updates
     delete updates.id;
-    console.log(args.id);
     // run the update method
     return ctx.db.mutation.updateUser(
       {

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Mutation, Query } from 'react-apollo';
 import gql from 'graphql-tag';
 import Router from 'next/router';
+import Link from 'next/link';
 import Form from './styles/Form';
 import Error from './ErrorMessage';
 
@@ -14,6 +15,7 @@ const CURRENT_USER_QUERY = gql`
       company 
       website 
       phone
+      contactEmail
     }
   }
 `;
@@ -25,6 +27,7 @@ const UPDATE_USER_MUTATION = gql`
     $company: String
     $website: String 
     $phone: String
+    $contactEmail: String
     $id: ID!
   ) {
     updateUser(
@@ -33,6 +36,7 @@ const UPDATE_USER_MUTATION = gql`
       company: $company
       website: $website
       phone: $phone
+      contactEmail: $contactEmail
       id: $id
     ) {
         name
@@ -40,6 +44,7 @@ const UPDATE_USER_MUTATION = gql`
         company
         website
         phone 
+        contactEmail
     }
   }
 `;
@@ -109,7 +114,7 @@ class UpdateUser extends Component {
                         type="text"
                         name="company"
                         placeholder="company"
-                        defaultValue={me.name}
+                        defaultValue={me.company}
                         onChange={this.handleChange}
                       />
                     </label>

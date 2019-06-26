@@ -20,12 +20,33 @@ const MyAccountStyles = styled.div`
 
   }
   .picture-container {
-    display: flex;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .picture-container img {
+    display: block;
+    margin: 0 auto;
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
     border: 1px solid black;
   }
   .details-container {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section p {
+    margin: auto 0 auto 50px;
+    
   }
   .btn {
     display: inline-block;
@@ -58,7 +79,7 @@ const CURRENT_USER_QUERY = gql`
       company 
       website 
       phone
-      permissions
+      contactEmail
     }
   }
 `;
@@ -85,22 +106,28 @@ class MyAccount extends Component {
                 </div>
                 <div className="details-container">
                   <div className="section">
-                    <h3>NAME: {me.name}</h3>
+                    <h4>NAME </h4>
+                    <p>{me.name}</p>
                   </div>
                   <div className="section">
-                    <h3>USERNAME: {me.email}</h3>
+                    <h4>USERNAME</h4>
+                    <p>{me.email}</p>
                   </div>
                   <div className="section">
-                    <h3>PHONE: {me.phone}</h3>
+                    <h4>PHONE</h4>
+                    <p>{me.phone}</p>
                   </div>
                   <div className="section">
-                    <h3>COMPANY: {me.company}</h3>
+                    <h4>COMPANY</h4>
+                    <p>{me.company}</p>
                   </div>
                   <div className="section">
-                    <h3>WEBSITE: {me.website}</h3>
+                    <h4>WEBSITE</h4>
+                    <p>{me.website}</p>
                   </div>
                   <div className="section">
-                    <h3>CONTACT-EMAIL: {me.contactEmail}</h3>
+                    <h4>CONTACT-EMAIL</h4>
+                    <p>{me.contactEmail}</p>
                   </div>
                 </div>
                 <div className="button-container">
