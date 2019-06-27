@@ -17,7 +17,7 @@ Router.onRouteChangeError = () => {
 };
 
 const Logo = styled.h1`
-  font-size: 4rem;
+  font-size: 1.5rem;
   margin-left: 2rem;
   position: relative;
   z-index: 2;
@@ -29,6 +29,7 @@ const Logo = styled.h1`
     text-decoration: none;
   }
   @media (max-width: 1300px) {
+    font-size: 2rem;
     text-align: center;
   }
 `;

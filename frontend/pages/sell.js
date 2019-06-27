@@ -1,9 +1,9 @@
-import CreateItem from '../components/CreateItem';
+import CreateListing from '../components/CreateListing';
 import PleaseSignIn from '../components/PleaseSignIn';
 
 const Sell = props => (
   <PleaseSignIn>
-    <CreateItem />
+    <CreateListing />
   </PleaseSignIn>
 ); 
 

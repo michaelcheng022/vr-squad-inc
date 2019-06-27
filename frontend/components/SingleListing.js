@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import Head from 'next/head';
 import ImageGallery from './ImageGallery';
 import formatMoney from '../lib/formatMoney';
-import DeleteItem from './DeleteItem';
+import DeleteListing from './DeleteListing';
 
 const SingleListingStyles = styled.div`
   @media (max-width: 400px) {
@@ -240,7 +240,7 @@ class SingleListing extends Component {
                   >
                     <button className="btn btn-edit">EDIT</button>
                   </Link>
-                  <button className="btn btn-delete"><DeleteItem id={listing.id}>DELETE</DeleteItem></button>
+                  <button className="btn btn-delete"><DeleteListing id={listing.id}>DELETE</DeleteListing></button>
               </div>
               </div>
             </SingleListingStyles>

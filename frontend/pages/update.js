@@ -1,8 +1,8 @@
-import UpdateItem from '../components/UpdateItem';
+import UpdateListing from '../components/UpdateListing';
 
 const Update = ({ query }) => (
   <div>
-    <UpdateItem id={query.id} />
+    <UpdateListing id={query.id} />
   </div>
 );
 

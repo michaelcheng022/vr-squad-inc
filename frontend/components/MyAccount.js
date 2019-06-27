@@ -11,6 +11,8 @@ const MyAccountStyles = styled.div`
   min-width: 300px;
   margin: 2rem auto;
   box-shadow: ${props => props.theme.bs};
+  background: rgba(0,0,0,0.02);
+  border: 5px solid white;
   display: flex;
   font-family: Arial;
   justify-content: center;

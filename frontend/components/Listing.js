@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 import Title from './styles/Title';
 import ItemStyles from './styles/ItemStyles';
-import DeleteItem from './DeleteItem';
+import DeleteListing from './DeleteListing';
 
 export default class Listing extends Component {
   static propTypes = {
@@ -35,7 +35,7 @@ export default class Listing extends Component {
           >
             <a>Edit ✏️</a>
           </Link>
-          <DeleteItem id={item.id}>Delete This Item</DeleteItem>
+          <DeleteListing id={item.id}>Delete This Item</DeleteListing>
         </div>
       </ItemStyles>
     );
