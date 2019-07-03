@@ -1,7 +1,7 @@
 {
-  "name": "sick-fits-frontend",
+  "name": "real-estate-cms",
   "version": "1.0.0",
-  "description": "Sick Fits! An example React, GraphQL, Next and Apollo",
+  "description": "Real Estate Content Management System using React, GraphQL, Prisma",
   "main": "index.js",
   "scripts": {
     "dev": "next -p 4444",
@@ -36,7 +36,9 @@
     "react-grid-gallery": "^0.5.5",
     "react-stripe-checkout": "^2.6.3",
     "react-transition-group": "^2.5.0",
+    "react-youtube": "^7.9.0",
     "styled-components": "^3.4.9",
+    "video-react": "^0.14.0",
     "waait": "^1.0.2"
   },
   "devDependencies": {

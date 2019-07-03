@@ -6,6 +6,11 @@ const Meta = () => (
     <meta charSet="utf-8" />
     <link rel="shortcut icon" href="/static/favicon.png" />
     <link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
+    <link
+      rel="stylesheet"
+      href="https://video-react.github.io/assets/video-react.css"
+    />
+    
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet" />
     <title>VR SQUAD INC</title>
   </Head>

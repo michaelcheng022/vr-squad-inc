@@ -64,7 +64,7 @@ class Listings extends Component {
             if (loading) return <p>Loading...</p>;
             if (error) return <p>Error: {error.message}</p>;
             return (
-              <ItemsList>{data.listings.map(listing => <Listing item={listing} />)}</ItemsList>
+              <ItemsList>{data.listings.map(listing => <Listing key={listing.id} item={listing} />)}</ItemsList>
             );
           }}
         </Query>

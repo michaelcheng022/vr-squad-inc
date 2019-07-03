@@ -2,11 +2,14 @@ import React, { Component } from 'react';
 import gql from 'graphql-tag';
 import { Query } from 'react-apollo';
 import Link from 'next/link';
+import { Player } from 'video-react';
 import Error from './ErrorMessage';
 import styled from 'styled-components';
 import Head from 'next/head';
 import ImageGallery from './ImageGallery';
+import Map from './Map';
 import formatMoney from '../lib/formatMoney';
+import formatNumber from '../lib/formatNumber';
 import DeleteListing from './DeleteListing';
 
 const SingleListingStyles = styled.div`
@@ -134,6 +137,28 @@ const SingleListingStyles = styled.div`
     padding:0 10px; 
   }
 
+  .section ul {
+    font-size: 20px;
+    list-style: circle
+  }
+  .section ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .section ul li span{
+    margin: auto 0 auto 50px;
+  }
+
+  .video-container {
+    display:block;
+    margin: 0 auto;
+    padding: 3rem;
+    @media (min-width: 1300px) {
+      width: 800px;
+      padding: 4rem;
+    }
+  }
 `;
 
 const SINGLE_LISTING_QUERY = gql`
@@ -144,6 +169,7 @@ const SINGLE_LISTING_QUERY = gql`
       description
       mainImage
       images
+      video
       rooms
       bath
       lotSize
@@ -195,15 +221,28 @@ class SingleListing extends Component {
                   <p className="description">{listing.description}</p>
                 </div>
                 <div className="section">
-                  <h3><span>SPECIFICATIONS</span></h3>
-                  <ul>
-                    <li>PRICE: {formatMoney(listing.price)}</li>
-                    <li>{listing.rooms} BED</li>
-                    <li>{listing.bath} BATH</li>
-                    <li>HOUSE SIZE: {listing.houseSize} SQ FT</li>
-                    <li>LOT SIZE: {listing.lotSize} SQFT</li>
-                  </ul>
+                  <h3><span>DETAILS</span></h3>
+                  <div className="specs">
+                    <ul>
+                      <li>PRICE: <span></span>{formatMoney(listing.price)}</li>
+                      <li>HOUSE-SIZE: <span>{formatNumber(listing.houseSize)} sqft</span></li>
+                      <li>LOT-SIZE: <span>{formatNumber(listing.lotSize)} sqft</span></li>
+                      <li>BEDROOMS: <span>{listing.rooms}</span></li>
+                      <li>BATHROOMS: <span>{listing.bath} BATH</span></li>
+                    </ul>
+                  </div>
+                  
                 </div>
+                {listing.video ?
+                  <div className="section">
+                    <h3><span>VIDEO</span></h3>
+                    <div className="video-container">
+                      <Player>
+                        <source src={listing.video} />
+                      </Player>
+                    </div>
+                  </div>
+                : null}
                 <div className="section">
                   <h3><span>GALLERY</span></h3>
                   <ImageGallery images={listing.images} />
@@ -230,7 +269,6 @@ class SingleListing extends Component {
                     </div>
                   )}}
                 </Query>
-                
                 <div className="button-container">
                   <Link
                     href={{

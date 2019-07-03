@@ -10,6 +10,7 @@ type Mutation {
     description: String!
     mainImage: String!
     images: ListingCreateimagesInput 
+    video: String
     rooms: Int!
     bath: Float!
     lotSize: Int!
@@ -20,6 +21,7 @@ type Mutation {
     description: String
     mainImage: String
     images: ListingUpdateimagesInput
+    video: String
     rooms: Int
     bath: Float
     lotSize: Int
@@ -43,7 +45,7 @@ type Mutation {
 
 type Query {
   listings(where: ListingWhereInput, orderBy: ListingOrderByInput, skip: Int, first: Int): [Listing]!
-  listing(where: ListingWhereUniqueInput!): Listing
+  listing(where: ListingWhereUniqueInput): Listing
   listingsConnection(where: ListingWhereInput): ListingConnection!
   me: User
   users: [User]!

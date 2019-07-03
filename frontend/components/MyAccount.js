@@ -108,27 +108,27 @@ class MyAccount extends Component {
                 </div>
                 <div className="details-container">
                   <div className="section">
-                    <h4>NAME </h4>
+                    <h4>NAME: </h4>
                     <p>{me.name}</p>
                   </div>
                   <div className="section">
-                    <h4>USERNAME</h4>
+                    <h4>USERNAME:</h4>
                     <p>{me.email}</p>
                   </div>
                   <div className="section">
-                    <h4>PHONE</h4>
+                    <h4>PHONE:</h4>
                     <p>{me.phone}</p>
                   </div>
                   <div className="section">
-                    <h4>COMPANY</h4>
+                    <h4>COMPANY:</h4>
                     <p>{me.company}</p>
                   </div>
                   <div className="section">
-                    <h4>WEBSITE</h4>
+                    <h4>WEBSITE:</h4>
                     <p>{me.website}</p>
                   </div>
                   <div className="section">
-                    <h4>CONTACT-EMAIL</h4>
+                    <h4>CONTACT-EMAIL:</h4>
                     <p>{me.contactEmail}</p>
                   </div>
                 </div>

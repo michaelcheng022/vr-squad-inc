@@ -4,9 +4,10 @@ const jwt = require('jsonwebtoken');
 require('dotenv').config({ path: 'variables.env' });
 const createServer = require('./createServer');
 const db = require('./db');
-
+// const cors = require('cors');
 const server = createServer();
 
+// server.use(cors());
 server.express.use(cookieParser());
 
 // decode the JWT so we can get the user Id on each request
@@ -38,6 +39,7 @@ server.start(
     cors: {
       credentials: true,
       origin: process.env.FRONTEND_URL,
+
     },
   },
   deets => {

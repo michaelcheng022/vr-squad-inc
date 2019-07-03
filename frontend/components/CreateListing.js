@@ -135,6 +135,19 @@ class CreateListing extends Component {
                 />
               </label>
 
+              <label htmlFor="video">
+                Video
+                <input
+                  type="name"
+                  id="video"
+                  name="video"
+                  placeholder="Video URL"
+                  required
+                
+                  onChange={this.handleChange}
+                />
+              </label>
+
               <label htmlFor="rooms">
                 Rooms
                 <input

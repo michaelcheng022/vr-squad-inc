@@ -258,17 +258,25 @@ var Meta = function Meta() {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
-    href: "https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap",
     rel: "stylesheet",
+    href: "https://video-react.github.io/assets/video-react.css",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+    href: "https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap",
+    rel: "stylesheet",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 15
     },
     __self: this
   }, "VR SQUAD INC"));

@@ -209,7 +209,10 @@ function (_Document) {
   }]);
 
   return MyDocument;
-}(next_document__WEBPACK_IMPORTED_MODULE_1___default.a);
+}(next_document__WEBPACK_IMPORTED_MODULE_1___default.a); // <script async defer
+// src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDef-iJjhHH0ruDDbgXhPBqRXZ8QiJmwrw&callback=initMap">
+// </script>
+
 
 
 

@@ -13,6 +13,7 @@ const SINGLE_LISTING_QUERY = gql`
       description
       mainImage
       images
+      video
       rooms
       bath
       lotSize
@@ -28,6 +29,7 @@ const UPDATE_LISTING_MUTATION = gql`
     $description: String
     $mainImage: String
     $images: ListingUpdateimagesInput
+    $video: String
     $rooms: Int
     $bath: Float
     $lotSize: Int
@@ -40,6 +42,7 @@ const UPDATE_LISTING_MUTATION = gql`
       address: $address
       mainImage: $mainImage
       images: $images
+      video: $video
       description: $description
       rooms: $rooms
       bath: $bath
@@ -51,6 +54,7 @@ const UPDATE_LISTING_MUTATION = gql`
         description
         mainImage
         images
+        video
         rooms
         bath
         lotSize
@@ -154,6 +158,19 @@ class UpdateListing extends Component {
                         required
                         defaultValue={data.listing.images.join(' + ')}
                         onChange={this.handleImages}
+                      />
+                    </label>
+
+                    <label htmlFor="video">
+                      Video
+                      <input
+                        type="name"
+                        id="video"
+                        name="video"
+                        placeholder="Video URL"
+                        required
+                        defaultValue={data.listing.video}
+                        onChange={this.handleChange}
                       />
                     </label>
 
