@@ -1,4 +1,4 @@
 
 /node_modules/
-/primsa.yml/
-/variables.env/
+primsa.yml
+variables.env
