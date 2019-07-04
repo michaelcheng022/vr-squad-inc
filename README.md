@@ -1,4 +1,4 @@
-Real-Estate Content Mangement System (CMS)
+## Real-Estate Content Mangement System (CMS)
 
 A content mangement system created with React, GraphQL, Apollo-Client, GraphQL Yoga Server, and with a Prisma hosted PostgreSQL
 database.
