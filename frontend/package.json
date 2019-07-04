@@ -1,5 +1,5 @@
 {
-  "name": "real-estate-cms",
+  "name": "real-estate-cms-frontend",
   "version": "1.0.0",
   "description": "Real Estate Content Management System using React, GraphQL, Prisma",
   "main": "index.js",
