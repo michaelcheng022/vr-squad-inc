@@ -15,11 +15,11 @@ database.
 
 
 ## Screenshots
-![image](./screen-shots/cms-2.png)
+![image](./screen-shots/cms-2.png
 ![image](./screen-shots/cms-3.png)
-![image](./screen-shots/cms-gallery.png)
+##
 ![image](./screen-shots/cms-5.png)
-![image](./screen-shots/cms-account.png)
+![image](./screen-shots/cms-gallery.png)
 
 
 ## To Be Implemented
