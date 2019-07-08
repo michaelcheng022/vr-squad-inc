@@ -3,6 +3,7 @@
 A content mangement system created with React, GraphQL, Apollo-Client, GraphQL Yoga Server, and with a Prisma hosted PostgreSQL
 database.
 
+![Screenshot](./cms-1.png)
 
 ## Features
 * Ability to log in and create Real-Estate listings
