@@ -8,10 +8,10 @@ import styled from 'styled-components';
 import Head from 'next/head';
 import ImageGallery from './ImageGallery';
 import Map from './Map';
-import formatMoney from '../lib/formatMoney';
 import formatNumber from '../lib/formatNumber';
 import DeleteListing from './DeleteListing';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome, faBed, faToilet, faSign, faRulerCombined } from '@fortawesome/free-solid-svg-icons'
 const SingleListingStyles = styled.div`
   @media (max-width: 400px) {
     margin: 0;
@@ -139,15 +139,16 @@ const SingleListingStyles = styled.div`
 
   .section ul {
     font-size: 20px;
-    list-style: circle
-  }
-  .section ul li {
+    list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 50px;
+    margin-left: 0;
   }
-  .section ul li span{
-    margin: auto 0 auto 50px;
+
+  .section ul li{
+    margin: 0 auto;
   }
 
   .video-container {
@@ -224,11 +225,31 @@ class SingleListing extends Component {
                   <h3><span>DETAILS</span></h3>
                   <div className="specs">
                     <ul>
-                      <li>PRICE: <span></span>{formatMoney(listing.price)}</li>
-                      <li>HOUSE-SIZE: <span>{formatNumber(listing.houseSize)} sqft</span></li>
-                      <li>LOT-SIZE: <span>{formatNumber(listing.lotSize)} sqft</span></li>
-                      <li>BEDROOMS: <span>{listing.rooms}</span></li>
-                      <li>BATHROOMS: <span>{listing.bath} BATH</span></li>
+                      <li>
+                        <FontAwesomeIcon icon={faSign} size="3x" />
+                        <h4>$ {formatNumber(listing.price)}</h4>
+                        <p>price</p>
+                      </li>
+                      <li>
+                        <FontAwesomeIcon icon={faHome} size="3x"/>
+                        <h4>{formatNumber(listing.houseSize)} sq/ft</h4>
+                        <p>house-size</p>
+                      </li>
+                      <li>
+                        <FontAwesomeIcon icon={faRulerCombined} size="3x"/>
+                        <h4>{formatNumber(listing.lotSize)} sq/ft</h4>
+                        <p>lot-size</p>
+                      </li>
+                      <li>
+                        <FontAwesomeIcon icon={faBed} size="3x"/>
+                        <h4>{listing.rooms}</h4>
+                        <p>bedrooms</p>
+                      </li>
+                      <li>
+                        <FontAwesomeIcon icon={faToilet} size="3x"/>
+                        <h4>{listing.bath}</h4>
+                        <p>bath</p>
+                      </li>
                     </ul>
                   </div>
                   

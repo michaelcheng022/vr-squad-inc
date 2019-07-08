@@ -32,12 +32,13 @@ const MyAccountStyles = styled.div`
     width: 240px;
     height: 240px;
     object-fit: cover;
-    border: 1px solid black;
+    border: 2px solid black;
   }
   .details-container {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin: 20px;
+    padding: 10px;
   }
 
   .section {

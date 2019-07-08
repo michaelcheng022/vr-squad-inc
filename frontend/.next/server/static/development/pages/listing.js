@@ -870,9 +870,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _ImageGallery__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ImageGallery */ "./components/ImageGallery.js");
 /* harmony import */ var _Map__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Map */ "./components/Map.js");
-/* harmony import */ var _lib_formatMoney__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../lib/formatMoney */ "./lib/formatMoney.js");
-/* harmony import */ var _lib_formatNumber__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../lib/formatNumber */ "./lib/formatNumber.js");
-/* harmony import */ var _DeleteListing__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./DeleteListing */ "./components/DeleteListing.js");
+/* harmony import */ var _lib_formatNumber__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../lib/formatNumber */ "./lib/formatNumber.js");
+/* harmony import */ var _DeleteListing__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./DeleteListing */ "./components/DeleteListing.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "@fortawesome/react-fontawesome");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "@fortawesome/free-solid-svg-icons");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__);
 var _jsxFileName = "/home/michael/Desktop/web-dev-projects/vr-squad-inc/vr-squad-inc-master/frontend/components/SingleListing.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -928,10 +931,11 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var SingleListingStyles = styled_components__WEBPACK_IMPORTED_MODULE_6___default.a.div.withConfig({
   displayName: "SingleListing__SingleListingStyles",
-  componentId: "sc-7ei3gv-0"
-})(["@media (max-width:400px){margin:0;}max-width:1200px;min-width:300px;margin:2rem auto;box-shadow:", ";display:grid;font-family:'Roboto',sans-serif;grid-auto-columns:1fr;grid-auto-flow:column;img{width:100%;height:100%;margin-bottom:50px;object-fit:contain;}.button-container{float:right;}.btn{display:inline-block;font-weight:400;text-align:center;white-space:nowrap;vertical-align:middle;margin:0 10px;border:1px solid transparent;padding:.125rem .5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;}.btn-edit{background-color:#ffc107;border-color:#ffc107;}.btn-delete{background-color:#dc3545;border-color:#dc3545;}.details{margin:3rem;font-size:14px;}.description{padding:10px 34px;line-height:28px;font-size:17px;}.section{margin-top:10px;margin-bottom:40px;}.contact-card{display:flex;flex-direction:row;justify-content:center;margin:100px 0;}.agent-picture img{height:175px;width:175px;object-fit:cover;}.agent-details{margin-left:10px;font-family:'Roboto Condensed',sans-serif;font-style:bold;text-transform:uppercase;}.agent-title{font-family:'Roboto',sans-serif;font-size:34px;font-weight:1000;}.agent-company{margin-bottom:10px;}.agent-contact{font-family:'Roboto Condensed',sans-serif;font-size:16px;margin-left:5px;font-weight:550;}.agent-website{margin-top:15px;margin-left:5px;}.agent-website a{text-decoration:none;font-size:12px;font-weight:600;color:black;cursor:pointer;}.agent-website a:hover{color:blue;}.section h3{font-family:'Roboto Condensed',sans-serif;font-size:32px;font-style:bold;width:100%;text-align:left;text-indent:40px;border-bottom:1.5px solid #000;line-height:0.1em;margin:10px 0 20px;}.section h3 span{background:#fff;padding:0 10px;}.section ul{font-size:20px;list-style:circle}.section ul li{display:flex;flex-direction:row;justify-content:space-between;}.section ul li span{margin:auto 0 auto 50px;}.video-container{display:block;margin:0 auto;padding:3rem;@media (min-width:1300px){width:800px;padding:4rem;}}"], function (props) {
+  componentId: "sc-70jaw5-0"
+})(["@media (max-width:400px){margin:0;}max-width:1200px;min-width:300px;margin:2rem auto;box-shadow:", ";display:grid;font-family:'Roboto',sans-serif;grid-auto-columns:1fr;grid-auto-flow:column;img{width:100%;height:100%;margin-bottom:50px;object-fit:contain;}.button-container{float:right;}.btn{display:inline-block;font-weight:400;text-align:center;white-space:nowrap;vertical-align:middle;margin:0 10px;border:1px solid transparent;padding:.125rem .5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;}.btn-edit{background-color:#ffc107;border-color:#ffc107;}.btn-delete{background-color:#dc3545;border-color:#dc3545;}.details{margin:3rem;font-size:14px;}.description{padding:10px 34px;line-height:28px;font-size:17px;}.section{margin-top:10px;margin-bottom:40px;}.contact-card{display:flex;flex-direction:row;justify-content:center;margin:100px 0;}.agent-picture img{height:175px;width:175px;object-fit:cover;}.agent-details{margin-left:10px;font-family:'Roboto Condensed',sans-serif;font-style:bold;text-transform:uppercase;}.agent-title{font-family:'Roboto',sans-serif;font-size:34px;font-weight:1000;}.agent-company{margin-bottom:10px;}.agent-contact{font-family:'Roboto Condensed',sans-serif;font-size:16px;margin-left:5px;font-weight:550;}.agent-website{margin-top:15px;margin-left:5px;}.agent-website a{text-decoration:none;font-size:12px;font-weight:600;color:black;cursor:pointer;}.agent-website a:hover{color:blue;}.section h3{font-family:'Roboto Condensed',sans-serif;font-size:32px;font-style:bold;width:100%;text-align:left;text-indent:40px;border-bottom:1.5px solid #000;line-height:0.1em;margin:10px 0 20px;}.section h3 span{background:#fff;padding:0 10px;}.section ul{font-size:20px;list-style:none;display:flex;flex-direction:row;justify-content:center;margin:50px;margin-left:0;}.section ul li{margin:0 auto;}.video-container{display:block;margin:0 auto;padding:3rem;@media (min-width:1300px){width:800px;padding:4rem;}}"], function (props) {
   return props.theme.bs;
 });
 var SINGLE_LISTING_QUERY = graphql_tag__WEBPACK_IMPORTED_MODULE_1___default()(_templateObject());
@@ -960,7 +964,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 200
+          lineNumber: 201
         },
         __self: this
       }, function (_ref) {
@@ -971,21 +975,21 @@ function (_Component) {
           error: error,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 207
+            lineNumber: 208
           },
           __self: this
         });
         if (loading) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 208
+            lineNumber: 209
           },
           __self: this
         }, "Loading...");
         if (!data.listing) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 209
+            lineNumber: 210
           },
           __self: this
         }, "No listing Found for ", _this.props.id);
@@ -993,32 +997,32 @@ function (_Component) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SingleListingStyles, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 212
+            lineNumber: 213
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_7___default.a, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 213
+            lineNumber: 214
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 214
+            lineNumber: 215
           },
           __self: this
         }, "VR Squad Inc | ", listing.address)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "details",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 216
+            lineNumber: 217
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 217
+            lineNumber: 218
           },
           __self: this
         }, listing.address), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -1026,197 +1030,267 @@ function (_Component) {
           alt: listing.description,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 218
+            lineNumber: 219
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "section",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 219
+            lineNumber: 220
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 220
+            lineNumber: 221
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 220
+            lineNumber: 221
           },
           __self: this
         }, "DESCRIPTION")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           className: "description",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 221
+            lineNumber: 222
           },
           __self: this
         }, listing.description)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "section",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 223
+            lineNumber: 224
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 224
+            lineNumber: 225
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 224
+            lineNumber: 225
           },
           __self: this
         }, "DETAILS")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "specs",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 225
+            lineNumber: 226
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 226
+            lineNumber: 227
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 227
-          },
-          __self: this
-        }, "PRICE: ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 227
-          },
-          __self: this
-        }), Object(_lib_formatMoney__WEBPACK_IMPORTED_MODULE_10__["default"])(listing.price)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-          __source: {
-            fileName: _jsxFileName,
             lineNumber: 228
           },
           __self: this
-        }, "HOUSE-SIZE: ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 228
-          },
-          __self: this
-        }, Object(_lib_formatNumber__WEBPACK_IMPORTED_MODULE_11__["default"])(listing.houseSize), " sqft")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
+          icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faSign"],
+          size: "3x",
           __source: {
             fileName: _jsxFileName,
             lineNumber: 229
           },
           __self: this
-        }, "LOT-SIZE: ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 229
-          },
-          __self: this
-        }, Object(_lib_formatNumber__WEBPACK_IMPORTED_MODULE_11__["default"])(listing.lotSize), " sqft")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 230
           },
           __self: this
-        }, "BEDROOMS: ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 230
-          },
-          __self: this
-        }, listing.rooms)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        }, "$ ", Object(_lib_formatNumber__WEBPACK_IMPORTED_MODULE_10__["default"])(listing.price)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 231
           },
           __self: this
-        }, "BATHROOMS: ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        }, "price")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 231
+            lineNumber: 233
           },
           __self: this
-        }, listing.bath, " BATH"))))), listing.video ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
+          icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faHome"],
+          size: "3x",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 234
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 235
+          },
+          __self: this
+        }, Object(_lib_formatNumber__WEBPACK_IMPORTED_MODULE_10__["default"])(listing.houseSize), " sq/ft"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 236
+          },
+          __self: this
+        }, "house-size")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 238
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
+          icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faRulerCombined"],
+          size: "3x",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 239
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 240
+          },
+          __self: this
+        }, Object(_lib_formatNumber__WEBPACK_IMPORTED_MODULE_10__["default"])(listing.lotSize), " sq/ft"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 241
+          },
+          __self: this
+        }, "lot-size")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 243
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
+          icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faBed"],
+          size: "3x",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 244
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 245
+          },
+          __self: this
+        }, listing.rooms), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 246
+          },
+          __self: this
+        }, "bedrooms")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 248
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
+          icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faToilet"],
+          size: "3x",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 249
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 250
+          },
+          __self: this
+        }, listing.bath), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 251
+          },
+          __self: this
+        }, "bath"))))), listing.video ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "section",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 237
+            lineNumber: 258
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 238
+            lineNumber: 259
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 238
+            lineNumber: 259
           },
           __self: this
         }, "VIDEO")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "video-container",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 239
+            lineNumber: 260
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(video_react__WEBPACK_IMPORTED_MODULE_4__["Player"], {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 240
+            lineNumber: 261
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
           src: listing.video,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 241
+            lineNumber: 262
           },
           __self: this
         })))) : null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "section",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 246
+            lineNumber: 267
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 247
+            lineNumber: 268
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 247
+            lineNumber: 268
           },
           __self: this
         }, "GALLERY")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ImageGallery__WEBPACK_IMPORTED_MODULE_8__["default"], {
           images: listing.images,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 248
+            lineNumber: 269
           },
           __self: this
         })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_2__["Query"], {
           query: CURRENT_USER_QUERY,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 250
+            lineNumber: 271
           },
           __self: this
         }, function (_ref2) {
@@ -1229,89 +1303,89 @@ function (_Component) {
             className: "section",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 255
+              lineNumber: 276
             },
             __self: this
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 256
+              lineNumber: 277
             },
             __self: this
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 256
+              lineNumber: 277
             },
             __self: this
           }, "PRESENTED BY")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "contact-card",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 257
+              lineNumber: 278
             },
             __self: this
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "agent-picture",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 258
+              lineNumber: 279
             },
             __self: this
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
             src: me.profilePicture,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 259
+              lineNumber: 280
             },
             __self: this
           })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "agent-details",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 261
+              lineNumber: 282
             },
             __self: this
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "agent-title",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 262
+              lineNumber: 283
             },
             __self: this
           }, me.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "agent-contact agent-company",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 263
+              lineNumber: 284
             },
             __self: this
           }, me.company), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "agent-contact",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 264
+              lineNumber: 285
             },
             __self: this
           }, me.contactEmail), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "agent-contact",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 265
+              lineNumber: 286
             },
             __self: this
           }, me.phone), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "agent-website",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 266
+              lineNumber: 287
             },
             __self: this
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
             href: me.website,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 266
+              lineNumber: 287
             },
             __self: this
           }, "website")))));
@@ -1319,7 +1393,7 @@ function (_Component) {
           className: "button-container",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 272
+            lineNumber: 293
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -1331,28 +1405,28 @@ function (_Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 273
+            lineNumber: 294
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
           className: "btn btn-edit",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 279
+            lineNumber: 300
           },
           __self: this
         }, "EDIT")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
           className: "btn btn-delete",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 281
+            lineNumber: 302
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DeleteListing__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DeleteListing__WEBPACK_IMPORTED_MODULE_11__["default"], {
           id: listing.id,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 281
+            lineNumber: 302
           },
           __self: this
         }, "DELETE")))));
@@ -1412,29 +1486,6 @@ var Title = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.h3.withConf
   componentId: "sc-16nq74k-0"
 })(["margin:0;padding:10px 15px;text-align:center;margin-top:0;text-shadow:2px 2px 0 rgba(0,0,0,0.1);a{background:white;display:flex;line-height:1.3;font-size:16pt;text-align:center;text-decoration:none;color:black;padding:0 1rem;}a:hover{color:blue;}"]);
 /* harmony default export */ __webpack_exports__["default"] = (Title);
-
-/***/ }),
-
-/***/ "./lib/formatMoney.js":
-/*!****************************!*\
-  !*** ./lib/formatMoney.js ***!
-  \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (function (amount) {
-  var options = {
-    style: 'currency',
-    currency: 'USD',
-    minimumFractionDigits: 2
-  }; // if its a whole, dollar amount, leave off the .00
-
-  if (amount % 100 === 0) options.minimumFractionDigits = 0;
-  var formatter = new Intl.NumberFormat('en-US', options);
-  return formatter.format(amount / 100);
-});
 
 /***/ }),
 
@@ -1499,6 +1550,28 @@ var Listing = function Listing(props) {
 
 module.exports = __webpack_require__(/*! ./pages/listing.js */"./pages/listing.js");
 
+
+/***/ }),
+
+/***/ "@fortawesome/free-solid-svg-icons":
+/*!****************************************************!*\
+  !*** external "@fortawesome/free-solid-svg-icons" ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@fortawesome/free-solid-svg-icons");
+
+/***/ }),
+
+/***/ "@fortawesome/react-fontawesome":
+/*!*************************************************!*\
+  !*** external "@fortawesome/react-fontawesome" ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@fortawesome/react-fontawesome");
 
 /***/ }),
 
