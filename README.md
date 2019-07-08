@@ -13,12 +13,15 @@ database.
 * Delete listings you no longer need
 * Request password reset if you forget via JWT
 
+
 ## Screenshots
-![Screenshot](./screen-shots/cms-2.png)
-![Screenshot](./screen-shots/cms-3.png)
-![Screenshot](./screen-shots/cms-gallery.png)
-![Screenshot](./screen-shots/cms-5.png)
-![Screenshot](./screen-shots/cms-account.png)
+![image](./screen-shots/cms-2.png)
+![image](./screen-shots/cms-3.png)
+![image](./screen-shots/cms-gallery.png)
+![image](./screen-shots/cms-5.png)
+![image](./screen-shots/cms-account.png)
+
+
 ## To Be Implemented
 * Fix mailing service that mails back webtokens
 * Fix Google Static Map API
