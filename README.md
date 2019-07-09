@@ -12,10 +12,11 @@ database.
 * Edit your listings to change information on house 
 * Delete listings you no longer need
 * Request password reset if you forget via JWT
+* Mailing service that mails JWT token to your email
 
 ## To Be Implemented
-* Fix mailing service that mails back webtokens
-* Fix Google Static Map API
+* Configure mail service
+* Configure Google Static Map API
 * Generate static web page using Next 
 
 
